@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+test.mjs -text
+baseline/test.mjs -text

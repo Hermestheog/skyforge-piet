@@ -1,0 +1,13 @@
+{
+  "name": "skyforge-piet",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Executable Piet images for orbital calculation and two-body satellite tracking",
+  "type": "module",
+  "scripts": {
+    "build": "node assemble.mjs && node tracking/build.mjs",
+    "test": "node scripts/test-all.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

@@ -1,0 +1,61 @@
+{
+  "interpreter": "unmodified npiet v1.3h, compiled with libpng in Docker",
+  "png_sha256": "6cc02d3ffde1d64147ac90b01d4b4e249ecfc9ff5ae7e7fdf73ea1ca9c29ad3e",
+  "cases": [
+    {
+      "label": "Lower bound",
+      "radius_km": 6378,
+      "piet_m_s": 7905,
+      "model_reference_m_s": 7905.446241417911,
+      "jpl_reference_m_s": 7905.450560128694,
+      "absolute_error_m_s": 0.4505601286937235
+    },
+    {
+      "label": "LEO (400 km above 6378 km)",
+      "radius_km": 6778,
+      "piet_m_s": 7668,
+      "model_reference_m_s": 7668.631425322557,
+      "jpl_reference_m_s": 7668.635614662439,
+      "absolute_error_m_s": 0.6356146624393659
+    },
+    {
+      "label": "LEO",
+      "radius_km": 7000,
+      "piet_m_s": 7546,
+      "model_reference_m_s": 7546.049108166282,
+      "jpl_reference_m_s": 7546.053230539979,
+      "absolute_error_m_s": 0.05323053997926763
+    },
+    {
+      "label": "MEO",
+      "radius_km": 26560,
+      "piet_m_s": 3873,
+      "model_reference_m_s": 3873.955358607263,
+      "jpl_reference_m_s": 3873.9574749321696,
+      "absolute_error_m_s": 0.957474932169589
+    },
+    {
+      "label": "GEO",
+      "radius_km": 42164,
+      "piet_m_s": 3074,
+      "model_reference_m_s": 3074.6645801808263,
+      "jpl_reference_m_s": 3074.6662598566686,
+      "absolute_error_m_s": 0.6662598566686029
+    },
+    {
+      "label": "Upper bound",
+      "radius_km": 100000,
+      "piet_m_s": 1996,
+      "model_reference_m_s": 1996.4969321288727,
+      "jpl_reference_m_s": 1996.498022806434,
+      "absolute_error_m_s": 0.49802280643393715
+    }
+  ],
+  "sweep_count": 542,
+  "sweep_max_model_error_m_s": 0.9979339441379125,
+  "square_boundary_count": 14,
+  "invalid_input_count": 6,
+  "zoom_cases": 6,
+  "total_numeric_checks": 574,
+  "result": "PASS"
+}

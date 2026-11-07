@@ -1,0 +1,4 @@
+*
+!vendor/
+vendor/*
+!vendor/npiet-1.3h.c

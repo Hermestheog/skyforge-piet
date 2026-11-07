@@ -1,0 +1,31 @@
+name: Execute Piet programs
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  piet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build unmodified npiet with PNG support
+        run: docker build -t skyforge-piet:ci .
+      - name: Assemble and verify reproducible source pixels
+        run: |
+          docker run --rm -v "$PWD:/work" --entrypoint node skyforge-piet:ci scripts/rebuild-check.mjs
+      - name: Execute all tests sequentially in npiet
+        run: |
+          docker run --rm --network none -v "$PWD:/work" --entrypoint npm skyforge-piet:ci test
+      - name: Preserve test logs, including failures
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: piet-test-evidence
+          retention-days: 90
+          path: |
+            logs/runs/
+            test-results.json
+            equivalence-results.json
+            layout-verification.json
+            tracking/test-results.json
+            tracking/trace.txt

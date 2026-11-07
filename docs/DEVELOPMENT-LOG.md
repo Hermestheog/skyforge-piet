@@ -150,3 +150,29 @@ root cause or current hypothesis, fix, regression coverage, and status. Keep
 superseded hypotheses visible. `npm test` saves per-suite output and a manifest
 under `logs/runs/<UTC timestamp>/`; ignored live traces can be archived with
 `node scripts/archive-trace.mjs <source> <label>` when they explain a finding.
+
+## 2026-11-07 — public publication and CI
+
+Published [Hermestheog/skyforge-piet](https://github.com/Hermestheog/skyforge-piet)
+as a public repository, with `main` as default branch. Initial source commit:
+`d4dc42df6acd6d4ee049f82019afa3fea847273f`.
+
+[First GitHub CI run](https://github.com/Hermestheog/skyforge-piet/actions/runs/42383657340)
+**passed** in 1m13s, including the unmodified interpreter build, pixel-for-pixel
+reassembly, all 574 original checks, 574 equivalence comparisons, artwork
+coverage, and all 80 tracking tests. Test logs were uploaded even-on-failure
+by design; this run's per-suite logs and manifest were downloaded into
+`logs/runs/` for permanent Git history. A complete passing eccentric-case trace
+is archived as `logs/2026-11-07/first-passing-ci-eccentric.trace.txt.gz`.
+
+CI emitted an informational notice about the `ubuntu-latest` migration to Ubuntu
+26. It did not affect this run. The Docker-based interpreter and pixel rebuild
+check remain the reproducibility boundary.
+
+The initial whitespace check flagged whitespace in the unmodified upstream
+npiet source/license. It was intentionally retained to preserve source hashes;
+the project's own files passed `git diff --check` excluding `vendor/`.
+
+Added AGENTS.md and CONTRIBUTING.md to carry the user's logging preference into
+future work. The follow-up commit adds only guidance, publication notes and CI
+evidence; it uses `[skip ci]` because no executable source or tests changed.

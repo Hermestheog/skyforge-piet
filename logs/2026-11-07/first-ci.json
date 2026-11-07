@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/Hermestheog/skyforge-piet",
+  "run_url": "https://github.com/Hermestheog/skyforge-piet/actions/runs/42383657340",
+  "source_commit": "d4dc42df6acd6d4ee049f82019afa3fea847273f",
+  "conclusion": "success",
+  "legacy_numeric_checks": 574,
+  "original_artwork_equivalence_checks": 574,
+  "tracking_cases": 80,
+  "reproducible_pixels": true,
+  "artwork_colored_block_coverage_percent": 100,
+  "logs": "../runs/"
+}

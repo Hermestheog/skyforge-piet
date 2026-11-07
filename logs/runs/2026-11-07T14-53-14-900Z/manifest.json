@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "script": "test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 17257,
+      "log": "test.mjs.log"
+    },
+    {
+      "script": "equivalence.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 18256,
+      "log": "equivalence.mjs.log"
+    },
+    {
+      "script": "verify-layout.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 94,
+      "log": "verify-layout.mjs.log"
+    },
+    {
+      "script": "tracking/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 10352,
+      "log": "tracking-test.mjs.log"
+    }
+  ]
+}

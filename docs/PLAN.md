@@ -40,7 +40,7 @@ position, azimuth, elevation, range, Doppler. SGP4 remains a later milestone.
 - [x] Run unmodified npiet on all new cases; fix failures and audit 64-bit bounds.
 - [x] Rerun the original 574 tests and original/artwork equivalence sequentially.
 - [x] Add README, math contract, examples, CI and SGP4 roadmap; independent final review.
-- [ ] Commit and publish the approved standalone repository; verify remote contents/CI.
+- [x] Commit and publish the approved standalone repository; verify remote contents/CI.
 
 ## Review focus
 
@@ -55,3 +55,5 @@ frame-rotation signs; polar and zenith/nadir geometry; every input bound and mis
 - Ruling: no worktree of SkyForge needed: user requested an independent new repository.
 - Final review: no substantive findings after clarifying npiet's integer-prefix input parsing.
 - Implementation and sampled errors are documented in DEVELOPMENT-LOG.md; 80 tracker cases pass.
+- Published public repository on 2026-11-07. CI run 42383657340 passed all stages;
+  its logs and a full passing eccentric trace are preserved under logs/.

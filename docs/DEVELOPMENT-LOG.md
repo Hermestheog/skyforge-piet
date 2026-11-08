@@ -176,3 +176,75 @@ the project's own files passed `git diff --check` excluding `vendor/`.
 Added AGENTS.md and CONTRIBUTING.md to carry the user's logging preference into
 future work. The follow-up commit adds only guidance, publication notes and CI
 evidence; it uses `[skip ci]` because no executable source or tests changed.
+
+## 2026-11-07 — tagged baseline and first SGP4 epoch kernel
+
+Published annotated tag and release
+[v0.2.0](https://github.com/Hermestheog/skyforge-piet/releases/tag/v0.2.0)
+at `17b48c1cdce51e1f820f38913a765013bab827ef`, with the circular artwork and
+two-body tracking PNGs as release assets. Started `codex/sgp4-near-earth` from
+that commit; the stable baseline remains separate.
+
+Implemented `sgp4/epoch.png`: WGS-72 un-Kozai initialization, generalized Kepler
+solution, J3 long-period and J2 short-period corrections, and TEME vectors at
+t=0, all computed by Piet instructions. The first domain is deliberately bounded:
+6.5–17 rev/day, eccentricity 0–0.25, inclination 0–170 degrees. Elapsed-time
+propagation, drag coefficients and deep-space terms are not implemented.
+
+Pinned the independent upstream SGP4 port and published TLE/vector files at
+`aholinch/sgp4` commit `552cb1489a52c3023ae70cb6c7e239e84c5950fe`. Recorded
+source paths, SHA-256 hashes and license; test runs check hashes before use.
+The reference is not imported by the assembler or used by the PNG runtime.
+
+The initial red test failed with `SGP4 epoch executable PNG must exist`; its
+actual output is preserved in `logs/2026-11-07/sgp4-epoch-initial-red.log`.
+After assembly, all 82 cases passed in unmodified npiet: nine published epoch
+vectors, 52 valid cases total and 30 rejected inputs. No numerical failures were
+observed in that first run. The predeclared tolerances remain 20 m and 20 mm/s;
+observed maximum component errors were 2.951859 m and 3.814783 mm/s.
+
+Executable SHA-256:
+`09b74bac128ca7b087c7d6721781d886be2d2dddd4015bbdf568273e64788c3c`.
+The image is 4516×604 pixels and emits 89,441 core instructions, with six
+physical EOF/unreadable-input branches. A full Vanguard execution trace is
+archived as `logs/2026-11-07/sgp4-epoch-vanguard-first-pass.trace.txt.gz` with
+its uncompressed hash in the adjacent metadata file.
+
+Numerical design decisions retained for later work:
+
+- The original square-root routine has a deliberately small result domain.
+  SGP4 semimajor axes in Earth radii need a larger scaled result, so the new
+  kernel supplies a separate 31-bit-result root without changing baseline code.
+- The J3 longitude coefficient contains `1 + cos(inclination)` in its
+  denominator. Near 180 degrees, the current fixed-point format loses precision;
+  that region is explicitly rejected rather than silently evaluated.
+- At t=0 the secular and drag time terms vanish. Passing epoch vectors therefore
+  provides no evidence for nonzero-time propagation. Small drag coefficients
+  require wider precision before that phase can be implemented.
+- The generalized Kepler correction clamp is emitted defensively, but the
+  bounded eccentricity domain does not require its ±0.95-radian branch. The
+  initial plan's request to exercise that branch is deferred with wider-domain
+  work; current tests exercise the solver across the accepted domain.
+
+## 2026-11-08 — resume, review and regression verification
+
+The first independent-review attempt stopped at a service usage limit and
+produced no findings. On resumption, a fresh whole-branch review completed with
+no blocking math, runtime, test-independence or documentation findings. It
+recommended requiring the exact nine published satellite IDs rather than only
+a minimum fixture count; that assertion was added without changing the PNG.
+
+Pixel-for-pixel reassembly passed for all four executable images. The first
+full-suite attempt on resumption did not start: Docker reported the missing
+`dockerDesktopLinuxEngine` named pipe, and no Docker process was running.
+Started the installed Docker Desktop in the background to restore the existing
+test environment. This was an infrastructure interruption, not a numerical test
+failure; no executable or tolerance was changed to address it.
+
+After Docker became ready, the complete sequential `npm test` run passed:
+574 circular checks, 574 exact-output equivalence comparisons, 100% colored
+artwork coverage, 80 two-body tracking cases and 82 SGP4 epoch cases. All five
+suite exit codes are zero in `logs/runs/2026-11-08T19-46-42-329Z/manifest.json`;
+the corresponding stdout/stderr logs are retained beside it. The SGP4 maxima
+match the first run. `git diff v0.2.0` confirms no changes to the original PNGs,
+original test file, baseline directory, or tracking implementation/artifacts.

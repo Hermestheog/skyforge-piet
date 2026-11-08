@@ -248,3 +248,21 @@ suite exit codes are zero in `logs/runs/2026-11-08T19-46-42-329Z/manifest.json`;
 the corresponding stdout/stderr logs are retained beside it. The SGP4 maxima
 match the first run. `git diff v0.2.0` confirms no changes to the original PNGs,
 original test file, baseline directory, or tracking implementation/artifacts.
+
+Pushed implementation commit `1ac873585b422cd2f1f67c70c06f1566ebecd995` and
+opened [draft PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1).
+The connected GitHub integration could read repository metadata but its PR
+creation call returned HTTP 403, `Resource not accessible by integration`.
+The existing authenticated GitHub CLI successfully created the same authorized
+draft PR. No repository permissions or token scopes were changed.
+
+[The SGP4 PR CI run](https://github.com/Hermestheog/skyforge-piet/actions/runs/42517013604)
+passed all steps at implementation commit `1ac8735`: unmodified interpreter
+build, pixel-identical reassembly, all five test suites and evidence upload.
+The returned job/step status is preserved in
+`logs/2026-11-08/sgp4-epoch-first-ci.json`. This independently reproduces the
+local run on GitHub's Linux runner. The complete public job log is retained as
+`logs/2026-11-08/sgp4-epoch-first-ci.log`. The PR remains a draft for continued SGP4
+development; `main` and the v0.2.0 baseline tag are unchanged.
+Raw CI log whitespace is retained, including timestamped blank lines with trailing
+spaces; the project's source/documentation whitespace check excludes that archive.

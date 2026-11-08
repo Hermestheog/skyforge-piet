@@ -4,3 +4,6 @@ node_modules/
 .work/
 tracking/trace.txt
 sgp4/trace.txt
+sgp4/secular-trace.txt
+sgp4/secular-failure.trace.txt
+sgp4/secular-failure.json

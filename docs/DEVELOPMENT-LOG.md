@@ -266,3 +266,56 @@ local run on GitHub's Linux runner. The complete public job log is retained as
 development; `main` and the v0.2.0 baseline tag are unchanged.
 Raw CI log whitespace is retained, including timestamped blank lines with trailing
 spaces; the project's source/documentation whitespace check excludes that archive.
+
+## 2026-11-08 — nonzero-time SGP4 with explicit zero drag
+
+The user requested continued development after discussing the fixed-point
+arithmetic. Added `sgp4/secular.png`, a second executable SGP4 image accepting
+the six mean elements, elapsed seconds within ±86400, and an explicit B* field.
+Only B*=0 is supported; positive and negative nonzero values are rejected.
+This is the near-Earth zero-drag subset, not atmospheric-drag support.
+
+The assembler now has an opt-in secular mode. Default assembly reproduces the
+epoch PNG's existing SHA-256 exactly. The new image adds higher-precision
+un-Kozai initialization and the J2/J2-squared/J4 secular rates for mean anomaly,
+argument of perigee and node, then uses the existing periodic reconstruction.
+Most geometry stays at 1e8 scale; mean motion uses 1e10 and small rate
+corrections use 1e12. Large unwrapped mean angles are reduced before storing
+them, preserving npiet's signed-32-bit roll constraint. The largest high-scale
+mean-motion product remains below signed 64-bit within the input domain.
+
+Test-first evidence: the new test initially failed with `SGP4 zero-drag
+executable PNG must exist`; actual output is retained in
+`logs/2026-11-08/sgp4-secular-initial-red.log`. The first assembled image passed
+98 valid cases and 36 rejected inputs with no observed numerical failures.
+Tests include negative/positive time, ±one-day boundaries, tiny eccentricity,
+phase wrapping, unsupported B*, and each of eight input failure branches.
+Fixed preimplementation limits remain 20 m / 20 mm/s per component; measured
+maxima were 3.147844 m / 3.881826 mm/s. The complete first test output is in
+`logs/2026-11-08/sgp4-secular-first-pass.log`.
+
+Reference distinction: the independent upstream implementation was verified
+against 158 original published rows, including 149 nonzero-time rows, with each
+original TLE's B* unchanged. The PNG itself is compared with vectors recomputed
+by that verified oracle with B*=0. Those recomputed vectors are not claimed to
+be the original published drag-affected trajectories.
+
+New executable: 6094×492 pixels, 91,907 core instructions, eight error branches.
+SHA-256: `48a9a2948971e9e4aa41fd6243323d94601a27037472a6091a3401398a86d419`.
+A full execution trace for Vanguard with B*=0 at +86400 seconds is archived as
+`logs/2026-11-08/sgp4-zero-drag-vanguard-day-first-pass.trace.txt.gz`, with
+adjacent metadata and the uncompressed content hash.
+
+Independent review found no blocking math, overflow, test-independence or
+documentation issues. Its suggested hardening was applied: the oracle test
+now requires exactly 149 nonzero-time rows plus nine epoch rows, rather than
+merely requiring more than 100 nonzero-time rows. No physics or numerical
+tolerances changed in response to review.
+
+Full regression verification passed after the review change: all six suites
+exited zero in `logs/runs/2026-11-08T20-10-40-607Z/manifest.json`, with complete
+suite logs retained beside it. This includes the 574 original checks, 574
+exact-output comparisons, full artwork coverage, 80 tracking tests, 82 epoch
+tests, and 134 zero-drag propagation tests. Pixel rebuild verification passed
+for all five executable images. The original circular, tracking and epoch PNGs,
+their generated artifacts and existing numerical test results remain unchanged.

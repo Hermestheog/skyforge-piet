@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "script": "test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 44936,
+      "log": "test.mjs.log"
+    },
+    {
+      "script": "equivalence.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 49163,
+      "log": "equivalence.mjs.log"
+    },
+    {
+      "script": "verify-layout.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 405,
+      "log": "verify-layout.mjs.log"
+    },
+    {
+      "script": "tracking/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 38030,
+      "log": "tracking-test.mjs.log"
+    },
+    {
+      "script": "sgp4/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 27385,
+      "log": "sgp4-test.mjs.log"
+    },
+    {
+      "script": "sgp4/secular-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 34004,
+      "log": "sgp4-secular-test.mjs.log"
+    }
+  ]
+}

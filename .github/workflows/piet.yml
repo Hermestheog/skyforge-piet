@@ -31,3 +31,7 @@ jobs:
             tracking/trace.txt
             sgp4/test-results.json
             sgp4/trace.txt
+            sgp4/secular-test-results.json
+            sgp4/secular-trace.txt
+            sgp4/secular-failure.json
+            sgp4/secular-failure.trace.txt

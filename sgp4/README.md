@@ -93,9 +93,10 @@ because the J3 longitude coefficient's small denominator needs finer precision.
 The original tracker's smaller square-root domain is left unchanged; this
 kernel supplies a root with room for Earth-radius-scaled semimajor axes.
 
-The next stage requires wider precision for small drag/secular coefficients,
-then nonzero-time comparisons against the pinned published verification rows.
-Epoch agreement does not establish propagation accuracy.
+The separate [B*=0 propagation program](PROPAGATION.md) now adds higher-precision
+initialization and secular rates for times within one day of epoch. This epoch
+PNG itself is unchanged. Atmospheric drag remains subsequent work. Epoch
+agreement alone does not establish propagation accuracy.
 
 ## Reference provenance
 

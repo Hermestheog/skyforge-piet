@@ -5,7 +5,7 @@
   "description": "Executable Piet images for orbital calculation and two-body satellite tracking",
   "type": "module",
   "scripts": {
-    "build": "node assemble.mjs && node tracking/build.mjs && node sgp4/build.mjs",
+    "build": "node assemble.mjs && node tracking/build.mjs && node sgp4/build.mjs && node sgp4/secular-build.mjs",
     "test": "node scripts/test-all.mjs"
   },
   "engines": { "node": ">=22" },

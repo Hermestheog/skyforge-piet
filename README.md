@@ -17,12 +17,13 @@ elevation, range, range rate, Doppler, and visibility.**
 This is an elliptic **two-body** model with rotating spherical Earth.
 The stable baseline is [v0.2.0](https://github.com/Hermestheog/skyforge-piet/releases/tag/v0.2.0).
 
-**SGP4 development has started:** a separate [SGP4 epoch PNG](sgp4/epoch.png)
-computes bounded near-Earth TEME states at the TLE epoch, including WGS-72
-un-Kozai initialization and long/short-period corrections. It passes nine
-published epoch vectors and additional numerical/input tests. It does **not**
-yet propagate to other times or implement drag or deep-space dynamics.
-See [SGP4 instructions and limits](sgp4/README.md) and the [roadmap](docs/ROADMAP.md).
+**SGP4 development:** the [epoch PNG](sgp4/epoch.png) computes bounded near-Earth
+TEME states at the TLE epoch and passes nine published epoch vectors. A second
+[SGP4 propagation PNG](sgp4/secular.png) advances the **B*=0 subset** up to one
+day forward or backward, including secular and periodic corrections. It rejects
+nonzero B*; atmospheric drag and deep-space dynamics remain unimplemented.
+See [propagation instructions and limits](sgp4/PROPAGATION.md),
+[epoch instructions](sgp4/README.md), and the [roadmap](docs/ROADMAP.md).
 
 ## Run the PNGs
 
@@ -125,7 +126,8 @@ With Node 22+ and npiet on PATH, use `npm test` and `npm run build` directly.
 Evidence is checked in: [circular tests](TEST-RESULTS.md), [574 before/after
 comparisons](equivalence-results.json), [artwork coverage](layout-verification.json),
 and [tracking results](tracking/test-results.json), plus the
-[SGP4 epoch comparisons](sgp4/test-results.json). Tests retain strict timeouts
+[SGP4 epoch comparisons](sgp4/test-results.json) and
+[zero-drag propagation comparisons](sgp4/secular-test-results.json). Tests retain strict timeouts
 and execute actual PNG files in unmodified npiet.
 
 ## Development history

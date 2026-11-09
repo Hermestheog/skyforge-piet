@@ -1,0 +1,471 @@
+﻿2026-11-08T20:15:02.2688603Z Current runner version: '2.338.2'
+2026-11-08T20:15:02.2708128Z ##[group]Runner Image Provisioner
+2026-11-08T20:15:02.2708869Z Hosted Compute Agent
+2026-11-08T20:15:02.2709369Z Version: 20261028.624
+2026-11-08T20:15:02.2709951Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-08T20:15:02.2710548Z Build Date: 2026-10-28T21:51:42Z
+2026-11-08T20:15:02.2711132Z Worker ID: {758ea7ed-fa84-41c8-ae06-18b11492741f}
+2026-11-08T20:15:02.2711724Z Region: westus3
+2026-11-08T20:15:02.2712214Z Cloud: Azure
+2026-11-08T20:15:02.2712711Z ##[endgroup]
+2026-11-08T20:15:02.2714006Z ##[group]Operating System
+2026-11-08T20:15:02.2714613Z Ubuntu
+2026-11-08T20:15:02.2715059Z 26.04.1
+2026-11-08T20:15:02.2715535Z LTS
+2026-11-08T20:15:02.2716004Z ##[endgroup]
+2026-11-08T20:15:02.2716753Z ##[group]Runner Image
+2026-11-08T20:15:02.2717250Z Image: ubuntu-26.04
+2026-11-08T20:15:02.2717786Z Version: 20261101.186.1
+2026-11-08T20:15:02.2718833Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-08T20:15:02.2720098Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+2026-11-08T20:15:02.2720861Z ##[endgroup]
+2026-11-08T20:15:02.2721841Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T20:15:02.2723361Z Contents: read
+2026-11-08T20:15:02.2723934Z Metadata: read
+2026-11-08T20:15:02.2724396Z ##[endgroup]
+2026-11-08T20:15:02.2726103Z Secret source: Actions
+2026-11-08T20:15:02.2727103Z Cache mode: write
+2026-11-08T20:15:02.2727695Z Prepare workflow directory
+2026-11-08T20:15:02.3001894Z Prepare all required actions
+2026-11-08T20:15:02.3057046Z Getting action download info
+2026-11-08T20:15:02.5954058Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-08T20:15:02.7153530Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-08T20:15:02.8724868Z Complete job name: piet
+2026-11-08T20:15:02.9381258Z ##[group]Run actions/checkout@v7
+2026-11-08T20:15:02.9381955Z with:
+2026-11-08T20:15:02.9382331Z   repository: Hermestheog/skyforge-piet
+2026-11-08T20:15:02.9385517Z   token: ***
+2026-11-08T20:15:02.9385883Z   ssh-strict: true
+2026-11-08T20:15:02.9386398Z   ssh-user: git
+2026-11-08T20:15:02.9386774Z   persist-credentials: true
+2026-11-08T20:15:02.9387177Z   clean: true
+2026-11-08T20:15:02.9387538Z   sparse-checkout-cone-mode: true
+2026-11-08T20:15:02.9387954Z   fetch-depth: 1
+2026-11-08T20:15:02.9388306Z   fetch-tags: false
+2026-11-08T20:15:02.9388667Z   show-progress: true
+2026-11-08T20:15:02.9389034Z   lfs: false
+2026-11-08T20:15:02.9389369Z   submodules: false
+2026-11-08T20:15:02.9389737Z   set-safe-directory: true
+2026-11-08T20:15:02.9390143Z   allow-unsafe-pr-checkout: false
+2026-11-08T20:15:02.9390746Z ##[endgroup]
+2026-11-08T20:15:03.1871067Z Syncing repository: Hermestheog/skyforge-piet
+2026-11-08T20:15:03.1872978Z ##[group]Getting Git version info
+2026-11-08T20:15:03.1873680Z Working directory is '/home/runner/work/skyforge-piet/skyforge-piet'
+2026-11-08T20:15:03.1874602Z [command]/usr/bin/git version
+2026-11-08T20:15:03.1878627Z git version 2.56.0
+2026-11-08T20:15:03.1894429Z ##[endgroup]
+2026-11-08T20:15:03.1903259Z Temporarily overriding HOME='/home/runner/work/_temp/d2c10780-a2c5-4ad0-ba5d-2e0e50caf066' before making global git config changes
+2026-11-08T20:15:03.1904418Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T20:15:03.1906871Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/skyforge-piet/skyforge-piet
+2026-11-08T20:15:03.1975526Z Deleting the contents of '/home/runner/work/skyforge-piet/skyforge-piet'
+2026-11-08T20:15:03.1978005Z ##[group]Determining repository object format
+2026-11-08T20:15:03.1979517Z ##[endgroup]
+2026-11-08T20:15:03.1980409Z ##[group]Initializing the repository
+2026-11-08T20:15:03.1982977Z [command]/usr/bin/git init /home/runner/work/skyforge-piet/skyforge-piet
+2026-11-08T20:15:03.2084086Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T20:15:03.2085803Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T20:15:03.2087226Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T20:15:03.2088249Z hint: call:
+2026-11-08T20:15:03.2088871Z hint:
+2026-11-08T20:15:03.2089623Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T20:15:03.2090520Z hint:
+2026-11-08T20:15:03.2091369Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T20:15:03.2092657Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T20:15:03.2093731Z hint:
+2026-11-08T20:15:03.2094375Z hint: 	git branch -m <name>
+2026-11-08T20:15:03.2095162Z hint:
+2026-11-08T20:15:03.2096068Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T20:15:03.2097729Z Initialized empty Git repository in /home/runner/work/skyforge-piet/skyforge-piet/.git/
+2026-11-08T20:15:03.2108013Z [command]/usr/bin/git remote add origin https://github.com/Hermestheog/skyforge-piet
+2026-11-08T20:15:03.2156501Z ##[endgroup]
+2026-11-08T20:15:03.2157475Z ##[group]Disabling automatic garbage collection
+2026-11-08T20:15:03.2159506Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-08T20:15:03.2190568Z ##[endgroup]
+2026-11-08T20:15:03.2191895Z ##[group]Setting up auth
+2026-11-08T20:15:03.2192646Z Removing SSH command configuration
+2026-11-08T20:15:03.2195403Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T20:15:03.2226025Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T20:15:03.2801756Z Removing HTTP extra header
+2026-11-08T20:15:03.2807629Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T20:15:03.2836090Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T20:15:03.3067617Z Removing includeIf entries pointing to credentials config files
+2026-11-08T20:15:03.3071745Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T20:15:03.3100573Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T20:15:03.3342482Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-08T20:15:03.3378946Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git.path /home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:15:03.3409377Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:15:03.3441777Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:15:03.3473886Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:15:03.3502642Z ##[endgroup]
+2026-11-08T20:15:03.3503533Z ##[group]Fetching the repository
+2026-11-08T20:15:03.3509647Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +fb7c67703d02368d6559a888633e39789381781e:refs/remotes/pull/1/merge
+2026-11-08T20:15:05.1607055Z From https://github.com/Hermestheog/skyforge-piet
+2026-11-08T20:15:05.1608538Z  * [new ref]         fb7c67703d02368d6559a888633e39789381781e -> pull/1/merge
+2026-11-08T20:15:05.1612138Z ##[endgroup]
+2026-11-08T20:15:05.1613336Z ##[group]Determining the checkout info
+2026-11-08T20:15:05.1614616Z ##[endgroup]
+2026-11-08T20:15:05.1616509Z [command]/usr/bin/git sparse-checkout disable
+2026-11-08T20:15:05.1667037Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-08T20:15:05.1696947Z ##[group]Checking out the ref
+2026-11-08T20:15:05.1700366Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2026-11-08T20:15:05.2549629Z Note: switching to 'refs/remotes/pull/1/merge'.
+2026-11-08T20:15:05.2550481Z 
+2026-11-08T20:15:05.2550952Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-08T20:15:05.2552012Z changes and commit them, and you can discard any commits you make in this
+2026-11-08T20:15:05.2553126Z state without impacting any branches by switching back to a branch.
+2026-11-08T20:15:05.2553735Z 
+2026-11-08T20:15:05.2554238Z If you want to create a new branch to retain commits you create, you may
+2026-11-08T20:15:05.2555231Z do so (now or later) by using -c with the switch command. Example:
+2026-11-08T20:15:05.2555834Z 
+2026-11-08T20:15:05.2556126Z   git switch -c <new-branch-name>
+2026-11-08T20:15:05.2556785Z 
+2026-11-08T20:15:05.2557114Z Or undo this operation with:
+2026-11-08T20:15:05.2557536Z 
+2026-11-08T20:15:05.2557803Z   git switch -
+2026-11-08T20:15:05.2558150Z 
+2026-11-08T20:15:05.2558685Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-08T20:15:05.2559454Z 
+2026-11-08T20:15:05.2560389Z HEAD is now at fb7c677 Merge 5ca2fb77555ef9a93e5fb3e6a8c3e4b28ed366ae into 17b48c1cdce51e1f820f38913a765013bab827ef
+2026-11-08T20:15:05.2579537Z ##[endgroup]
+2026-11-08T20:15:05.2624364Z [command]/usr/bin/git log -1 --format=%H
+2026-11-08T20:15:05.2647444Z fb7c67703d02368d6559a888633e39789381781e
+2026-11-08T20:15:05.2885514Z ##[group]Run docker build -t skyforge-piet:ci .
+2026-11-08T20:15:05.2887154Z [36;1mdocker build -t skyforge-piet:ci .[0m
+2026-11-08T20:15:05.2937521Z shell: /usr/bin/bash -e {0}
+2026-11-08T20:15:05.2938508Z ##[endgroup]
+2026-11-08T20:15:05.9450365Z #0 building with "default" instance using docker driver
+2026-11-08T20:15:05.9450767Z 
+2026-11-08T20:15:05.9450960Z #1 [internal] load build definition from Dockerfile
+2026-11-08T20:15:05.9451312Z #1 transferring dockerfile: 244B done
+2026-11-08T20:15:05.9451623Z #1 DONE 0.0s
+2026-11-08T20:15:05.9451746Z 
+2026-11-08T20:15:05.9451901Z #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-11-08T20:15:06.1305004Z #2 ...
+2026-11-08T20:15:06.1305291Z 
+2026-11-08T20:15:06.1305571Z #3 [auth] library/node:pull token for registry-1.docker.io
+2026-11-08T20:15:06.1306007Z #3 DONE 0.0s
+2026-11-08T20:15:06.2812692Z 
+2026-11-08T20:15:06.2813032Z #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-11-08T20:15:06.5971276Z #2 DONE 0.8s
+2026-11-08T20:15:06.7118138Z 
+2026-11-08T20:15:06.7118751Z #4 [internal] load .dockerignore
+2026-11-08T20:15:06.7119296Z #4 transferring context: 81B done
+2026-11-08T20:15:06.7119633Z #4 DONE 0.0s
+2026-11-08T20:15:06.7119829Z 
+2026-11-08T20:15:06.7119949Z #5 [internal] load build context
+2026-11-08T20:15:06.7120310Z #5 transferring context: 68.68kB done
+2026-11-08T20:15:06.7120593Z #5 DONE 0.0s
+2026-11-08T20:15:06.7120706Z 
+2026-11-08T20:15:06.7121182Z #6 [1/5] FROM docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202
+2026-11-08T20:15:06.7121993Z #6 resolve docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202 0.0s done
+2026-11-08T20:15:06.7122787Z #6 sha256:071409a402546fea9e56af710d951a9e0c9bb205e4b1186811677d2c9dcad115 443B / 443B 0.1s done
+2026-11-08T20:15:06.8637674Z #6 sha256:df11f9b3da94f640e357ccc86df09a574dc04df1ad95e012f511f4a02b566cd3 1.26MB / 1.26MB 0.1s done
+2026-11-08T20:15:06.8638772Z #6 sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c 0B / 56.22MB 0.2s
+2026-11-08T20:15:06.8640018Z #6 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 3.85MB / 3.85MB 0.2s done
+2026-11-08T20:15:07.1027247Z #6 sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c 31.46MB / 56.22MB 0.3s
+2026-11-08T20:15:07.1028171Z #6 extracting sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 0.1s done
+2026-11-08T20:15:07.1029115Z #6 sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c 56.22MB / 56.22MB 0.5s
+2026-11-08T20:15:07.3539725Z #6 sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c 56.22MB / 56.22MB 0.7s done
+2026-11-08T20:15:07.5069368Z #6 extracting sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c
+2026-11-08T20:15:08.1587243Z #6 extracting sha256:2a9491572f6e8f9c3be47a2d17b7dcd30f264003f2cbeedf9359544b3ca5396c 0.8s done
+2026-11-08T20:15:08.1587871Z #6 DONE 1.5s
+2026-11-08T20:15:08.3364302Z 
+2026-11-08T20:15:08.3364931Z #6 [1/5] FROM docker.io/library/node:22-alpine@sha256:0e1754758c2df4cfa3e68d59e2e1b7374bb7fd9ea6328eaaacf15cc934af8202
+2026-11-08T20:15:08.3365598Z #6 extracting sha256:df11f9b3da94f640e357ccc86df09a574dc04df1ad95e012f511f4a02b566cd3 0.0s done
+2026-11-08T20:15:08.3366106Z #6 extracting sha256:071409a402546fea9e56af710d951a9e0c9bb205e4b1186811677d2c9dcad115 done
+2026-11-08T20:15:08.3366741Z #6 DONE 1.6s
+2026-11-08T20:15:08.3366849Z 
+2026-11-08T20:15:08.3366966Z #7 [2/5] RUN apk add --no-cache build-base libpng-dev
+2026-11-08T20:15:08.6569937Z #7 0.471 ( 1/24) Upgrading zlib (1.3.2-r1 -> 1.4-r0)
+2026-11-08T20:15:08.7743122Z #7 0.481 ( 2/24) Installing jansson (2.15.0-r0)
+2026-11-08T20:15:08.7743518Z #7 0.491 ( 3/24) Installing zstd-libs (1.5.7-r2)
+2026-11-08T20:15:08.7743854Z #7 0.506 ( 4/24) Installing binutils (2.45.1-r1)
+2026-11-08T20:15:08.7744171Z #7 0.564 ( 5/24) Installing libmagic (5.47-r2)
+2026-11-08T20:15:08.7744801Z #7 0.588 ( 6/24) Installing file (5.47-r2)
+2026-11-08T20:15:09.0185757Z #7 0.598 ( 7/24) Installing libgcc-static (15.2.0-r5)
+2026-11-08T20:15:09.5732341Z #7 0.617 ( 8/24) Installing libgomp (15.2.0-r5)
+2026-11-08T20:15:09.5732749Z #7 0.628 ( 9/24) Installing gmp (6.3.0-r4)
+2026-11-08T20:15:09.5732987Z #7 0.641 (10/24) Installing isl26 (0.26-r2)
+2026-11-08T20:15:09.5733220Z #7 0.660 (11/24) Installing mpfr4 (4.2.2-r0)
+2026-11-08T20:15:09.5733520Z #7 0.672 (12/24) Installing mpc1 (1.3.1-r1)
+2026-11-08T20:15:09.5733763Z #7 0.682 (13/24) Installing gcc (15.2.0-r5)
+2026-11-08T20:15:09.5734011Z #7 1.387 (14/24) Installing libstdc++-dev (15.2.0-r5)
+2026-11-08T20:15:09.6950554Z #7 1.509 (15/24) Installing musl-dev (1.2.6-r3)
+2026-11-08T20:15:09.8969634Z #7 1.561 (16/24) Installing g++ (15.2.0-r5)
+2026-11-08T20:15:09.9468683Z #7 1.761 (17/24) Installing make (4.4.1-r4)
+2026-11-08T20:15:10.1768912Z #7 1.772 (18/24) Installing fortify-headers (3.0.1-r2)
+2026-11-08T20:15:10.1769365Z #7 1.782 (19/24) Installing patch (2.8.1-r0)
+2026-11-08T20:15:10.1769722Z #7 1.792 (20/24) Installing build-base (0.5-r4)
+2026-11-08T20:15:10.1770037Z #7 1.792 (21/24) Installing libpng (1.6.59-r0)
+2026-11-08T20:15:10.1770397Z #7 1.802 (22/24) Installing pkgconf (2.5.1-r0)
+2026-11-08T20:15:10.1770705Z #7 1.812 (23/24) Installing zlib-dev (1.4-r0)
+2026-11-08T20:15:10.1771042Z #7 1.822 (24/24) Installing libpng-dev (1.6.59-r0)
+2026-11-08T20:15:10.1771421Z #7 1.833 Executing busybox-1.37.0-r31.trigger
+2026-11-08T20:15:10.1771784Z #7 1.840 OK: 276.1 MiB in 42 packages
+2026-11-08T20:15:12.8188891Z #7 DONE 4.6s
+2026-11-08T20:15:12.9942378Z 
+2026-11-08T20:15:12.9942925Z #8 [3/5] COPY vendor/npiet-1.3h.c /tmp/npiet.c
+2026-11-08T20:15:12.9943350Z #8 DONE 0.0s
+2026-11-08T20:15:12.9943489Z 
+2026-11-08T20:15:12.9943772Z #9 [4/5] RUN cc -O2 -DHAVE_PNG_H /tmp/npiet.c -lpng -o /usr/local/bin/npiet
+2026-11-08T20:15:13.5817835Z #9 DONE 0.7s
+2026-11-08T20:15:13.7469314Z 
+2026-11-08T20:15:13.7469800Z #10 [5/5] WORKDIR /work
+2026-11-08T20:15:13.7470190Z #10 DONE 0.0s
+2026-11-08T20:15:13.7470389Z 
+2026-11-08T20:15:13.7470506Z #11 exporting to image
+2026-11-08T20:15:13.7470779Z #11 exporting layers
+2026-11-08T20:15:22.4984420Z #11 exporting layers 8.9s done
+2026-11-08T20:15:22.6888709Z #11 exporting manifest sha256:2208372b8a7f868f28e7213f2286d46e8a12ef21aeca8806c5cc39c93187acc3 done
+2026-11-08T20:15:22.6889338Z #11 exporting config sha256:9f7fb96dd8d394ef5d186d50abe33beb1f2f8b3cb97a4436a5d0e5ee80450ac6 done
+2026-11-08T20:15:22.6889948Z #11 exporting attestation manifest sha256:5db6193f35e3526255ae019a6e1fa38d57d4d57b0447990af7e1a0aff1bd645e done
+2026-11-08T20:15:22.6890508Z #11 exporting manifest list sha256:0cd8f4a21920a0fe2650d19c0347efb8568fc9aeb04c71aec708d88cd1a9c3f0 done
+2026-11-08T20:15:22.6890928Z #11 naming to docker.io/library/skyforge-piet:ci done
+2026-11-08T20:15:22.6891208Z #11 unpacking to docker.io/library/skyforge-piet:ci
+2026-11-08T20:15:23.6583628Z #11 unpacking to docker.io/library/skyforge-piet:ci 1.1s done
+2026-11-08T20:15:23.7076149Z #11 DONE 10.1s
+2026-11-08T20:15:23.7173085Z ##[group]Run docker run --rm -v "$PWD:/work" --entrypoint node skyforge-piet:ci scripts/rebuild-check.mjs
+2026-11-08T20:15:23.7173744Z [36;1mdocker run --rm -v "$PWD:/work" --entrypoint node skyforge-piet:ci scripts/rebuild-check.mjs[0m
+2026-11-08T20:15:23.7220598Z shell: /usr/bin/bash -e {0}
+2026-11-08T20:15:23.7220812Z ##[endgroup]
+2026-11-08T20:15:26.4401664Z Assembled executable Earth into 944x730 PNG. {
+2026-11-08T20:15:26.4402187Z   original_computational_instructions: 597,
+2026-11-08T20:15:26.4402531Z   artwork_tiles: 660,
+2026-11-08T20:15:26.4402811Z   padding_instructions: 63,
+2026-11-08T20:15:26.4403099Z   routing_instructions: 138,
+2026-11-08T20:15:26.4403447Z   core_by_region: { earth: 401, orbit: 148, satellite: 48 }
+2026-11-08T20:15:26.4403826Z }
+2026-11-08T20:15:26.7949050Z {
+2026-11-08T20:15:26.7949388Z   width: 8518,
+2026-11-08T20:15:26.7949695Z   height: 426,
+2026-11-08T20:15:26.7949987Z   core_instructions: 89207,
+2026-11-08T20:15:26.7950439Z   input_error_branches: 12,
+2026-11-08T20:15:26.7950698Z   rows: 28,
+2026-11-08T20:15:26.7951065Z   png_sha256: '24c4f8ee83631c92c70e3f17c5eee5ef7d0a10780b9a6abe561384d4aa5ce707',
+2026-11-08T20:15:26.7951707Z   pixel_sha256: 'ce52e4038049535692ac8d06f537b1d634c6577f562f662c952b5df8d1690e9f'
+2026-11-08T20:15:26.7952151Z }
+2026-11-08T20:15:27.1501686Z {
+2026-11-08T20:15:27.1501977Z   width: 4516,
+2026-11-08T20:15:27.1502257Z   height: 604,
+2026-11-08T20:15:27.1502519Z   core_instructions: 89441,
+2026-11-08T20:15:27.1502835Z   input_error_branches: 6,
+2026-11-08T20:15:27.1503077Z   rows: 57,
+2026-11-08T20:15:27.1503447Z   png_sha256: '09b74bac128ca7b087c7d6721781d886be2d2dddd4015bbdf568273e64788c3c',
+2026-11-08T20:15:27.1504075Z   pixel_sha256: '400c36afe527e97fcc1f356fd9b74ac73ba50511dd059541dbe8067736f55abe'
+2026-11-08T20:15:27.1504490Z }
+2026-11-08T20:15:27.5239712Z {
+2026-11-08T20:15:27.5240045Z   width: 6094,
+2026-11-08T20:15:27.5240253Z   height: 492,
+2026-11-08T20:15:27.5240446Z   core_instructions: 91907,
+2026-11-08T20:15:27.5240714Z   input_error_branches: 8,
+2026-11-08T20:15:27.5240919Z   rows: 43,
+2026-11-08T20:15:27.5241196Z   png_sha256: '48a9a2948971e9e4aa41fd6243323d94601a27037472a6091a3401398a86d419',
+2026-11-08T20:15:27.5241644Z   pixel_sha256: '7e541f9ade54d9852f67ed1a798fe83a4cc12a50809aef9db41084aeac307f30'
+2026-11-08T20:15:27.5241966Z }
+2026-11-08T20:15:27.7500832Z PASS: all executable source pixels rebuild identically.
+2026-11-08T20:15:27.8447604Z ##[group]Run docker run --rm --network none -v "$PWD:/work" --entrypoint npm skyforge-piet:ci test
+2026-11-08T20:15:27.8448143Z [36;1mdocker run --rm --network none -v "$PWD:/work" --entrypoint npm skyforge-piet:ci test[0m
+2026-11-08T20:15:27.8492565Z shell: /usr/bin/bash -e {0}
+2026-11-08T20:15:27.8492781Z ##[endgroup]
+2026-11-08T20:15:28.2853944Z 
+2026-11-08T20:15:28.2854290Z > skyforge-piet@0.2.0 test
+2026-11-08T20:15:28.2854649Z > node scripts/test-all.mjs
+2026-11-08T20:15:28.2854855Z 
+2026-11-08T20:15:42.5867685Z ┌─────────┬──────────────────────────────┬───────────┬──────────┬─────────────────────┬────────────────────┬─────────────────────┐
+2026-11-08T20:15:42.5868991Z │ (index) │ label                        │ radius_km │ piet_m_s │ model_reference_m_s │ jpl_reference_m_s  │ absolute_error_m_s  │
+2026-11-08T20:15:42.5870443Z ├─────────┼──────────────────────────────┼───────────┼──────────┼─────────────────────┼────────────────────┼─────────────────────┤
+2026-11-08T20:15:42.5871754Z │ 0       │ 'Lower bound'                │ 6378      │ 7905     │ 7905.446241417911   │ 7905.450560128694  │ 0.4505601286937235  │
+2026-11-08T20:15:42.5872769Z │ 1       │ 'LEO (400 km above 6378 km)' │ 6778      │ 7668     │ 7668.631425322557   │ 7668.635614662439  │ 0.6356146624393659  │
+2026-11-08T20:15:42.5873621Z │ 2       │ 'LEO'                        │ 7000      │ 7546     │ 7546.049108166282   │ 7546.053230539979  │ 0.05323053997926763 │
+2026-11-08T20:15:42.5874458Z │ 3       │ 'MEO'                        │ 26560     │ 3873     │ 3873.955358607263   │ 3873.9574749321696 │ 0.957474932169589   │
+2026-11-08T20:15:42.5875323Z │ 4       │ 'GEO'                        │ 42164     │ 3074     │ 3074.6645801808263  │ 3074.6662598566686 │ 0.6662598566686029  │
+2026-11-08T20:15:42.5877028Z │ 5       │ 'Upper bound'                │ 100000    │ 1996     │ 1996.4969321288727  │ 1996.498022806434  │ 0.49802280643393715 │
+2026-11-08T20:15:42.5877898Z └─────────┴──────────────────────────────┴───────────┴──────────┴─────────────────────┴────────────────────┴─────────────────────┘
+2026-11-08T20:15:42.5878244Z {
+2026-11-08T20:15:42.5878506Z   "interpreter": "unmodified npiet v1.3h, compiled with libpng in Docker",
+2026-11-08T20:15:42.5878933Z   "png_sha256": "5df9d055f88ad23f30c758647b8ad06239cb70c4871038824b462ee51a77d09d",
+2026-11-08T20:15:42.5879255Z   "cases": [
+2026-11-08T20:15:42.5879408Z     {
+2026-11-08T20:15:42.5879570Z       "label": "Lower bound",
+2026-11-08T20:15:42.5879772Z       "radius_km": 6378,
+2026-11-08T20:15:42.5879982Z       "piet_m_s": 7905,
+2026-11-08T20:15:42.5880184Z       "model_reference_m_s": 7905.446241417911,
+2026-11-08T20:15:42.5880424Z       "jpl_reference_m_s": 7905.450560128694,
+2026-11-08T20:15:42.5880665Z       "absolute_error_m_s": 0.4505601286937235
+2026-11-08T20:15:42.5880873Z     },
+2026-11-08T20:15:42.5881016Z     {
+2026-11-08T20:15:42.5881177Z       "label": "LEO (400 km above 6378 km)",
+2026-11-08T20:15:42.5881394Z       "radius_km": 6778,
+2026-11-08T20:15:42.5881585Z       "piet_m_s": 7668,
+2026-11-08T20:15:42.5881779Z       "model_reference_m_s": 7668.631425322557,
+2026-11-08T20:15:42.5882005Z       "jpl_reference_m_s": 7668.635614662439,
+2026-11-08T20:15:42.5882244Z       "absolute_error_m_s": 0.6356146624393659
+2026-11-08T20:15:42.5882463Z     },
+2026-11-08T20:15:42.5882607Z     {
+2026-11-08T20:15:42.5882754Z       "label": "LEO",
+2026-11-08T20:15:42.5882924Z       "radius_km": 7000,
+2026-11-08T20:15:42.5883116Z       "piet_m_s": 7546,
+2026-11-08T20:15:42.5883308Z       "model_reference_m_s": 7546.049108166282,
+2026-11-08T20:15:42.5883547Z       "jpl_reference_m_s": 7546.053230539979,
+2026-11-08T20:15:42.5883794Z       "absolute_error_m_s": 0.05323053997926763
+2026-11-08T20:15:42.5884012Z     },
+2026-11-08T20:15:42.5884166Z     {
+2026-11-08T20:15:42.5884319Z       "label": "MEO",
+2026-11-08T20:15:42.5884500Z       "radius_km": 26560,
+2026-11-08T20:15:42.5884681Z       "piet_m_s": 3873,
+2026-11-08T20:15:42.5884872Z       "model_reference_m_s": 3873.955358607263,
+2026-11-08T20:15:42.5885501Z       "jpl_reference_m_s": 3873.9574749321696,
+2026-11-08T20:15:42.5885846Z       "absolute_error_m_s": 0.957474932169589
+2026-11-08T20:15:42.5886150Z     },
+2026-11-08T20:15:42.5886545Z     {
+2026-11-08T20:15:42.5886787Z       "label": "GEO",
+2026-11-08T20:15:42.5887071Z       "radius_km": 42164,
+2026-11-08T20:15:42.5887347Z       "piet_m_s": 3074,
+2026-11-08T20:15:42.5887642Z       "model_reference_m_s": 3074.6645801808263,
+2026-11-08T20:15:42.5887954Z       "jpl_reference_m_s": 3074.6662598566686,
+2026-11-08T20:15:42.5888179Z       "absolute_error_m_s": 0.6662598566686029
+2026-11-08T20:15:42.5888380Z     },
+2026-11-08T20:15:42.5888521Z     {
+2026-11-08T20:15:42.5888676Z       "label": "Upper bound",
+2026-11-08T20:15:42.5889053Z       "radius_km": 100000,
+2026-11-08T20:15:42.5889229Z       "piet_m_s": 1996,
+2026-11-08T20:15:42.5889422Z       "model_reference_m_s": 1996.4969321288727,
+2026-11-08T20:15:42.5889649Z       "jpl_reference_m_s": 1996.498022806434,
+2026-11-08T20:15:42.5889875Z       "absolute_error_m_s": 0.49802280643393715
+2026-11-08T20:15:42.5890080Z     }
+2026-11-08T20:15:42.5890223Z   ],
+2026-11-08T20:15:42.5890375Z   "sweep_count": 542,
+2026-11-08T20:15:42.5890573Z   "sweep_max_model_error_m_s": 0.9979339441379125,
+2026-11-08T20:15:42.5890826Z   "square_boundary_count": 14,
+2026-11-08T20:15:42.5891088Z   "invalid_input_count": 6,
+2026-11-08T20:15:42.5891283Z   "zoom_cases": 6,
+2026-11-08T20:15:42.5891455Z   "total_numeric_checks": 574,
+2026-11-08T20:15:42.5891645Z   "result": "PASS"
+2026-11-08T20:15:42.5891805Z }
+2026-11-08T20:15:57.5796684Z PASS: all 574 original/redesigned executions have byte-identical stdout, successful termination, and no warnings.
+2026-11-08T20:15:57.6553080Z {
+2026-11-08T20:15:57.6553388Z   result: 'PASS',
+2026-11-08T20:15:57.6553824Z   png_sha256: '5df9d055f88ad23f30c758647b8ad06239cb70c4871038824b462ee51a77d09d',
+2026-11-08T20:15:57.6554279Z   width: 944,
+2026-11-08T20:15:57.6554488Z   height: 730,
+2026-11-08T20:15:57.6554784Z   executed_colored_blocks: 1529,
+2026-11-08T20:15:57.6555076Z   total_colored_blocks: 1529,
+2026-11-08T20:15:57.6555369Z   executed_colored_pixels: 122045,
+2026-11-08T20:15:57.6555663Z   total_colored_pixels: 122045,
+2026-11-08T20:15:57.6555932Z   colored_coverage_percent: 100,
+2026-11-08T20:15:57.6556422Z   original_computational_instructions_in_order: 597,
+2026-11-08T20:15:57.6556858Z   core_by_region: { earth: 401, orbit: 148, satellite: 48 },
+2026-11-08T20:15:57.6557228Z   push_block_areas: 'all exact',
+2026-11-08T20:15:57.6557898Z   note: 'Coverage is obtained from the real npiet GEO trace; each touched colored block is flood-filled.'
+2026-11-08T20:15:57.6558415Z }
+2026-11-08T20:16:05.9772551Z {
+2026-11-08T20:16:05.9772784Z   "result": "PASS",
+2026-11-08T20:16:05.9773109Z   "valid_cases": 40,
+2026-11-08T20:16:05.9773390Z   "invalid_cases": 40,
+2026-11-08T20:16:05.9773645Z   "total": 80,
+2026-11-08T20:16:05.9774064Z   "png_sha256": "24c4f8ee83631c92c70e3f17c5eee5ef7d0a10780b9a6abe561384d4aa5ce707",
+2026-11-08T20:16:05.9774608Z   "field_tolerances": [
+2026-11-08T20:16:05.9774882Z     0,
+2026-11-08T20:16:05.9775114Z     100,
+2026-11-08T20:16:05.9775331Z     100,
+2026-11-08T20:16:05.9775538Z     100,
+2026-11-08T20:16:05.9775735Z     100,
+2026-11-08T20:16:05.9775936Z     100,
+2026-11-08T20:16:05.9776142Z     100,
+2026-11-08T20:16:05.9776492Z     50,
+2026-11-08T20:16:05.9776693Z     50,
+2026-11-08T20:16:05.9776902Z     100,
+2026-11-08T20:16:05.9777127Z     100,
+2026-11-08T20:16:05.9777324Z     4,
+2026-11-08T20:16:05.9777532Z     0
+2026-11-08T20:16:05.9777726Z   ],
+2026-11-08T20:16:05.9777953Z   "max_observed_errors": [
+2026-11-08T20:16:05.9778224Z     0,
+2026-11-08T20:16:05.9778426Z     10.694960668683052,
+2026-11-08T20:16:05.9778666Z     12.999181348830462,
+2026-11-08T20:16:05.9778915Z     14.59547776170075,
+2026-11-08T20:16:05.9779148Z     4.565171470865607,
+2026-11-08T20:16:05.9779383Z     8.270944614880136,
+2026-11-08T20:16:05.9779675Z     5.082897215150297,
+2026-11-08T20:16:05.9780007Z     0.9548646546318196,
+2026-11-08T20:16:05.9780454Z     1,
+2026-11-08T20:16:05.9780606Z     6.622190058231354,
+2026-11-08T20:16:05.9780765Z     5.49026872869581,
+2026-11-08T20:16:05.9780940Z     1.0225468478965922,
+2026-11-08T20:16:05.9781108Z     0
+2026-11-08T20:16:05.9781252Z   ],
+2026-11-08T20:16:05.9781464Z   "max_abs_stack_value_in_eccentric_trace": 9000000000000034000
+2026-11-08T20:16:05.9781723Z }
+2026-11-08T20:16:12.5826865Z PASS SGP4 epoch: 9 published, 52 total valid, 30 invalid; max errors 2.951858365908265, 1.5858863927423954, 2.54900941811502, 3.814782662317157, 3.0703536118380725, 2.25
+2026-11-08T20:16:23.8854232Z PASS SGP4 zero-drag: 98 valid, 36 invalid; 149 published nonzero rows independently verify oracle; max errors 2.268823505321052, 3.147843686514534, 1.7796875204658136, 3.517069518682547, 3.8818259183317423, 3.0282822344452143
+2026-11-08T20:16:23.8856781Z All suites passed. Logs preserved: logs/runs/2026-11-08T20-15-28-316Z
+2026-11-08T20:16:24.6868287Z ##[group]Run actions/upload-artifact@v7
+2026-11-08T20:16:24.6868530Z with:
+2026-11-08T20:16:24.6868708Z   name: piet-test-evidence
+2026-11-08T20:16:24.6868905Z   retention-days: 90
+2026-11-08T20:16:24.6869727Z   path: logs/runs/
+test-results.json
+equivalence-results.json
+layout-verification.json
+tracking/test-results.json
+tracking/trace.txt
+sgp4/test-results.json
+sgp4/trace.txt
+sgp4/secular-test-results.json
+sgp4/secular-trace.txt
+sgp4/secular-failure.json
+sgp4/secular-failure.trace.txt
+
+2026-11-08T20:16:24.6870572Z   if-no-files-found: warn
+2026-11-08T20:16:24.6870771Z   compression-level: 6
+2026-11-08T20:16:24.6870956Z   overwrite: false
+2026-11-08T20:16:24.6871143Z   include-hidden-files: false
+2026-11-08T20:16:24.6871340Z   archive: true
+2026-11-08T20:16:24.6871509Z ##[endgroup]
+2026-11-08T20:16:24.8174649Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-08T20:16:24.8178573Z The least common ancestor is /home/runner/work/skyforge-piet/skyforge-piet. This will be the root directory of the artifact
+2026-11-08T20:16:24.8179450Z With the provided path, there will be 34 files uploaded
+2026-11-08T20:16:24.8186885Z Artifact name is valid!
+2026-11-08T20:16:24.8187277Z Root directory input is valid!
+2026-11-08T20:16:25.1521639Z Uploading artifact: piet-test-evidence.zip
+2026-11-08T20:16:25.1551117Z Beginning upload of artifact content to blob storage
+2026-11-08T20:16:26.7570528Z Uploaded bytes 4715633
+2026-11-08T20:16:26.8170319Z Finished uploading artifact content to blob storage!
+2026-11-08T20:16:26.8172713Z SHA256 digest of uploaded artifact is 2d972a1a5cc138c941d4b557d85cb6c2a73d2ff6e0e31668023df8b204f2d031
+2026-11-08T20:16:26.8174319Z Finalizing artifact upload
+2026-11-08T20:16:27.4229628Z Artifact piet-test-evidence successfully finalized. Artifact ID 13632925773
+2026-11-08T20:16:27.4230453Z Artifact piet-test-evidence has been successfully uploaded! Final size is 4715633 bytes. Artifact ID is 13632925773
+2026-11-08T20:16:27.4234004Z Artifact download URL: https://github.com/Hermestheog/skyforge-piet/actions/runs/42519147945/artifacts/13632925773
+2026-11-08T20:16:27.4476991Z Post job cleanup.
+2026-11-08T20:16:27.5190023Z [command]/usr/bin/git version
+2026-11-08T20:16:27.5228548Z git version 2.56.0
+2026-11-08T20:16:27.5259324Z Temporarily overriding HOME='/home/runner/work/_temp/40d24a8e-2818-4b6a-af80-61826e8227b3' before making global git config changes
+2026-11-08T20:16:27.5260062Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T20:16:27.5263300Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/skyforge-piet/skyforge-piet
+2026-11-08T20:16:27.5293508Z Removing SSH command configuration
+2026-11-08T20:16:27.5307102Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T20:16:27.5330135Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T20:16:27.5590866Z Removing HTTP extra header
+2026-11-08T20:16:27.5607992Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T20:16:27.5645495Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T20:16:27.5905622Z Removing includeIf entries pointing to credentials config files
+2026-11-08T20:16:27.5910970Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T20:16:27.5934911Z includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git.path
+2026-11-08T20:16:27.5935654Z includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git/worktrees/*.path
+2026-11-08T20:16:27.5936884Z includeif.gitdir:/github/workspace/.git.path
+2026-11-08T20:16:27.5937350Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-08T20:16:27.5942354Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git.path
+2026-11-08T20:16:27.5963100Z /home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:16:27.5971005Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-70414b83\-5958\-40fb\-bb75\-e44933e81677\.config
+2026-11-08T20:16:27.6001940Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git/worktrees/*.path
+2026-11-08T20:16:27.6021432Z /home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:16:27.6028431Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/skyforge-piet/skyforge-piet/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-70414b83\-5958\-40fb\-bb75\-e44933e81677\.config
+2026-11-08T20:16:27.6055899Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-08T20:16:27.6075484Z /github/runner_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:16:27.6081845Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-70414b83\-5958\-40fb\-bb75\-e44933e81677\.config
+2026-11-08T20:16:27.6110406Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-08T20:16:27.6129511Z /github/runner_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config
+2026-11-08T20:16:27.6135365Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-70414b83\-5958\-40fb\-bb75\-e44933e81677\.config
+2026-11-08T20:16:27.6163509Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T20:16:27.6394945Z Removing credentials config '/home/runner/work/_temp/git-credentials-70414b83-5958-40fb-bb75-e44933e81677.config'
+2026-11-08T20:16:27.6550505Z Cleaning up orphan processes

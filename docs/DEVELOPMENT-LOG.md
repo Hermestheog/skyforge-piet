@@ -319,3 +319,29 @@ exact-output comparisons, full artwork coverage, 80 tracking tests, 82 epoch
 tests, and 134 zero-drag propagation tests. Pixel rebuild verification passed
 for all five executable images. The original circular, tracking and epoch PNGs,
 their generated artifacts and existing numerical test results remain unchanged.
+
+## 2026-11-09 — zero-drag milestone publication verified
+
+Implementation commit `5ca2fb77555ef9a93e5fb3e6a8c3e4b28ed366ae` is pushed to
+[PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1), whose description now
+covers the epoch kernel and B*=0 time propagation. [GitHub CI run 42519147945](https://github.com/Hermestheog/skyforge-piet/actions/runs/42519147945)
+passed every step: unmodified npiet build, all five image rebuilds, all six test
+suites and evidence upload. Its job/step summary and complete public job log
+are preserved in `logs/2026-11-09/sgp4-zero-drag-ci.json` and `.log`.
+
+The previous optional attempt to run the documented example command did not
+execute: automatic approval review hit a service usage limit. The review
+explicitly said this was an inability to complete review, not a determination
+that the action was unsafe. No approval mechanism was bypassed. On resumption,
+the same command passed normal approval and ran successfully with networking
+disabled and the repository mounted read-only. Its direct npiet output was:
+
+```text
+0 -938574 -6268186 -4294031 7536102 -427138 989870
+```
+
+No JavaScript test runner supplied those values. The command read the eight
+integers from `examples/sgp4-vanguard-zero-drag-day.txt` and executed
+`sgp4/secular.png` directly. No code, PNG, test threshold or reference fixture
+changed during this publication verification. Atmospheric drag remains the
+next physics milestone; nonzero B* is still rejected by this executable.

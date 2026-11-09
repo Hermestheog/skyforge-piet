@@ -30,7 +30,7 @@ Positive/negative elapsed time, phase wrapping across many revolutions, zero/tin
 - [x] Write `sgp4/secular-test.mjs`: independently verify the pinned oracle against published nonzero-time rows for the nine near-Earth TLEs; invoke the new PNG against the same mean elements with B*=0 at multiple signed times, boundary cases and seeded samples. Preserve the expected missing-PNG failure.
 - [x] Add optional secular assembly mode and `sgp4/secular-build.mjs`. Preserve existing outputs, and run the new test through npiet. Record precision bugs with reproducible inputs and traces.
 - [x] Add the new executable to rebuild checks, sequential suites and CI evidence. Document input scales, exact subset and measured errors; preserve logs.
-- [ ] Run all suites and obtain a fresh review. Commit and push to the existing draft PR; verify CI and retain its outcome.
+- [x] Run all suites and obtain a fresh review. Commit and push to the existing draft PR; verify CI and retain its outcome.
 
 ## Ledger
 
@@ -39,3 +39,5 @@ Positive/negative elapsed time, phase wrapping across many revolutions, zero/tin
 - First PNG run: 98 valid and 36 invalid cases passed; maximum component errors 3.147844 m / 3.881826 mm/s. All five executable images rebuild identically. Existing epoch and earlier artifacts have no diff.
 - Fresh independent review found no blocking issues. Applied its optional test hardening: require all 149 published nonzero-time oracle rows and all nine epoch rows. No thresholds or mathematical behavior changed.
 - Complete six-suite run passed after review: `logs/runs/2026-11-08T20-10-40-607Z/`. All existing artifacts and results remain unchanged; the new suite adds 134 PNG executions.
+- Implementation commit `5ca2fb7` was pushed to PR #1. [GitHub CI](https://github.com/Hermestheog/skyforge-piet/actions/runs/42519147945) passed all six suites, pixel rebuilds and evidence upload. Result and full job log are archived under `logs/2026-11-09/sgp4-zero-drag-ci.*`.
+- The direct read-only Docker command from the instructions produced the exact documented Vanguard output, without a host-language test runner. An earlier optional attempt was not executed because automatic approval review hit a service usage limit; the resumed attempt succeeded.

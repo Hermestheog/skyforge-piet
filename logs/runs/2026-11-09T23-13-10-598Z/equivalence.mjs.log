@@ -1,0 +1,1 @@
+PASS: all 574 original/redesigned executions have byte-identical stdout, successful termination, and no warnings.

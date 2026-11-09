@@ -345,3 +345,21 @@ integers from `examples/sgp4-vanguard-zero-drag-day.txt` and executed
 `sgp4/secular.png` directly. No code, PNG, test threshold or reference fixture
 changed during this publication verification. Atmospheric drag remains the
 next physics milestone; nonzero B* is still rejected by this executable.
+
+## 2026-11-09 — atmosphere initialization component
+
+Added a separate executable `sgp4/atmosphere.png` for the altitude-dependent
+s4/qoms24 parameters and the simplified-drag flag. It follows the pinned
+Vallado sgp4init block, including strict 98/156/220 km thresholds. It accepts
+perigee in metres; deriving that input inside the full propagator is future
+integration work. Nonzero B* propagation remains unsupported.
+
+The initial test failed because the executable PNG was absent; actual output
+is retained in `logs/2026-11-09/atmosphere-initial-red.log`. The first image
+passed 214 valid and four invalid cases in unmodified npiet, with thresholds
+fixed before implementation. No numerical failure was observed. The image has
+629 emitted instructions and measures 472x161 pixels. A scaled-square sequence
+avoids overflowing a direct fourth power. The component is included in the
+sequential test runner and reproducible-image check; previous images are intact.
+
+Independent review found no blocking issues. All seven suites passed; logs are retained in logs/runs/2026-11-09T23-13-10-598Z/. Atmosphere PNG SHA-256: 45d99db161341d4aca32ee0605515d27dabd74655c6d84326030bff4c19c4cc4. The review suggested adding the hash directly to future test reports; this entry records it for this run.

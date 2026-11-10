@@ -363,3 +363,28 @@ avoids overflowing a direct fourth power. The component is included in the
 sequential test runner and reproducible-image check; previous images are intact.
 
 Independent review found no blocking issues. All seven suites passed; logs are retained in logs/runs/2026-11-09T23-13-10-598Z/. Atmosphere PNG SHA-256: 45d99db161341d4aca32ee0605515d27dabd74655c6d84326030bff4c19c4cc4. The review suggested adding the hash directly to future test reports; this entry records it for this run.
+
+## 2026-11-09 — first cc1/cc2 drag coefficient kernel
+
+Added sgp4/drag.png, a bounded coefficient kernel using recovered orbital
+quantities and signed B*. It does not yet implement drag-affected propagation.
+The initial missing-image test and first numerical failure are preserved under
+logs/2026-11-09/drag-coefficient-*.log.
+
+First failure: input 8000000 0 0 529401726 -1000000 returned cc2=3708;
+reference was 3714.7985423622117 in scale 1e11. The fourth-power coefficient
+was rounded prematurely at scale 1e9. Raising that internal scale to 1e11
+fixed the failure without changing the predeclared tolerance (5 output units
+plus 0.01%). All 99 valid and 21 invalid coefficient cases then passed.
+The domain keeps perigee >=200 km, so the fixed s=78 km atmosphere applies.
+Further coefficients and propagation integration remain future work.
+
+Full eight-suite regression passed, with all exit codes zero in
+logs/runs/2026-11-09T23-28-00-506Z/manifest.json. All seven executable images
+rebuild identically. The independent review attempt hit a service usage limit
+and returned no findings; it must not be counted as a completed review.
+Manual arithmetic review confirmed the coefficient scales against the pinned
+formula. Using d=aR-78km and the perigee bound gives ae<=d-122km;
+this bounds the 1e11-scaled coef below 8e8 throughout the declared domain.
+The coef*mean-motion product is consequently below 6e17, within int64.
+This manual review supplements the numerical tests, not an independent review.

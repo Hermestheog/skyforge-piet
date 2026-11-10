@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "script": "test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 69658,
+      "log": "test.mjs.log"
+    },
+    {
+      "script": "equivalence.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 51698,
+      "log": "equivalence.mjs.log"
+    },
+    {
+      "script": "verify-layout.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 552,
+      "log": "verify-layout.mjs.log"
+    },
+    {
+      "script": "tracking/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 32880,
+      "log": "tracking-test.mjs.log"
+    },
+    {
+      "script": "sgp4/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 21371,
+      "log": "sgp4-test.mjs.log"
+    },
+    {
+      "script": "sgp4/secular-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 35598,
+      "log": "sgp4-secular-test.mjs.log"
+    },
+    {
+      "script": "sgp4/atmosphere-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 4256,
+      "log": "sgp4-atmosphere-test.mjs.log"
+    },
+    {
+      "script": "sgp4/drag-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 7939,
+      "log": "sgp4-drag-test.mjs.log"
+    }
+  ]
+}

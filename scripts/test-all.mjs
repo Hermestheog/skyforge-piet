@@ -3,7 +3,7 @@ import {spawnSync} from 'node:child_process';
 import {mkdirSync,writeFileSync} from 'node:fs';
 const dir=`logs/runs/${new Date().toISOString().replace(/[:.]/g,'-')}`;
 mkdirSync(dir,{recursive:true});const results=[];
-for(const script of ['test.mjs','equivalence.mjs','verify-layout.mjs','tracking/test.mjs','sgp4/test.mjs','sgp4/secular-test.mjs','sgp4/atmosphere-test.mjs']){
+for(const script of ['test.mjs','equivalence.mjs','verify-layout.mjs','tracking/test.mjs','sgp4/test.mjs','sgp4/secular-test.mjs','sgp4/atmosphere-test.mjs','sgp4/drag-test.mjs']){
   const start=Date.now(),p=spawnSync(process.execPath,[script],{encoding:'utf8',maxBuffer:10e6});
   const log=`${script.replaceAll('/','-')}.log`;
   const output=(p.stdout||'')+(p.stderr||'')+(p.error?String(p.error):'');

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/aholinch/sgp4",
+  "commit": "552cb1489a52c3023ae70cb6c7e239e84c5950fe",
+  "publication": "https://celestrak.org/publications/AIAA/2006-6753/",
+  "purpose": "Unmodified independent test oracle and published verification fixtures; never runtime or assembly dependencies",
+  "files": {
+    "sgp4.js": {"path": "src/js/sgp4.js", "sha256": "279c51b8c24a0e241b19416f512bdafd7bf08c029a404ea0bee1615a00ad6416"},
+    "SGP4-VER.TLE": {"path": "data/SGP4-VER.TLE", "sha256": "d246d1d9d768ace445a38a965713fa9ba52d80fd8a41a0502ff83d7acffe2881"},
+    "tcppver.out": {"path": "data/tcppver.out", "sha256": "5e32cfd749c71334d7792b5af268f3c2aead2cea0f264fd690c4def4732e61d9"},
+    "LICENSE": {"path": "LICENSE", "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"}
+  }
+}

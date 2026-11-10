@@ -1,0 +1,7 @@
+{
+  "source": "sgp4/secular-trace.txt",
+  "label": "sgp4-zero-drag-vanguard-day-first-pass",
+  "recorded_at": "2026-11-08T20:09:11.733Z",
+  "uncompressed_bytes": 52215523,
+  "sha256": "8f736f63c38d750069ac23462b0c5df75d68d504c26c0084cf2d03a7a92f9ea7"
+}

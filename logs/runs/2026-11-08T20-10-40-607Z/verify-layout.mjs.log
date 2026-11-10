@@ -1,0 +1,15 @@
+{
+  result: 'PASS',
+  png_sha256: '5df9d055f88ad23f30c758647b8ad06239cb70c4871038824b462ee51a77d09d',
+  width: 944,
+  height: 730,
+  executed_colored_blocks: 1529,
+  total_colored_blocks: 1529,
+  executed_colored_pixels: 122045,
+  total_colored_pixels: 122045,
+  colored_coverage_percent: 100,
+  original_computational_instructions_in_order: 597,
+  core_by_region: { earth: 401, orbit: 148, satellite: 48 },
+  push_block_areas: 'all exact',
+  note: 'Coverage is obtained from the real npiet GEO trace; each touched colored block is flood-filled.'
+}

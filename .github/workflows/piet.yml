@@ -34,6 +34,7 @@ jobs:
             sgp4/secular-test-results.json
             sgp4/atmosphere-test-results.json
             sgp4/drag-test-results.json
+            sgp4/drag-ecc-test-results.json
             sgp4/secular-trace.txt
             sgp4/secular-failure.json
             sgp4/secular-failure.trace.txt

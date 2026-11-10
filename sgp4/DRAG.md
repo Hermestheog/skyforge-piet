@@ -20,7 +20,7 @@ printf '7000000\n0\n63000\n650000000\n1000\n' | npiet -q -cs 1 sgp4/drag.png
 ```
 
 All mathematics runs in the PNG. Perigee bounds imply s=78 km. The expression
-qoms24*tsi^4 is evaluated as ((120-s)/(a*R-s))^4, before dividing by psi^3.5,
+qoms24*tsi^4 is evaluated as ((120-s)/(a*R-R-s))^4, before dividing by psi^3.5,
 to avoid prematurely rounding the small atmosphere coefficient. Integer sqrt
 supplies sqrt(psi); the coefficient scale is 1e11. Registers fit signed 32-bit
 and intermediate products use unmodified npiet's signed-64-bit arithmetic.

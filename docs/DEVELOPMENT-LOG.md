@@ -388,3 +388,20 @@ formula. Using d=aR-78km and the perigee bound gives ae<=d-122km;
 this bounds the 1e11-scaled coef below 8e8 throughout the declared domain.
 The coef*mean-motion product is consequently below 6e17, within int64.
 This manual review supplements the numerical tests, not an independent review.
+
+## 2026-11-09 — cc4/cc5 eccentricity drag milestone
+
+Added a separate drag-ecc.png with cc4 and cc5, preserving the previous cc1/cc2
+PNG and tests. It takes argument of perigee as a sixth input and outputs cc2,
+cc1, cc4, cc5 at documented fixed-point scales. The first test failed for the
+missing image; its output is retained in drag-ecc-initial-red.log. The assembled
+image passed 495 valid and 25 invalid cases at unchanged tolerances. No numerical
+failure was observed in this increment.
+
+Independent review completed successfully for cc1/cc2/cc4/cc5 formulas and bounds.
+It found a documentation error in DRAG.md's canceled expression: the denominator
+must be a*R-R-s, not a*R-s. The code already subtracted R+78km correctly. Fixed
+the documentation only; no executable behavior changed in response to review.
+Nonzero-B* state propagation is still not implemented by these kernels.
+
+All nine regression suites passed, including 520 new cases. Full run logs and zero exit codes are retained in logs/runs/2026-11-10T00-55-26-808Z/. All eight executable images rebuilt identically. Existing PNGs and test results remain unchanged.

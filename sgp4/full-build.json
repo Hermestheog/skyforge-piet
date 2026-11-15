@@ -1,9 +1,9 @@
 {
   "width": 6094,
-  "height": 748,
-  "core_instructions": 148597,
+  "height": 1316,
+  "core_instructions": 259877,
   "input_error_branches": 8,
-  "rows": 75,
-  "png_sha256": "ccf489a18c8f523cf56cddaf3513fdcf14ac23c31290e5f1ae45934d2a459c33",
-  "pixel_sha256": "ae7a8768364845dd279d6e05359f5a75ff39cd765166a9aa0b9a730335f467bd"
+  "rows": 146,
+  "png_sha256": "8ff515a97fd916105d7dd649bc60c0ab0f3c9f74d6d93a15bcf416678f7cc432",
+  "pixel_sha256": "bbcb693c1b3a4e7a37cb58e98ced8812e7e61ea5d3e1c434728d82d76f762d12"
 }

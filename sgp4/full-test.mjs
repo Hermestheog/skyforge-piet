@@ -97,6 +97,24 @@ for(const seconds of [0,-86400,86400])for(const bstar of [0,-1,1,-1000000000,100
   candidate(`polar apogee regression t=${seconds}, B*=${bstar}`,input,{source:'polar apogee regression'});
 }
 assert.equal(cases.length+invalid.length,625,'610 retained + 15 polar apogee regressions');
+// Independently located low-altitude range regressions: the normalized
+// atmosphere coefficient exceeds int64 at scale 1e11 in the first family;
+// the second has nonzero ae but |a-s| below the obsolete 1e-6 guard.
+for(const [label,elements] of [
+  ['coefficient range',[1698885868,0,0,0,0,1800000]],
+  ['near-zero atmosphere distance',[1699125370,10000,0,0,0,1800000]],
+])for(const seconds of [-1,1])for(const bstar of [-1,1])
+  candidate(`${label} regression t=${seconds}, B*=${bstar}`,[...elements,seconds,bstar],{source:'low-altitude range regression'});
+assert.equal(cases.length+invalid.length,633,'625 retained + 8 low-altitude range regressions');
+candidate('unrepresentable circular atmosphere coefficient',
+  [1695012290,0,900000,0,0,0,1,1],{source:'singular coefficient regression'});
+assert.equal(cases.length+invalid.length,634,'633 retained + circular atmosphere overflow regression');
+candidate('unrepresentable B* coefficient product',
+  [1694972595,0,900000,0,0,0,1,1000000000],{source:'coefficient folding overflow regression'});
+assert.equal(cases.length+invalid.length,635,'634 retained + coefficient folding overflow regression');
+candidate('unrepresentable drag coefficient product',
+  [1694972595,0,900000,0,0,0,1,10000000],{source:'drag product overflow regression'});
+assert.equal(cases.length+invalid.length,636,'635 retained + drag product overflow regression');
 for(const branch of ['normal','simple'])assert.ok(cases.some(c=>c.source==='published original B*'&&c.branch===branch&&c.input[6]!==0));
 const preparation={tolerances,valid_cases:cases.length,invalid_cases:invalid.length,published_direct_cases:cases.filter(c=>c.source==='published original B*').length,oracleChecks,publishedExcluded,quantization,cases,invalid};
 mkdirSync('.work',{recursive:true});

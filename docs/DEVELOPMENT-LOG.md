@@ -505,3 +505,51 @@ precision. It assembles successfully into image SHA-256
 `ccf489a18c8f523cf56cddaf3513fdcf14ac23c31290e5f1ae45934d2a459c33`.
 Syntax and oracle preparation pass. Actual interpreter validation of this image
 remains outstanding; previous partial runs must not be attributed to it.
+
+Checkpoint `ee0e31c` was pushed to the public development branch. GitHub run
+43753754380 rebuilt identical pixels and passed prior suites, then failed
+satellite 22312 with encoded B*=-499490 at +86400 seconds: y=1028396 m versus
+1028517.335516965 m, error 121.335516965 m. The validation log excerpt is retained
+in `logs/2026-11-15/checkpoint-ci-validation.log`. The draft PR describes the
+checkpoint as unfinished. The GitHub connector could not update PR metadata
+(403); the existing authenticated gh CLI performed the authorized update.
+
+Independent range probes confirmed two additional numerical holes, beyond the
+625-case checkpoint. For `[1698885868,0,0,0,0,1800000,-1,1]`, the oracle returns
+a valid state but the normalized ratio is about 166.67 and the 1e11-scaled
+coefficient exceeds int64. For
+`[1699125370,10000,0,0,0,1800000,-1,1]`, the oracle returns a valid state despite
+an extremely small a-s; normalized geometry can handle it, while the older
+singularity guard rejects it. The eight time/B-sign combinations are now
+regressions, bringing coverage to 633 cases (546 valid, 87 invalid). Probe source
+and exact oracle outputs are archived under `logs/2026-11-15/`. No thresholds or
+prior cases were removed. Dynamic coefficient scaling and precision fixes remain
+in progress.
+
+The complete checkpoint interpreter run collected four failures; exact outputs
+are archived in `full-drag-checkpoint-all-failures.trace.txt.gz`. Subsequent
+diagnosis traced the remaining precision loss to the original 1e10 recovered
+mean motion and 1e8 axis. Full mode now independently recovers drag geometry at
+higher precision using split integer constants and a cube-root search. The
+existing secular/periodic kernels and their images remain unchanged.
+
+Range fixes normalize eta, retain four coefficient scales, and use safe scaled
+products for the J2 drag terms. The first adaptive implementation still overflowed
+the J2 products at a 600 m atmospheric distance; staged multiply/divide fixed the
+wrong success/error decisions. Higher-precision mean-motion recovery then removed
+the residual 174.5 m error in that regression.
+
+Review also identified three unrepresentable-coefficient/product cases near the
+atmospheric singularity. All three are rejected by the pinned oracle and are
+retained as regressions. Runtime guards now reject a normalized ratio above 50000,
+oversized scaled coefficients and unsafe B*, time, X or eccentricity products,
+with harmless substitutes on the error path. The conservative numerical guards
+are documented as part of the bounded kernel's contract, not hidden as physical
+SGP4 error codes. No prior valid case or tolerance was removed.
+
+The final read-only review found its concrete blockers addressed and approved
+proceeding to interpreter validation; it is not a formal all-inputs range proof.
+All 636 diagnostic cases pass. Candidate image SHA-256
+`8ff515a97fd916105d7dd649bc60c0ab0f3c9f74d6d93a15bcf416678f7cc432`
+contains 259877 emitted instructions, 6094x1316 pixels. Actual interpreter
+acceptance of this candidate is still required before declaring the milestone.

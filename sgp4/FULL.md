@@ -41,7 +41,11 @@ The intended error packet is `1 0 0 0 0 0 0`; status 0 denotes a calculated stat
 The interface bounds are not a guarantee that a trajectory remains valid.
 Missing/unreadable inputs, unsupported bounds, deep-space periods, invalid
 propagated elements and states below the WGS-72 Earth radius must be rejected.
-Error-path validation is part of the ongoing work.
+Numerical range guards also reject a normalized atmospheric ratio above 50000
+or a coefficient/drag product outside the conservative signed-64-bit arithmetic
+guards. The interface
+bounds are encoding limits, not a promise to propagate every combination through
+an atmospheric singularity. Error-path validation is part of the ongoing work.
 
 npiet uses C integer parsing, which may accept a numeric prefix before trailing
 text. Supply integer tokens in range; oversized integers are outside its input
@@ -54,11 +58,12 @@ and observer/station geometry are separate work and are not provided here.
 The layout is a dense executable raster; the original Earth/satellite artwork
 and its 574-case behavior remain separate preserved artifacts.
 
-`node sgp4/full-test.mjs` executes the actual PNG for 540 valid and 85 invalid
+`node sgp4/full-test.mjs` executes the actual PNG for 546 valid and 90 invalid
 cases. The tolerance fixed before implementation is 100 m and 100 mm/s per
 component. It retains the original 451 cases and adds 144 domain corners plus
 15 exact failures from a broader signed-B* stress campaign, plus 15 polar-apogee
-regressions. It includes 104
+regressions, eight low-altitude numerical-range regressions and a circular
+atmospheric-singularity regression plus two product-overflow regressions. It includes 104
 direct published states with original B*, signed-B* grids, boundaries and seeded
 cases. The pinned independent oracle is checked
 against all 158 relevant published rows. Fractional-second rows are checked at

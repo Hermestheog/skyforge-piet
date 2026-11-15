@@ -11,7 +11,7 @@ This ledger distinguishes previously verified milestones from ongoing work.
 | Variable atmosphere component | `b6bcf2d` | `sgp4/atmosphere.png`; 218 cases |
 | cc1/cc2 component | `bdb548f` | `sgp4/drag.png`; 120 cases |
 | cc4/cc5 component | `83d18df` | `sgp4/drag-ecc.png`; 520 cases |
-| Full signed-B* integration | Explicit unfinished checkpoint, 2026-11-15 | `sgp4/full.png`, builder, listing, register/instruction maps, independent 625-case suite retaining all original 451 cases; validation in progress |
+| Full signed-B* integration | Unfinished checkpoint `ee0e31c`, 2026-11-15; subsequent work ongoing | `sgp4/full.png`, builder, listing, register/instruction maps; checkpoint saved 625 cases, current suite extends this to 636 while retaining all original 451; validation in progress |
 
 All nine earlier suites have a saved passing manifest at
 `logs/runs/2026-11-10T00-55-26-808Z/manifest.json`. The eight pre-existing PNG

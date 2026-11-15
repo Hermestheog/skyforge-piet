@@ -1,0 +1,9 @@
+{
+  "width": 6094,
+  "height": 748,
+  "core_instructions": 148597,
+  "input_error_branches": 8,
+  "rows": 75,
+  "png_sha256": "ccf489a18c8f523cf56cddaf3513fdcf14ac23c31290e5f1ae45934d2a459c33",
+  "pixel_sha256": "ae7a8768364845dd279d6e05359f5a75ff39cd765166a9aa0b9a730335f467bd"
+}

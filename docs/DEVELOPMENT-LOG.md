@@ -404,4 +404,104 @@ must be a*R-R-s, not a*R-s. The code already subtracted R+78km correctly. Fixed
 the documentation only; no executable behavior changed in response to review.
 Nonzero-B* state propagation is still not implemented by these kernels.
 
+## 2026-11-10 — integrated nonzero-B* propagation work
+
+The user explicitly requested completion of the integrated propagation path,
+not another isolated coefficient milestone. The implementation and independent
+test tasks are proceeding under `docs/superpowers/plans/2026-11-09-full-drag.md`.
+An initial test-agent attempt stopped at a service usage limit before producing
+files; neither implementation nor test task remained active on resumption.
+The tasks were restarted with separate ownership of production code and tests.
+
+Verification must distinguish original published trajectories from input
+quantization: B* is supplied at scale 1e9, and time as whole seconds. Published
+fractional-minute rows that cannot be represented exactly must not be compared
+against rounded-time output as if their epochs were identical. Both normal and
+simplified drag branches, variable atmosphere and higher-order terms are required.
+Deep-space SDP4 remains a separate scope. No integrated-completion claim is made
+by this entry; numerical and regression outcomes will be recorded below.
+
 All nine regression suites passed, including 520 new cases. Full run logs and zero exit codes are retained in logs/runs/2026-11-10T00-55-26-808Z/. All eight executable images rebuilt identically. Existing PNGs and test results remain unchanged.
+
+## 2026-11-11 — integrated drag precision and error-path investigation
+
+The first actual npiet integration run failed satellite 29141 at 100 minutes:
+the velocity y error was 105.446 mm/s, above the predeclared 100 mm/s limit.
+The exact input, reference, output and image hash are archived in
+`logs/2026-11-11/full-drag-first-precision-failure.trace.txt.gz`.
+Retaining higher-order time terms at scale 1e10 instead of 1e8 allowed the
+subsequent run to pass all 104 directly comparable published original-B* states.
+This is a partial result, not an integrated-suite pass.
+
+The second image (SHA-256
+`7f1b1cd019b0a6d38f4593c1986f20b13683aa4a146bd9b3e52d4580d0843479`)
+still failed three seeded valid cases and four expected-error cases. One later
+invalid case also emitted a divide-by-zero diagnostic. The seven numerical
+failures, including exact inputs and expected/actual outputs, are archived in
+`logs/2026-11-11/full-drag-second-run-failures.trace.txt.gz`.
+Thresholds remain 100 m and 100 mm/s per component. Investigation is ongoing.
+
+Reinspection of unmodified npiet confirms its roll operation uses an `int`
+temporary for the element moved across the stack boundary; other shifted stack
+elements remain `long`. The compiler's register reads usually move the requested
+element across this boundary. Consequently a wide newly stored intermediate may
+appear correct until a later read truncates it. A numerical diagnostic that
+truncates every set is useful for finding risks but is not an exact interpreter
+model and is not acceptance evidence. All acceptance tests execute the PNG.
+
+## 2026-11-11 evening / 2026-11-12 UTC — wider arithmetic and broader review
+
+The root agent resumed saved implementation work after all three agents reached
+a service usage limit. Their partial work was inspected, not discarded or
+treated as completed review. Agents later resumed after service became available.
+`docs/WORK-LEDGER.md` reconciles earlier commits, executable images, tests and logs.
+
+Introduced runtime Piet register storage in three base-1e9 limbs to avoid npiet's
+int32 roll temporary while preserving signed-64-bit values. A dedicated actual
+npiet test passes 14 values, including both signed-64-bit extrema, after stack
+movement and replacement. Its first fixture lacked the input prefix required by
+the existing renderer and failed assembly with `Overlap 34,90`; adding an input
+guard to the fixture fixed that harness error without changing the renderer.
+
+Staged division by psi and sqrt(psi) avoids rounding psi^3.5 prematurely.
+The intermediate image `5e9c1f471d3baae77940e8c668b8a2e60b24ec15298afba46ec34bb033e27bbe`
+passed all 401 valid cases in actual npiet, then failed an expected decay/error
+case for satellite 29141 at -86400 seconds. This failure is preserved in
+`logs/2026-11-12/full-drag-wide-storage-error.trace.txt.gz`.
+Its D4 multiplication overflowed int64 before scaling; moving the small X factor
+earlier fixed this in diagnostic execution. Quotient/remainder multiplication
+also avoids forming oversized unscaled products. Simplified-branch invalid
+eccentricity is checked before squaring enormous time terms on the error path.
+
+A broader diagnostic campaign used 200 seeded cases across the entire signed
+B* interface, revealing 15 further failures. The diagnostic source and failures
+are archived under `logs/2026-11-12/full-drag-*.trace.txt.gz`; these are diagnostic
+evidence, not interpreter acceptance. The independent suite now preserves all
+451 original cases and adds 144 domain corners and those 15 exact regressions:
+525 valid plus 85 invalid cases, with unchanged 100 m / 100 mm/s tolerances.
+
+Independent read-only review identified three blockers: eta-family ordinary
+registers overflow at allowed high-motion/high-eccentricity corners; the final
+mean-angle product can exceed int64 before division (stress seed 26); and early
+coefficient rounding loses about 44 ppm in seed 31 before time amplification.
+The reference formula structure otherwise matched the reviewed implementation.
+These findings are being resolved; neither partial published-vector success nor
+the diagnostic pass establishes full-domain completion.
+
+## 2026-11-15 — requested unfinished checkpoint
+
+The user explicitly requested saving current progress and continuing. This is
+an unfinished development checkpoint, not a passing milestone or release tag.
+The latest saved whole-suite run is
+`logs/runs/2026-11-12T00-03-19-486Z/manifest.json`: all nine prior suites and the
+14-value wide-register suite passed; integrated propagation failed an added
+high-motion/high-eccentricity corner. The old failing image and exact failure
+are compressed under `logs/2026-11-15/` for reproducibility.
+
+The suite now contains 625 cases (540 valid, 85 invalid), retaining all earlier
+cases and adding 15 polar-apogee regressions. The saved implementation adds
+normalized eta geometry, a zero-drag bypass and higher coefficient/atmosphere
+precision. It assembles successfully into image SHA-256
+`ccf489a18c8f523cf56cddaf3513fdcf14ac23c31290e5f1ae45934d2a459c33`.
+Syntax and oracle preparation pass. Actual interpreter validation of this image
+remains outstanding; previous partial runs must not be attributed to it.

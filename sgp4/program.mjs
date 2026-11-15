@@ -3,6 +3,7 @@
 import {Compiler,add,sub,mul,div,gt,not,neg,sel} from '../tracking/compiler.mjs';
 import {Q,PI,TAU,fx,wrap,sincos,atan2} from '../tracking/math.mjs';
 import {initializeSecular,advanceSecular} from './secular.mjs';
+import {advanceFullDrag} from './full-drag.mjs';
 const fq=(a,b)=>div(mul(a,Q),b),rad=a=>div(mul(a,PI),1800000);
 // The original tracker's sqrt deliberately has a smaller result domain.
 // This local root supports fixed-point semimajor axes > 1 Earth radius.
@@ -16,11 +17,12 @@ function axisFromMotion(c,out,motion){c.scope(out,(s,v)=>{
   for(let k=0;k<12;k++)s('a',div(add(mul(2,v('a')),fq(v('square'),fx(v('a'),v('a')))),3));
   c.set(out,v('a'));
 });}
-export function program({secular=false}={}){
+export function program({secular=false,full=false}={}){
+  if(full)secular=true;
   const c=new Compiler(),set=(n,e)=>c.set(n,e);
   const fields=[['motion',650000000,1700000000,1082419157],['ecc',0,2500000,1859667],
     ['incl',0,1700000,342682],['node',0,3600000,3487242],['argp',0,3600000,3317664],['mean',0,3600000,193264]];
-  if(secular)fields.push(['seconds',-86400,86400,0],['bstar',0,0,0]);
+  if(secular)fields.push(['seconds',-86400,86400,0],['bstar',full?-1000000000:0,full?1000000000:0,0]);
   set('valid',1);
   for(const [n,lo,hi,fallback] of fields){c.input(n);set('ok',mul(not(gt(lo,n)),not(gt(n,hi))));
     set('valid',mul('valid','ok'));set(n,sel('ok',n,fallback));}
@@ -42,6 +44,7 @@ export function program({secular=false}={}){
   set('valid',mul('valid',gt(mul('nm',225),TAU)));
   // Default mode is epoch only. Optional mode advances the B*=0 subset.
   if(secular)advanceSecular(c);
+  if(full)advanceFullDrag(c,root);
   set('aycof',div(fx(234507,'is'),2));
   set('xlcof',fq(div(fx(fx(234507,'is'),add(3*Q,mul(5,'ic'))),4),add(Q,'ic')));
   set('e',sel(gt(100,'e'),100,'e')); // SGP4 eccentricity floor 1e-6.

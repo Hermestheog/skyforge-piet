@@ -21,7 +21,9 @@ The stable baseline is [v0.2.0](https://github.com/Hermestheog/skyforge-piet/rel
 TEME states at the TLE epoch and passes nine published epoch vectors. A second
 [SGP4 propagation PNG](sgp4/secular.png) advances the **B*=0 subset** up to one
 day forward or backward, including secular and periodic corrections. It rejects
-nonzero B*; atmospheric drag and deep-space dynamics remain unimplemented.
+nonzero B*. An [integrated nonzero-B* image](sgp4/FULL.md) is undergoing
+validation; its full suite is not yet passing. Deep-space dynamics remain
+unimplemented.
 See [propagation instructions and limits](sgp4/PROPAGATION.md),
 [epoch instructions](sgp4/README.md), and the [roadmap](docs/ROADMAP.md).
 

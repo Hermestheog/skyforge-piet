@@ -22,6 +22,7 @@ jobs:
         with:
           name: piet-test-evidence
           retention-days: 90
+          include-hidden-files: true
           path: |
             logs/runs/
             test-results.json
@@ -35,6 +36,10 @@ jobs:
             sgp4/atmosphere-test-results.json
             sgp4/drag-test-results.json
             sgp4/drag-ecc-test-results.json
+            sgp4/full-test-results.json
+            .work/full-failure*.json
+            .work/full-protocol-failure*.json
+            .work/full-collected-failures.json
             sgp4/secular-trace.txt
             sgp4/secular-failure.json
             sgp4/secular-failure.trace.txt

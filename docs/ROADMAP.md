@@ -8,16 +8,17 @@
 3. **Tracking integration prerequisites:** independent published state-vector fixtures, a wider
    eccentricity/epoch test campaign, WGS-84 station geometry, UTC/Julian-date
    and sidereal-time conversion, and TLE parsing/checksums in Piet.
-4. **SGP4 near-Earth — epoch and zero-drag milestones implemented:** WGS-72 initialization,
+4. **Bounded SGP4 near-Earth — integrated signed-B* propagation implemented:** WGS-72 initialization,
    generalized Kepler solving, J3 long-period and J2 short-period corrections
    in [an executable PNG](../sgp4/epoch.png), verified against nine published
    epoch vectors. Domain limits and instructions are in [sgp4/README.md](../sgp4/README.md).
    A second [executable PNG](../sgp4/secular.png) adds higher-precision secular
    rates and nonzero-time propagation for **B*=0**, up to ±86400 seconds;
-   [instructions](../sgp4/PROPAGATION.md) state its limits. Next: atmospheric drag
-   coefficients and higher-order time terms, then direct nonzero-time comparisons
-   against original published TLE trajectories. Keep the
-   two-body program as an independent baseline rather than silently renaming it.
+   [instructions](../sgp4/PROPAGATION.md) state its limits. The integrated
+   [full PNG](../sgp4/full.png) adds variable atmosphere, signed B*, normal and
+   simplified drag, and higher-order time terms. Its 636 cases include 104 direct
+   original-B* published states; [instructions and numerical bounds](../sgp4/FULL.md)
+   describe the accepted interface and range guards. Prior programs are preserved.
 5. **Deep-space support:** SDP4/resonance/lunar-solar terms, with separate
    verification coverage. A GEO example in the current two-body model does
    not establish deep-space SGP4 correctness.
@@ -25,9 +26,9 @@
    output in a host UI. Orbital computation stays in the PNG.
 
 The v0.2.0 release contains the two-body baseline. This development branch adds
-an SGP4 epoch kernel and a bounded B*=0 propagator. Nonzero B* and deep-space
-support remain incomplete. Full acceptance requires
-matching nonzero-time reference vectors, explicit numerical tolerances, and a
-reproducible run in an unmodified interpreter. Image aesthetics never replace
-numerical validation. TLE parsing, time conversion and station geometry remain
-separate integration work; the epoch kernel accepts scaled mean elements.
+an SGP4 epoch kernel, a bounded B*=0 propagator and verified integrated signed-B*
+propagation. Deep-space support remains unimplemented. The integrated milestone
+matches nonzero-time reference vectors at explicit tolerances and rebuilds
+identically for an unmodified interpreter. TLE parsing, time conversion and
+SGP4 station geometry remain separate integration work; the PNG accepts scaled
+mean elements.

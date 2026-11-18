@@ -11,7 +11,7 @@ This ledger distinguishes previously verified milestones from ongoing work.
 | Variable atmosphere component | `b6bcf2d` | `sgp4/atmosphere.png`; 218 cases |
 | cc1/cc2 component | `bdb548f` | `sgp4/drag.png`; 120 cases |
 | cc4/cc5 component | `83d18df` | `sgp4/drag-ecc.png`; 520 cases |
-| Full signed-B* integration | Unfinished checkpoint `ee0e31c`, 2026-11-15; subsequent work ongoing | `sgp4/full.png`, builder, listing, register/instruction maps; checkpoint saved 625 cases, current suite extends this to 636 while retaining all original 451; validation in progress |
+| Full signed-B* integration | Checkpoints `ee0e31c`, `c3905de`; verified 2026-11-18 | `sgp4/full.png`, builder, listing, register/instruction maps; all 636 cases pass, retaining all original 451 |
 
 All nine earlier suites have a saved passing manifest at
 `logs/runs/2026-11-10T00-55-26-808Z/manifest.json`. The eight pre-existing PNG
@@ -41,3 +41,10 @@ The implementation, test and review agents encountered service usage limits on
 2026-11-11. Their saved work was retained and inspected; the root agent continued
 debugging and verification. The interrupted review is **not** a completed review.
 No full-integration completion claim or release tag follows from partial tests.
+
+Final acceptance was confirmed on 2026-11-18 from GitHub run 43756865368:
+all eleven suites pass and all executable source pixels rebuild identically.
+The 636-case report matches the final PNG hash; CI logs are preserved in
+`logs/runs/2026-11-15T20-14-15-222Z/`. The separate local 633-case pre-guard run
+also passed and is retained without attributing its results to the final image.
+All review findings with concrete reproducers were addressed before acceptance.

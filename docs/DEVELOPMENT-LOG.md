@@ -553,3 +553,27 @@ All 636 diagnostic cases pass. Candidate image SHA-256
 `8ff515a97fd916105d7dd649bc60c0ab0f3c9f74d6d93a15bcf416678f7cc432`
 contains 259877 emitted instructions, 6094x1316 pixels. Actual interpreter
 acceptance of this candidate is still required before declaring the milestone.
+
+## 2026-11-18 — integrated signed-B* acceptance confirmed
+
+GitHub run 43756865368, for source commit
+`c3905de578669ea544891b8607f0783b383cf780`, passed all eleven sequential suites
+in unmodified npiet 1.3h and rebuilt every executable image identically.
+The final suite passed 546 valid and 90 invalid cases, including 104 direct
+published states with original B*. Maximum component errors were
+76.09114730358124 m and 53.48300000000745 mm/s, below the original 100/100 limits.
+The downloaded report's hash was checked against the actual final PNG:
+`8ff515a97fd916105d7dd649bc60c0ab0f3c9f74d6d93a15bcf416678f7cc432`.
+All eleven manifest exit codes are zero; evidence is permanently retained in
+`logs/runs/2026-11-15T20-14-15-222Z/` and `sgp4/full-test-results.json`.
+
+The older local 633-case image also passed all suites; its report is separately
+archived under `logs/2026-11-18/` because its image hash differs from the final
+guarded image. No results were silently transferred between builds.
+
+This completes the bounded near-Earth nonzero-B* integration milestone. It does
+not implement deep-space SDP4, TLE parsing, UTC conversion or SGP4 station
+geometry, and does not establish a formal accuracy bound for all encodable
+inputs. Numerical range rejections and measured test accuracy are explicit in
+`sgp4/FULL.md`. Earlier executable images, test files, interpreter source,
+failure records and milestone commits remain preserved.

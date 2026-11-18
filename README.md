@@ -17,15 +17,16 @@ elevation, range, range rate, Doppler, and visibility.**
 This is an elliptic **two-body** model with rotating spherical Earth.
 The stable baseline is [v0.2.0](https://github.com/Hermestheog/skyforge-piet/releases/tag/v0.2.0).
 
-**SGP4 development:** the [epoch PNG](sgp4/epoch.png) computes bounded near-Earth
-TEME states at the TLE epoch and passes nine published epoch vectors. A second
-[SGP4 propagation PNG](sgp4/secular.png) advances the **B*=0 subset** up to one
-day forward or backward, including secular and periodic corrections. It rejects
-nonzero B*. An [integrated nonzero-B* image](sgp4/FULL.md) is undergoing
-validation; its full suite is not yet passing. Deep-space dynamics remain
-unimplemented.
-See [propagation instructions and limits](sgp4/PROPAGATION.md),
-[epoch instructions](sgp4/README.md), and the [roadmap](docs/ROADMAP.md).
+**Bounded near-Earth SGP4 is implemented:** [full.png](sgp4/full.png) computes
+TEME position and velocity with signed B*, variable atmosphere, normal/simplified
+drag, higher-order time terms, and secular/periodic corrections, up to one day
+forward or backward. All 636 cases pass in unmodified npiet, including 104 direct
+published states with original B*. Runtime orbital mathematics stays in the PNG.
+See [instructions, numerical limits and results](sgp4/FULL.md).
+
+The earlier [epoch](sgp4/README.md) and [B*=0](sgp4/PROPAGATION.md) programs remain
+unchanged. Deep-space dynamics, TLE parsing and SGP4 station tracking remain
+separate work in the [roadmap](docs/ROADMAP.md).
 
 ## Run the PNGs
 
@@ -129,7 +130,8 @@ Evidence is checked in: [circular tests](TEST-RESULTS.md), [574 before/after
 comparisons](equivalence-results.json), [artwork coverage](layout-verification.json),
 and [tracking results](tracking/test-results.json), plus the
 [SGP4 epoch comparisons](sgp4/test-results.json) and
-[zero-drag propagation comparisons](sgp4/secular-test-results.json). Tests retain strict timeouts
+[zero-drag propagation comparisons](sgp4/secular-test-results.json), and
+[636 integrated signed-B* cases](sgp4/full-test-results.json). Tests retain strict timeouts
 and execute actual PNG files in unmodified npiet.
 
 ## Development history

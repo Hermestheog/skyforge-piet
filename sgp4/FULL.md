@@ -1,9 +1,8 @@
 # Integrated near-Earth SGP4
 
-`full.png` is an executable Piet program under development. It includes signed
-B* drag in addition to the initialization, secular rates and periodic corrections
-of the earlier kernels. **The full validation suite is not yet passing.** Use
-the retained baseline programs when you need their previously verified behavior.
+[`full.png`](full.png) is a verified, bounded near-Earth SGP4 Piet program. It
+includes signed B* drag in addition to initialization, secular rates and periodic
+corrections. All 636 acceptance cases pass in unmodified 64-bit npiet 1.3h.
 
 All input-dependent orbital calculations execute as integer and stack operations
 in the PNG. JavaScript assembles instructions and supplies independent test
@@ -13,14 +12,27 @@ with different scales chosen for geometry, rates and small drag terms.
 From the repository root with unmodified 64-bit npiet 1.3h:
 
 ```sh
-npiet -q -w -uu -cs 1 sgp4/full.png < elements.txt
+npiet -q -w -uu -cs 1 sgp4/full.png < examples/sgp4-6251-120min.txt
 ```
 
 Or build the included Dockerfile and run:
 
 ```sh
 docker build -t skyforge-piet .
-docker run --rm -i --network none -v "$PWD:/work:ro" skyforge-piet -q -w -uu -cs 1 sgp4/full.png < elements.txt
+docker run --rm -i --network none -v "$PWD:/work:ro" skyforge-piet -q -w -uu -cs 1 sgp4/full.png < examples/sgp4-6251-120min.txt
+```
+
+PowerShell:
+
+```powershell
+$pietDir = (Get-Location).Path
+Get-Content examples/sgp4-6251-120min.txt | docker run --rm -i --network none --mount "type=bind,source=$pietDir,target=/work,readonly" skyforge-piet -q -w -uu -cs 1 sgp4/full.png
+```
+
+This published satellite-6251 example, at 120 minutes with original B*, returns:
+
+```text
+0 -3935697 409110 5471335 -3374784 -6635212 -1942056
 ```
 
 Supply eight whitespace-separated signed-32-bit decimal integers:
@@ -37,15 +49,15 @@ Supply eight whitespace-separated signed-32-bit decimal integers:
 | B* | inverse Earth radii × 1000000000 | -1000000000–1000000000 |
 
 Output is `status x y z vx vy vz`: TEME position in metres and velocity in mm/s.
-The intended error packet is `1 0 0 0 0 0 0`; status 0 denotes a calculated state.
+The error packet is `1 0 0 0 0 0 0`; status 0 denotes a calculated state.
 The interface bounds are not a guarantee that a trajectory remains valid.
 Missing/unreadable inputs, unsupported bounds, deep-space periods, invalid
-propagated elements and states below the WGS-72 Earth radius must be rejected.
+propagated elements and states below the WGS-72 Earth radius are rejected.
 Numerical range guards also reject a normalized atmospheric ratio above 50000
 or a coefficient/drag product outside the conservative signed-64-bit arithmetic
-guards. The interface
-bounds are encoding limits, not a promise to propagate every combination through
-an atmospheric singularity. Error-path validation is part of the ongoing work.
+guards. The interface bounds are encoding limits, not a promise to propagate
+every combination through an atmospheric singularity. Status 1 is this kernel's
+single error code; it is not Vallado's multi-code API.
 
 npiet uses C integer parsing, which may accept a numeric prefix before trailing
 text. Supply integer tokens in range; oversized integers are outside its input
@@ -73,5 +85,12 @@ direct published comparison.
 
 Failures and interpreter quirks are retained in
 [the development log](../docs/DEVELOPMENT-LOG.md) and compressed evidence under
-`logs/`. A future passing report must match the SHA-256 of the executable image;
-filtered diagnostic runs explicitly report partial coverage.
+`logs/`. The [passing report](full-test-results.json) matches the executable's
+SHA-256 `8ff515a97fd916105d7dd649bc60c0ab0f3c9f74d6d93a15bcf416678f7cc432`.
+Maximum observed component errors are **76.092 m** and **53.484 mm/s**, below the
+predeclared 100/100 limits. These are measured test results, not a formal accuracy
+guarantee for every encodable input. Filtered diagnostics report partial coverage.
+
+The image is 6094x1316 pixels and contains 259877 emitted instructions plus
+routing. All eleven suites and reproducible-image checks passed in
+[GitHub run 43756865368](https://github.com/Hermestheog/skyforge-piet/actions/runs/43756865368).

@@ -1,7 +1,23 @@
 # Preserved work and current integration
 
-Reconciled on 2026-11-11 against Git history, the working tree and saved logs.
+Reconciled on 2026-11-20 against Git history, the working tree and saved logs.
 This ledger distinguishes previously verified milestones from ongoing work.
+
+## Current published state
+
+- `main`: `17b48c1`, the `v0.2.0` baseline.
+- Development branch: `codex/sgp4-near-earth`, open PR #1; not merged.
+- Verified milestone: `v0.3.0` at `a85cbd4323a9932601a5632f93f8b236d1067850`.
+  Its final CI run 44425070199 passed all eleven suites and reproducibility checks;
+  retained evidence: `logs/2026-11-18/final-ci-validation.log`.
+- Subsequent checkpoint: deep-space epoch/time component, executable PNG,
+  independent oracle tests, 256-case passing standalone report and failure traces.
+  See `sgp4/DEEP-TIME.md`. This addition is not yet included in `npm test`,
+  aggregate build/rebuild checks or CI artifact lists. Full regression acceptance
+  and independent review for this addition remain pending. The attempted reviewer
+  stopped at a service usage limit; it did not supply a completed review.
+- Full SDP4, lunar/solar dynamics, resonance propagation, TLE parsing and SGP4
+  observer geometry remain unfinished. The checkpoint does not advance the tag.
 
 | Milestone | Git evidence | Executable / checks |
 |---|---|---|

@@ -577,3 +577,30 @@ geometry, and does not establish a formal accuracy bound for all encodable
 inputs. Numerical range rejections and measured test accuracy are explicit in
 `sgp4/FULL.md`. Earlier executable images, test files, interpreter source,
 failure records and milestone commits remain preserved.
+
+## 2026-11-20 — Git reconciled; epoch foundation checkpoint
+
+Untracked epoch source, executable PNG, assembly/map, report and failure traces
+are preserved as a checkpoint after v0.3.0. The initial J2000 fixture used
+4.894961212735793 radians instead of the pinned formula's 4.894961212823059
+(67310.54841 sidereal seconds). Correcting the fixture retained the fixed 5e-8
+runtime tolerance. That failure and the subsequent missing-PNG red test are
+archived under logs/2026-11-19/.
+
+Fresh assembly reproduced PNG SHA-256
+9a2da0aa693c0884d5636ba9cd3e6500b9d6bfc5901ed33e2ac67b905cb66e6c.
+Fresh unmodified npiet Docker execution exited zero: 248 valid, 8 invalid cases,
+33 millisecond-quantized TLE epochs; maximum error 2.5609993237196704e-8 radians.
+
+The baseline comparison initially failed on a final CRLF in full-test.mjs.
+Inspection confirmed only line-ending differences in: sgp4/full-test.mjs.
+All 29 selected baseline PNG/test/vendor files match v0.3.0, with
+line endings normalized only for text comparison; PNG and vendor bytes are exact.
+No baseline file was rewritten to satisfy the check.
+
+The attempted independent reviewer hit a service usage limit without completing
+a review. Review and aggregate build/rebuild/test/CI integration remain pending.
+This standalone result is not full-regression acceptance of the new component.
+README, roadmap, ledger and component instructions now state these gaps.
+The v0.3.0 tag stays at a85cbd4; main stays at the v0.2.0 baseline.
+Full SDP4 is not implemented; this checkpoint does not create a new release.

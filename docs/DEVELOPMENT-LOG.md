@@ -684,3 +684,21 @@ The saved J2000 example executed directly and returned
 0 93423846 35664898 97857698 20588122 30315986 95293972.
 The component plan is complete; dscom coefficients, periodic corrections and
 resonance remain next. No full SDP4 or universal accuracy claim is made.
+
+## 2026-11-20 — complete unit-circle failure diagnostics
+
+The user rejected deferral of the lunar unit-circle diagnostic finding. Added a
+test-only shared check that writes the same failure artifact collected by CI,
+including input, expected/actual vectors, component errors, PNG hash, pair names
+and index, residual, and the unchanged 2e-6 tolerance before throwing. Assertion
+messages now include the epoch, pair and residual. No orbital emitter or PNG changed.
+
+The new regression first failed on the absent diagnostic helper (archived red
+trace), then passed with synthetic invalid unit-circle packets for each of three
+pairs. It verifies exact artifact contents and assertion context, and verifies
+that a valid packet creates no artifact. These synthetic packets test failure
+reporting only; they are not orbital numerical acceptance. The original 361-case
+lunar test also passed in actual unmodified npiet with unchanged measured errors.
+Full fourteen-suite acceptance is pending. Earlier deferred review entries are
+retained as history; this entry resolves the finding. AGENTS.md now records the
+user's instruction to resolve findings instead of deferring them.

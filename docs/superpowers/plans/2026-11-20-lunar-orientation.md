@@ -18,4 +18,5 @@ range and quadrants, sqrt range, negative components, noon epoch convention,
 quantization and oracle instrumentation integrity.
 
 Accepted: CI 44837670212 on 9ba039e, thirteen suites, eleven identical builds.
-Final: minor (deferred): unit-circle failures lack a detailed input packet.
+Final: resolved 2026-11-20: unit-circle failures preserve a detailed input packet;
+a dedicated regression suite verifies all three failure paths.

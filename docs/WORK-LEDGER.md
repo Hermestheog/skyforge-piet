@@ -70,8 +70,8 @@ All review findings with concrete reproducers were addressed before acceptance.
 Source 9ba039e, CI 44837670212: all thirteen suites and all eleven executable
 image rebuilds pass. The lunar suite contains 353 valid and 8 invalid cases;
 maximum component error 6.165933641444354e-8 at the fixed 5e-7 limit.
-Independent review found no critical/important defects. Deferred minor:
-unit-circle assertion diagnostics omit the detailed input packet.
+Independent review found no critical/important defects. The unit-circle diagnostic finding was subsequently resolved: all three pair
+failure paths preserve detailed packets and identify the input in the assertion.
 Permanent evidence: logs/runs/2026-11-20T23-34-05-986Z/ and sgp4/lunar-test-results.json.
 All twelve pre-existing PNG files (including reference artwork) compare exactly
 to bd015b8; shared production math and vendored interpreter are unchanged.

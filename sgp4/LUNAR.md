@@ -62,7 +62,8 @@ smaller, within signed 64-bit arithmetic. The larger epoch intermediates retain
 the existing split-limb implementation. The shared math and interpreter sources
 are unchanged.
 
-Deferred minor diagnostic issue: unit-circle assertions do not yet preserve
-the detailed failing input packet written by component-error checks. No such
-failure occurred in the tested cases; this affects failure diagnosis, not the
-assertion's acceptance threshold.
+Unit-circle failures preserve `.work/lunar-failure.json` with the input epoch,
+expected/actual values, component errors, PNG hash, pair index and names, residual
+and unchanged 2e-6 tolerance. The assertion message identifies the input and pair.
+A separate failure-path suite forces all three pairs to fail and checks each
+packet; successful checks create no failure artifact.

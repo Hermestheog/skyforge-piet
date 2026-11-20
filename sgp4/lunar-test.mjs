@@ -1,5 +1,6 @@
 // Independent, test-only instrumented pinned dscom oracle; never executes runtime math for PNG.
 import assert from 'node:assert/strict';
+import {checkLunarUnitCircles} from './lunar-diagnostics.mjs';
 import {existsSync,readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
@@ -42,7 +43,7 @@ const results=[],maxima=Array(6).fill(0);let maxResidual=0;
 for(const c of cases){const actual=run(c.input),errors=actual.slice(1).map((v,i)=>Math.abs(v/Q-c.expected[i]));
  if(actual[0]!==0||errors.some(e=>e>tolerance)){mkdirSync('.work',{recursive:true});writeFileSync('.work/lunar-failure.json',JSON.stringify({...c,actual,errors,png_sha256:sha},null,2));}
  assert.equal(actual[0],0,c.name);errors.forEach((e,i)=>{assert.ok(e<=tolerance,c.name+' '+c.input+' field '+i+': '+e);maxima[i]=Math.max(maxima[i],e);});
- for(let i=1;i<7;i+=2){const residual=Math.abs((actual[i]/Q)**2+(actual[i+1]/Q)**2-1);assert.ok(residual<=2e-6);maxResidual=Math.max(maxResidual,residual);}
+ maxResidual=Math.max(maxResidual,checkLunarUnitCircles({...c,errors,png_sha256:sha},actual));
  results.push({...c,actual,errors});
 }
 for(const input of invalid)assert.deepEqual(run(input),[1,0,0,0,0,0,0]);

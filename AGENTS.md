@@ -20,3 +20,6 @@
   two-body implementation SGP4. Follow `docs/ROADMAP.md` for subsequent milestones.
 - Before committing, inspect generated artifacts and logs. Retain the vendored
   interpreter byte-for-byte, including its upstream whitespace and license.
+
+- Resolve identified review findings before declaring a milestone complete. Do not
+  defer findings without explicit user direction; preserve their resolution logs.

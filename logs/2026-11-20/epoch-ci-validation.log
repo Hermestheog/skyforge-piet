@@ -1,0 +1,16 @@
+Source commit: f37d138dadb47b27223405967a1eb0d78481d202
+CI: https://github.com/Hermestheog/skyforge-piet/actions/runs/44834509587
+piet	Assemble and verify reproducible source pixels	2026-11-20T23:08:43.6823985Z PASS: all executable source pixels rebuild identically.
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:01.7339333Z   "result": "PASS"
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:20.4668884Z PASS: all 574 original/redesigned executions have byte-identical stdout, successful termination, and no warnings.
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:20.5654885Z   result: 'PASS',
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:30.9883868Z   "result": "PASS",
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:39.2452123Z PASS SGP4 epoch: 9 published, 52 total valid, 30 invalid; max errors 2.951858365908265, 1.5858863927423954, 2.54900941811502, 3.814782662317157, 3.0703536118380725, 2.25
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:53.2400241Z PASS SGP4 zero-drag: 98 valid, 36 invalid; 149 published nonzero rows independently verify oracle; max errors 2.268823505321052, 3.147843686514534, 1.7796875204658136, 3.517069518682547, 3.8818259183317423, 3.0282822344452143
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:54.0395318Z PASS atmosphere: 214 valid, 4 invalid
+piet	Execute all tests sequentially in npiet	2026-11-20T23:09:56.3468413Z PASS drag coefficients: 99 valid, 21 invalid
+piet	Execute all tests sequentially in npiet	2026-11-20T23:10:10.9878857Z PASS eccentricity drag coefficients: 495 valid, 25 invalid
+piet	Execute all tests sequentially in npiet	2026-11-20T23:10:11.1210687Z PASS: 14 signed-64-bit values survive Piet register transport and replacement.
+piet	Execute all tests sequentially in npiet	2026-11-20T23:13:30.1811890Z PASS full SGP4: 546 valid, 90 invalid; 104 direct original-B* published states; max errors 26.768833079840988, 42.679770000017015, 76.09114730358124, 26.996586703695357, 49.739999999757856, 53.48300000000745
+piet	Execute all tests sequentially in npiet	2026-11-20T23:13:32.7866261Z PASS deep-space epoch: 248 valid, 8 invalid; 33 TLE epochs; max angular errors 2.5609993237196704e-8, 9.989240545849043e-9, 9.977364712199233e-9, 1.0022637386697397e-8, 1.0842009068312565e-8
+piet	Execute all tests sequentially in npiet	2026-11-20T23:13:32.7869425Z All suites passed. Logs preserved: logs/runs/2026-11-20T23-08-44-376Z

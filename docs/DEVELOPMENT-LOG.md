@@ -631,3 +631,19 @@ now preserve this behavior separately from numerical cases. Cost: callers must
 supply canonical int32 tokens; status 1 is not a strict lexical validation result.
 No interpreter or runtime PNG was changed. Standalone suite and probes pass;
 full regression acceptance of these fixes is still pending.
+
+## 2026-11-20 — epoch foundation accepted
+
+Reviewed source f37d138dadb47b27223405967a1eb0d78481d202 passed CI run
+44834509587: all twelve sequential suites, including original 574-case checks
+and 636 full near-Earth cases, plus identical rebuilds of all ten PNGs. The
+downloaded epoch report exactly matches the local report and current PNG hash.
+All twelve manifest exit codes are zero. Permanent logs are in
+logs/runs/2026-11-20T23-08-44-376Z/ and logs/2026-11-20/epoch-ci-validation.log.
+The standalone J2000 example was executed from its saved file and returned
+0 489496120 218238244 145496891 624026290 235528008.
+
+This completes the epoch/time foundation plan, not full deep-space propagation.
+Next dependency: dscom lunar/solar orientation and common coefficients, then
+periodic corrections and resonance initialization/integration. All runtime
+orbital math remains in the executable PNG; the prior v0.3.0 tag is retained.

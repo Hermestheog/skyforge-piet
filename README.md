@@ -3,9 +3,9 @@
 **Development status (2026-11-20):** `v0.3.0` is the verified bounded near-Earth
 SGP4 milestone on `codex/sgp4-near-earth`; `main` still contains the `v0.2.0`
 baseline. [PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1) is open.
-The branch also preserves an in-progress [deep-space epoch kernel](sgp4/DEEP-TIME.md).
+The branch also includes a verified [deep-space epoch kernel](sgp4/DEEP-TIME.md).
 Its standalone 256-case suite passes and is now included in `npm test` and CI.
-Full regression acceptance of this integration and independent review are pending.
+Independent review is complete; all twelve suites and reproducibility checks pass.
 Full deep-space propagation remains unfinished.
 See the [work ledger](docs/WORK-LEDGER.md) for evidence and remaining work.
 

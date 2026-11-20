@@ -10,12 +10,12 @@ This ledger distinguishes previously verified milestones from ongoing work.
 - Verified milestone: `v0.3.0` at `a85cbd4323a9932601a5632f93f8b236d1067850`.
   Its final CI run 44425070199 passed all eleven suites and reproducibility checks;
   retained evidence: `logs/2026-11-18/final-ci-validation.log`.
-- Subsequent checkpoint: deep-space epoch/time component, executable PNG,
+- Subsequent verified component: deep-space epoch/time component, executable PNG,
   independent oracle tests, 256-case passing standalone report and failure traces.
   See `sgp4/DEEP-TIME.md`. This addition is now included in `npm test`,
-  aggregate build/rebuild checks and CI artifact lists. Full regression acceptance
-  and independent review for this addition remain pending. The attempted reviewer
-  stopped at a service usage limit; it did not supply a completed review.
+  aggregate build/rebuild checks and CI artifact lists. Full twelve-suite acceptance passed for `f37d138` in CI run 44834509587.
+  A fresh review completed and its two contract/test findings were addressed;
+  the earlier interrupted review remains recorded in the development log.
 - Full SDP4, lunar/solar dynamics, resonance propagation, TLE parsing and SGP4
   observer geometry remain unfinished. The checkpoint does not advance the tag.
 

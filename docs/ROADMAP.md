@@ -20,8 +20,8 @@
    original-B* published states; [instructions and numerical bounds](../sgp4/FULL.md)
    describe the accepted interface and range guards. Prior programs are preserved.
 5. **Deep-space support — in progress:** a standalone epoch-angle PNG and
-   256-case suite are saved in [the epoch foundation checkpoint](../sgp4/DEEP-TIME.md).
-   Regression-runner integration is in place; full acceptance and review are pending.
+   256-case suite are saved in [the verified epoch foundation](../sgp4/DEEP-TIME.md).
+   Independent review and all twelve regression suites pass; the epoch foundation is verified.
    SDP4/resonance/lunar-solar dynamics remain unimplemented, with separate
    verification coverage. A GEO example in the current two-body model does
    not establish deep-space SGP4 correctness.

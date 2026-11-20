@@ -21,7 +21,7 @@
    describe the accepted interface and range guards. Prior programs are preserved.
 5. **Deep-space support — in progress:** a standalone epoch-angle PNG and
    256-case suite are saved in [the epoch foundation checkpoint](../sgp4/DEEP-TIME.md).
-   Independent review and regression-runner integration remain pending.
+   Regression-runner integration is in place; full acceptance and review are pending.
    SDP4/resonance/lunar-solar dynamics remain unimplemented, with separate
    verification coverage. A GEO example in the current two-body model does
    not establish deep-space SGP4 correctness.

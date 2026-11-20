@@ -604,3 +604,11 @@ This standalone result is not full-regression acceptance of the new component.
 README, roadmap, ledger and component instructions now state these gaps.
 The v0.3.0 tag stays at a85cbd4; main stays at the v0.2.0 baseline.
 Full SDP4 is not implemented; this checkpoint does not create a new release.
+
+## 2026-11-20 — epoch component regression integration
+
+Added the epoch builder to npm build and pixel reproducibility checks, appended
+the standalone suite to the sequential runner, and retained its report plus
+failure packets in CI artifacts. The runtime image, existing tests, thresholds
+and interpreter are unchanged. Full twelve-suite acceptance is pending this
+candidate run; a fresh independent review has been requested.

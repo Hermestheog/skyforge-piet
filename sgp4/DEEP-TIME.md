@@ -32,7 +32,7 @@ not published deep-space position vectors or all possible inputs.
 PNG SHA-256: `9a2da0aa693c0884d5636ba9cd3e6500b9d6bfc5901ed33e2ac67b905cb66e6c`.
 The image contains 3647 emitted instructions, 1174×235 pixels.
 
-Pending: independent review, build/rebuild/test/CI integration and full regression
-acceptance for this addition. Existing `npm test` still runs the eleven prior
-suites. Lunar/solar dynamics, resonance initialization and integration remain
+Build, rebuild, sequential `npm test` and CI artifact collection now include this
+component (twelve suites total). Full regression acceptance and independent review
+are pending. Lunar/solar dynamics, resonance initialization and integration remain
 future work. No new release tag is warranted by this checkpoint.

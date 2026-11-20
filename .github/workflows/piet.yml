@@ -37,6 +37,9 @@ jobs:
             sgp4/drag-test-results.json
             sgp4/drag-ecc-test-results.json
             sgp4/full-test-results.json
+            sgp4/deep-time-test-results.json
+            .work/deep-time-failure.json
+            .work/deep-time-protocol-failure.json
             .work/full-failure*.json
             .work/full-protocol-failure*.json
             .work/full-collected-failures.json

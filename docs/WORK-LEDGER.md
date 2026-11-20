@@ -12,8 +12,8 @@ This ledger distinguishes previously verified milestones from ongoing work.
   retained evidence: `logs/2026-11-18/final-ci-validation.log`.
 - Subsequent checkpoint: deep-space epoch/time component, executable PNG,
   independent oracle tests, 256-case passing standalone report and failure traces.
-  See `sgp4/DEEP-TIME.md`. This addition is not yet included in `npm test`,
-  aggregate build/rebuild checks or CI artifact lists. Full regression acceptance
+  See `sgp4/DEEP-TIME.md`. This addition is now included in `npm test`,
+  aggregate build/rebuild checks and CI artifact lists. Full regression acceptance
   and independent review for this addition remain pending. The attempted reviewer
   stopped at a service usage limit; it did not supply a completed review.
 - Full SDP4, lunar/solar dynamics, resonance propagation, TLE parsing and SGP4

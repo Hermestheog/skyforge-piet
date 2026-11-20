@@ -4,8 +4,9 @@
 SGP4 milestone on `codex/sgp4-near-earth`; `main` still contains the `v0.2.0`
 baseline. [PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1) is open.
 The branch also preserves an in-progress [deep-space epoch kernel](sgp4/DEEP-TIME.md).
-Its standalone 256-case suite passes; it is not yet wired into `npm test` or CI.
-Full deep-space propagation and independent component review remain unfinished.
+Its standalone 256-case suite passes and is now included in `npm test` and CI.
+Full regression acceptance of this integration and independent review are pending.
+Full deep-space propagation remains unfinished.
 See the [work ledger](docs/WORK-LEDGER.md) for evidence and remaining work.
 
 **Satellite tracking computed by executable images.** The PNG files are Piet

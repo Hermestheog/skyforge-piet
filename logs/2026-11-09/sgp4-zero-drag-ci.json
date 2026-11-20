@@ -1,0 +1,64 @@
+{
+  "commit": "5ca2fb77555ef9a93e5fb3e6a8c3e4b28ed366ae",
+  "run_url": "https://github.com/Hermestheog/skyforge-piet/actions/runs/42519147945",
+  "jobs": [
+    {
+      "id": 128848604621,
+      "name": "piet",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 42519147945,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Build unmodified npiet with PNG support",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Assemble and verify reproducible source pixels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Execute all tests sequentially in npiet",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Preserve test logs, including failures",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    }
+  ]
+}

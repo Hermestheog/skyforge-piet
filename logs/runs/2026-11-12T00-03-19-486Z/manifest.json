@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "script": "test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 88941,
+      "log": "test.mjs.log"
+    },
+    {
+      "script": "equivalence.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 117052,
+      "log": "equivalence.mjs.log"
+    },
+    {
+      "script": "verify-layout.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 755,
+      "log": "verify-layout.mjs.log"
+    },
+    {
+      "script": "tracking/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 61692,
+      "log": "tracking-test.mjs.log"
+    },
+    {
+      "script": "sgp4/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 50754,
+      "log": "sgp4-test.mjs.log"
+    },
+    {
+      "script": "sgp4/secular-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 87743,
+      "log": "sgp4-secular-test.mjs.log"
+    },
+    {
+      "script": "sgp4/atmosphere-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 5742,
+      "log": "sgp4-atmosphere-test.mjs.log"
+    },
+    {
+      "script": "sgp4/drag-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 11366,
+      "log": "sgp4-drag-test.mjs.log"
+    },
+    {
+      "script": "sgp4/drag-ecc-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 77274,
+      "log": "sgp4-drag-ecc-test.mjs.log"
+    },
+    {
+      "script": "sgp4/wide-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 771,
+      "log": "sgp4-wide-test.mjs.log"
+    },
+    {
+      "script": "sgp4/full-test.mjs",
+      "exit_code": 1,
+      "elapsed_ms": 384622,
+      "log": "sgp4-full-test.mjs.log"
+    }
+  ]
+}

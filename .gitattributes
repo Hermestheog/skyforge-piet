@@ -2,3 +2,4 @@
 *.png binary
 test.mjs -text
 baseline/test.mjs -text
+vendor/sgp4-reference/* -text

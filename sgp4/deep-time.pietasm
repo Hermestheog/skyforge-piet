@@ -1,0 +1,3647 @@
+0	push 1	# valid
+1	push 9	# days
+2	push 10	# days
+3	multiply	# days
+4	push 10	# days
+5	multiply	# days
+6	push 10	# days
+7	multiply	# days
+8	push 10	# days
+9	multiply	# days
+10	push 10	# days
+11	multiply	# days
+12	push 10	# days
+13	multiply	# days
+14	push 10	# days
+15	multiply	# days
+16	push 10	# days
+17	multiply	# days
+18	push 10	# days
+19	multiply	# days
+20	push 10	# days
+21	multiply	# days
+22	push 10	# days
+23	multiply	# days
+24	push 10	# days
+25	multiply	# days
+26	push 10	# days
+27	multiply	# days
+28	push 10	# days
+29	multiply	# days
+30	push 10	# days
+31	multiply	# days
+32	push 10	# days
+33	multiply	# days
+34	push 10	# days
+35	multiply	# days
+36	push 10	# days
+37	multiply	# days
+38	in_number	# read days
+39	duplicate	# read days
+40	push 9	# read days
+41	push 10	# read days
+42	multiply	# read days
+43	push 10	# read days
+44	multiply	# read days
+45	push 10	# read days
+46	multiply	# read days
+47	push 10	# read days
+48	multiply	# read days
+49	push 10	# read days
+50	multiply	# read days
+51	push 10	# read days
+52	multiply	# read days
+53	push 10	# read days
+54	multiply	# read days
+55	push 10	# read days
+56	multiply	# read days
+57	push 10	# read days
+58	multiply	# read days
+59	push 10	# read days
+60	multiply	# read days
+61	push 10	# read days
+62	multiply	# read days
+63	push 10	# read days
+64	multiply	# read days
+65	push 10	# read days
+66	multiply	# read days
+67	push 10	# read days
+68	multiply	# read days
+69	push 10	# read days
+70	multiply	# read days
+71	push 10	# read days
+72	multiply	# read days
+73	push 10	# read days
+74	multiply	# read days
+75	push 10	# read days
+76	multiply	# read days
+77	subtract	# read days
+78	not	# read days
+79	guard_input	# read days
+80	push 2	# read days
+81	push 1	# read days
+82	roll	# read days
+83	pop	# read days
+84	push 1	# ok
+85	not	# ok
+86	push 3	# ok
+87	push 10	# ok
+88	multiply	# ok
+89	push 6	# ok
+90	add	# ok
+91	push 10	# ok
+92	multiply	# ok
+93	push 5	# ok
+94	add	# ok
+95	push 10	# ok
+96	multiply	# ok
+97	push 2	# ok
+98	add	# ok
+99	push 10	# ok
+100	multiply	# ok
+101	push 5	# ok
+102	add	# ok
+103	subtract	# ok
+104	push 2	# ok
+105	push 1	# ok
+106	not	# ok
+107	push 1	# ok
+108	subtract	# ok
+109	roll	# ok
+110	duplicate	# ok
+111	push 3	# ok
+112	push 1	# ok
+113	roll	# ok
+114	greater	# ok
+115	not	# ok
+116	push 2	# ok
+117	push 1	# ok
+118	not	# ok
+119	push 1	# ok
+120	subtract	# ok
+121	roll	# ok
+122	duplicate	# ok
+123	push 3	# ok
+124	push 1	# ok
+125	roll	# ok
+126	push 3	# ok
+127	push 10	# ok
+128	multiply	# ok
+129	push 6	# ok
+130	add	# ok
+131	push 10	# ok
+132	multiply	# ok
+133	push 5	# ok
+134	add	# ok
+135	push 10	# ok
+136	multiply	# ok
+137	push 2	# ok
+138	add	# ok
+139	push 10	# ok
+140	multiply	# ok
+141	push 5	# ok
+142	add	# ok
+143	greater	# ok
+144	not	# ok
+145	multiply	# ok
+146	push 3	# valid
+147	push 1	# valid
+148	not	# valid
+149	push 1	# valid
+150	subtract	# valid
+151	roll	# valid
+152	duplicate	# valid
+153	push 4	# valid
+154	push 1	# valid
+155	roll	# valid
+156	push 2	# valid
+157	push 1	# valid
+158	not	# valid
+159	push 1	# valid
+160	subtract	# valid
+161	roll	# valid
+162	duplicate	# valid
+163	push 3	# valid
+164	push 1	# valid
+165	roll	# valid
+166	multiply	# valid
+167	push 4	# valid
+168	push 1	# valid
+169	roll	# valid
+170	push 3	# valid
+171	push 1	# valid
+172	not	# valid
+173	push 1	# valid
+174	subtract	# valid
+175	roll	# valid
+176	pop	# valid
+177	duplicate	# days
+178	push 3	# days
+179	push 1	# days
+180	not	# days
+181	push 1	# days
+182	subtract	# days
+183	roll	# days
+184	duplicate	# days
+185	push 4	# days
+186	push 1	# days
+187	roll	# days
+188	multiply	# days
+189	push 2	# days
+190	push 1	# days
+191	not	# days
+192	push 1	# days
+193	subtract	# days
+194	roll	# days
+195	duplicate	# days
+196	push 3	# days
+197	push 1	# days
+198	roll	# days
+199	not	# days
+200	push 1	# days
+201	not	# days
+202	multiply	# days
+203	add	# days
+204	push 3	# days
+205	push 1	# days
+206	roll	# days
+207	push 2	# days
+208	push 1	# days
+209	not	# days
+210	push 1	# days
+211	subtract	# days
+212	roll	# days
+213	pop	# days
+214	push 9	# millis
+215	push 10	# millis
+216	multiply	# millis
+217	push 10	# millis
+218	multiply	# millis
+219	push 10	# millis
+220	multiply	# millis
+221	push 10	# millis
+222	multiply	# millis
+223	push 10	# millis
+224	multiply	# millis
+225	push 10	# millis
+226	multiply	# millis
+227	push 10	# millis
+228	multiply	# millis
+229	push 10	# millis
+230	multiply	# millis
+231	push 10	# millis
+232	multiply	# millis
+233	push 10	# millis
+234	multiply	# millis
+235	push 10	# millis
+236	multiply	# millis
+237	push 10	# millis
+238	multiply	# millis
+239	push 10	# millis
+240	multiply	# millis
+241	push 10	# millis
+242	multiply	# millis
+243	push 10	# millis
+244	multiply	# millis
+245	push 10	# millis
+246	multiply	# millis
+247	push 10	# millis
+248	multiply	# millis
+249	push 10	# millis
+250	multiply	# millis
+251	in_number	# read millis
+252	duplicate	# read millis
+253	push 9	# read millis
+254	push 10	# read millis
+255	multiply	# read millis
+256	push 10	# read millis
+257	multiply	# read millis
+258	push 10	# read millis
+259	multiply	# read millis
+260	push 10	# read millis
+261	multiply	# read millis
+262	push 10	# read millis
+263	multiply	# read millis
+264	push 10	# read millis
+265	multiply	# read millis
+266	push 10	# read millis
+267	multiply	# read millis
+268	push 10	# read millis
+269	multiply	# read millis
+270	push 10	# read millis
+271	multiply	# read millis
+272	push 10	# read millis
+273	multiply	# read millis
+274	push 10	# read millis
+275	multiply	# read millis
+276	push 10	# read millis
+277	multiply	# read millis
+278	push 10	# read millis
+279	multiply	# read millis
+280	push 10	# read millis
+281	multiply	# read millis
+282	push 10	# read millis
+283	multiply	# read millis
+284	push 10	# read millis
+285	multiply	# read millis
+286	push 10	# read millis
+287	multiply	# read millis
+288	push 10	# read millis
+289	multiply	# read millis
+290	subtract	# read millis
+291	not	# read millis
+292	guard_input	# read millis
+293	push 2	# read millis
+294	push 1	# read millis
+295	roll	# read millis
+296	pop	# read millis
+297	push 1	# ok
+298	not	# ok
+299	push 2	# ok
+300	push 1	# ok
+301	not	# ok
+302	push 1	# ok
+303	subtract	# ok
+304	roll	# ok
+305	duplicate	# ok
+306	push 3	# ok
+307	push 1	# ok
+308	roll	# ok
+309	greater	# ok
+310	not	# ok
+311	push 2	# ok
+312	push 1	# ok
+313	not	# ok
+314	push 1	# ok
+315	subtract	# ok
+316	roll	# ok
+317	duplicate	# ok
+318	push 3	# ok
+319	push 1	# ok
+320	roll	# ok
+321	push 8	# ok
+322	push 10	# ok
+323	multiply	# ok
+324	push 6	# ok
+325	add	# ok
+326	push 10	# ok
+327	multiply	# ok
+328	push 3	# ok
+329	add	# ok
+330	push 10	# ok
+331	multiply	# ok
+332	push 9	# ok
+333	add	# ok
+334	push 10	# ok
+335	multiply	# ok
+336	push 9	# ok
+337	add	# ok
+338	push 10	# ok
+339	multiply	# ok
+340	push 9	# ok
+341	add	# ok
+342	push 10	# ok
+343	multiply	# ok
+344	push 9	# ok
+345	add	# ok
+346	push 10	# ok
+347	multiply	# ok
+348	push 9	# ok
+349	add	# ok
+350	greater	# ok
+351	not	# ok
+352	multiply	# ok
+353	push 3	# ok
+354	push 1	# ok
+355	roll	# ok
+356	push 2	# ok
+357	push 1	# ok
+358	not	# ok
+359	push 1	# ok
+360	subtract	# ok
+361	roll	# ok
+362	pop	# ok
+363	push 4	# valid
+364	push 1	# valid
+365	not	# valid
+366	push 1	# valid
+367	subtract	# valid
+368	roll	# valid
+369	duplicate	# valid
+370	push 5	# valid
+371	push 1	# valid
+372	roll	# valid
+373	push 3	# valid
+374	push 1	# valid
+375	not	# valid
+376	push 1	# valid
+377	subtract	# valid
+378	roll	# valid
+379	duplicate	# valid
+380	push 4	# valid
+381	push 1	# valid
+382	roll	# valid
+383	multiply	# valid
+384	push 5	# valid
+385	push 1	# valid
+386	roll	# valid
+387	push 4	# valid
+388	push 1	# valid
+389	not	# valid
+390	push 1	# valid
+391	subtract	# valid
+392	roll	# valid
+393	pop	# valid
+394	push 2	# millis
+395	push 1	# millis
+396	not	# millis
+397	push 1	# millis
+398	subtract	# millis
+399	roll	# millis
+400	duplicate	# millis
+401	push 3	# millis
+402	push 1	# millis
+403	roll	# millis
+404	push 2	# millis
+405	push 1	# millis
+406	not	# millis
+407	push 1	# millis
+408	subtract	# millis
+409	roll	# millis
+410	duplicate	# millis
+411	push 3	# millis
+412	push 1	# millis
+413	roll	# millis
+414	multiply	# millis
+415	push 3	# millis
+416	push 1	# millis
+417	not	# millis
+418	push 1	# millis
+419	subtract	# millis
+420	roll	# millis
+421	duplicate	# millis
+422	push 4	# millis
+423	push 1	# millis
+424	roll	# millis
+425	not	# millis
+426	push 1	# millis
+427	not	# millis
+428	multiply	# millis
+429	add	# millis
+430	push 2	# millis
+431	push 1	# millis
+432	roll	# millis
+433	push 1	# millis
+434	push 1	# millis
+435	not	# millis
+436	push 1	# millis
+437	subtract	# millis
+438	roll	# millis
+439	pop	# millis
+440	duplicate	# clock_millis
+441	push 4	# clock_millis
+442	push 10	# clock_millis
+443	multiply	# clock_millis
+444	push 3	# clock_millis
+445	add	# clock_millis
+446	push 10	# clock_millis
+447	multiply	# clock_millis
+448	push 2	# clock_millis
+449	add	# clock_millis
+450	push 10	# clock_millis
+451	multiply	# clock_millis
+452	push 10	# clock_millis
+453	multiply	# clock_millis
+454	push 10	# clock_millis
+455	multiply	# clock_millis
+456	push 10	# clock_millis
+457	multiply	# clock_millis
+458	push 10	# clock_millis
+459	multiply	# clock_millis
+460	subtract	# clock_millis
+461	push 4	# clock_century
+462	push 1	# clock_century
+463	not	# clock_century
+464	push 1	# clock_century
+465	subtract	# clock_century
+466	roll	# clock_century
+467	duplicate	# clock_century
+468	push 5	# clock_century
+469	push 1	# clock_century
+470	roll	# clock_century
+471	push 1	# clock_century
+472	push 10	# clock_century
+473	multiply	# clock_century
+474	push 10	# clock_century
+475	multiply	# clock_century
+476	push 10	# clock_century
+477	multiply	# clock_century
+478	push 10	# clock_century
+479	multiply	# clock_century
+480	push 10	# clock_century
+481	multiply	# clock_century
+482	push 10	# clock_century
+483	multiply	# clock_century
+484	push 10	# clock_century
+485	multiply	# clock_century
+486	push 10	# clock_century
+487	multiply	# clock_century
+488	multiply	# clock_century
+489	push 3	# clock_century
+490	push 10	# clock_century
+491	multiply	# clock_century
+492	push 6	# clock_century
+493	add	# clock_century
+494	push 10	# clock_century
+495	multiply	# clock_century
+496	push 5	# clock_century
+497	add	# clock_century
+498	push 10	# clock_century
+499	multiply	# clock_century
+500	push 2	# clock_century
+501	add	# clock_century
+502	push 10	# clock_century
+503	multiply	# clock_century
+504	push 5	# clock_century
+505	add	# clock_century
+506	divide	# clock_century
+507	push 2	# clock_century
+508	push 1	# clock_century
+509	not	# clock_century
+510	push 1	# clock_century
+511	subtract	# clock_century
+512	roll	# clock_century
+513	duplicate	# clock_century
+514	push 3	# clock_century
+515	push 1	# clock_century
+516	roll	# clock_century
+517	push 1	# clock_century
+518	push 10	# clock_century
+519	multiply	# clock_century
+520	push 10	# clock_century
+521	multiply	# clock_century
+522	push 10	# clock_century
+523	multiply	# clock_century
+524	push 10	# clock_century
+525	multiply	# clock_century
+526	push 10	# clock_century
+527	multiply	# clock_century
+528	push 10	# clock_century
+529	multiply	# clock_century
+530	push 10	# clock_century
+531	multiply	# clock_century
+532	push 10	# clock_century
+533	multiply	# clock_century
+534	multiply	# clock_century
+535	push 3	# clock_century
+536	push 10	# clock_century
+537	multiply	# clock_century
+538	push 1	# clock_century
+539	add	# clock_century
+540	push 10	# clock_century
+541	multiply	# clock_century
+542	push 5	# clock_century
+543	add	# clock_century
+544	push 10	# clock_century
+545	multiply	# clock_century
+546	push 5	# clock_century
+547	add	# clock_century
+548	push 10	# clock_century
+549	multiply	# clock_century
+550	push 7	# clock_century
+551	add	# clock_century
+552	push 10	# clock_century
+553	multiply	# clock_century
+554	push 6	# clock_century
+555	add	# clock_century
+556	push 10	# clock_century
+557	multiply	# clock_century
+558	push 10	# clock_century
+559	multiply	# clock_century
+560	push 10	# clock_century
+561	multiply	# clock_century
+562	push 10	# clock_century
+563	multiply	# clock_century
+564	push 10	# clock_century
+565	multiply	# clock_century
+566	push 10	# clock_century
+567	multiply	# clock_century
+568	push 10	# clock_century
+569	multiply	# clock_century
+570	divide	# clock_century
+571	add	# clock_century
+572	duplicate	# clock_t2
+573	push 2	# clock_t2
+574	push 1	# clock_t2
+575	not	# clock_t2
+576	push 1	# clock_t2
+577	subtract	# clock_t2
+578	roll	# clock_t2
+579	duplicate	# clock_t2
+580	push 3	# clock_t2
+581	push 1	# clock_t2
+582	roll	# clock_t2
+583	multiply	# clock_t2
+584	push 1	# clock_t2
+585	push 10	# clock_t2
+586	multiply	# clock_t2
+587	push 10	# clock_t2
+588	multiply	# clock_t2
+589	push 10	# clock_t2
+590	multiply	# clock_t2
+591	push 10	# clock_t2
+592	multiply	# clock_t2
+593	push 10	# clock_t2
+594	multiply	# clock_t2
+595	push 10	# clock_t2
+596	multiply	# clock_t2
+597	push 10	# clock_t2
+598	multiply	# clock_t2
+599	push 10	# clock_t2
+600	multiply	# clock_t2
+601	divide	# clock_t2
+602	duplicate	# clock_t3
+603	push 3	# clock_t3
+604	push 1	# clock_t3
+605	not	# clock_t3
+606	push 1	# clock_t3
+607	subtract	# clock_t3
+608	roll	# clock_t3
+609	duplicate	# clock_t3
+610	push 4	# clock_t3
+611	push 1	# clock_t3
+612	roll	# clock_t3
+613	multiply	# clock_t3
+614	push 1	# clock_t3
+615	push 10	# clock_t3
+616	multiply	# clock_t3
+617	push 10	# clock_t3
+618	multiply	# clock_t3
+619	push 10	# clock_t3
+620	multiply	# clock_t3
+621	push 10	# clock_t3
+622	multiply	# clock_t3
+623	push 10	# clock_t3
+624	multiply	# clock_t3
+625	push 10	# clock_t3
+626	multiply	# clock_t3
+627	push 10	# clock_t3
+628	multiply	# clock_t3
+629	push 10	# clock_t3
+630	multiply	# clock_t3
+631	divide	# clock_t3
+632	push 6	# clock_seconds
+633	push 10	# clock_seconds
+634	multiply	# clock_seconds
+635	push 7	# clock_seconds
+636	add	# clock_seconds
+637	push 10	# clock_seconds
+638	multiply	# clock_seconds
+639	push 3	# clock_seconds
+640	add	# clock_seconds
+641	push 10	# clock_seconds
+642	multiply	# clock_seconds
+643	push 1	# clock_seconds
+644	add	# clock_seconds
+645	push 10	# clock_seconds
+646	multiply	# clock_seconds
+647	push 10	# clock_seconds
+648	multiply	# clock_seconds
+649	push 5	# clock_seconds
+650	add	# clock_seconds
+651	push 10	# clock_seconds
+652	multiply	# clock_seconds
+653	push 4	# clock_seconds
+654	add	# clock_seconds
+655	push 10	# clock_seconds
+656	multiply	# clock_seconds
+657	push 8	# clock_seconds
+658	add	# clock_seconds
+659	push 10	# clock_seconds
+660	multiply	# clock_seconds
+661	push 4	# clock_seconds
+662	add	# clock_seconds
+663	push 10	# clock_seconds
+664	multiply	# clock_seconds
+665	push 1	# clock_seconds
+666	add	# clock_seconds
+667	push 10	# clock_seconds
+668	multiply	# clock_seconds
+669	push 5	# clock_seconds
+670	push 1	# clock_seconds
+671	not	# clock_seconds
+672	push 1	# clock_seconds
+673	subtract	# clock_seconds
+674	roll	# clock_seconds
+675	duplicate	# clock_seconds
+676	push 6	# clock_seconds
+677	push 1	# clock_seconds
+678	roll	# clock_seconds
+679	push 1	# clock_seconds
+680	push 10	# clock_seconds
+681	multiply	# clock_seconds
+682	push 10	# clock_seconds
+683	multiply	# clock_seconds
+684	push 10	# clock_seconds
+685	multiply	# clock_seconds
+686	multiply	# clock_seconds
+687	add	# clock_seconds
+688	push 8	# clock_seconds
+689	push 1	# clock_seconds
+690	not	# clock_seconds
+691	push 1	# clock_seconds
+692	subtract	# clock_seconds
+693	roll	# clock_seconds
+694	duplicate	# clock_seconds
+695	push 9	# clock_seconds
+696	push 1	# clock_seconds
+697	roll	# clock_seconds
+698	push 8	# clock_seconds
+699	push 10	# clock_seconds
+700	multiply	# clock_seconds
+701	push 6	# clock_seconds
+702	add	# clock_seconds
+703	push 10	# clock_seconds
+704	multiply	# clock_seconds
+705	push 4	# clock_seconds
+706	add	# clock_seconds
+707	push 10	# clock_seconds
+708	multiply	# clock_seconds
+709	push 10	# clock_seconds
+710	multiply	# clock_seconds
+711	push 1	# clock_seconds
+712	add	# clock_seconds
+713	push 10	# clock_seconds
+714	multiply	# clock_seconds
+715	push 8	# clock_seconds
+716	add	# clock_seconds
+717	push 10	# clock_seconds
+718	multiply	# clock_seconds
+719	push 4	# clock_seconds
+720	add	# clock_seconds
+721	push 10	# clock_seconds
+722	multiply	# clock_seconds
+723	push 8	# clock_seconds
+724	add	# clock_seconds
+725	push 10	# clock_seconds
+726	multiply	# clock_seconds
+727	push 1	# clock_seconds
+728	add	# clock_seconds
+729	push 10	# clock_seconds
+730	multiply	# clock_seconds
+731	push 2	# clock_seconds
+732	add	# clock_seconds
+733	push 10	# clock_seconds
+734	multiply	# clock_seconds
+735	push 8	# clock_seconds
+736	add	# clock_seconds
+737	push 10	# clock_seconds
+738	multiply	# clock_seconds
+739	push 6	# clock_seconds
+740	add	# clock_seconds
+741	push 10	# clock_seconds
+742	multiply	# clock_seconds
+743	push 6	# clock_seconds
+744	add	# clock_seconds
+745	multiply	# clock_seconds
+746	push 3	# clock_seconds
+747	push 10	# clock_seconds
+748	multiply	# clock_seconds
+749	push 6	# clock_seconds
+750	add	# clock_seconds
+751	push 10	# clock_seconds
+752	multiply	# clock_seconds
+753	push 5	# clock_seconds
+754	add	# clock_seconds
+755	push 10	# clock_seconds
+756	multiply	# clock_seconds
+757	push 2	# clock_seconds
+758	add	# clock_seconds
+759	push 10	# clock_seconds
+760	multiply	# clock_seconds
+761	push 5	# clock_seconds
+762	add	# clock_seconds
+763	divide	# clock_seconds
+764	add	# clock_seconds
+765	push 5	# clock_seconds
+766	push 1	# clock_seconds
+767	not	# clock_seconds
+768	push 1	# clock_seconds
+769	subtract	# clock_seconds
+770	roll	# clock_seconds
+771	duplicate	# clock_seconds
+772	push 6	# clock_seconds
+773	push 1	# clock_seconds
+774	roll	# clock_seconds
+775	push 2	# clock_seconds
+776	push 10	# clock_seconds
+777	multiply	# clock_seconds
+778	push 3	# clock_seconds
+779	add	# clock_seconds
+780	push 10	# clock_seconds
+781	multiply	# clock_seconds
+782	push 6	# clock_seconds
+783	add	# clock_seconds
+784	push 10	# clock_seconds
+785	multiply	# clock_seconds
+786	push 5	# clock_seconds
+787	add	# clock_seconds
+788	push 10	# clock_seconds
+789	multiply	# clock_seconds
+790	push 5	# clock_seconds
+791	add	# clock_seconds
+792	push 10	# clock_seconds
+793	multiply	# clock_seconds
+794	push 5	# clock_seconds
+795	add	# clock_seconds
+796	push 10	# clock_seconds
+797	multiply	# clock_seconds
+798	push 3	# clock_seconds
+799	add	# clock_seconds
+800	push 10	# clock_seconds
+801	multiply	# clock_seconds
+802	push 6	# clock_seconds
+803	add	# clock_seconds
+804	push 10	# clock_seconds
+805	multiply	# clock_seconds
+806	push 7	# clock_seconds
+807	add	# clock_seconds
+808	multiply	# clock_seconds
+809	push 8	# clock_seconds
+810	push 10	# clock_seconds
+811	multiply	# clock_seconds
+812	push 6	# clock_seconds
+813	add	# clock_seconds
+814	push 10	# clock_seconds
+815	multiply	# clock_seconds
+816	push 4	# clock_seconds
+817	add	# clock_seconds
+818	push 10	# clock_seconds
+819	multiply	# clock_seconds
+820	push 10	# clock_seconds
+821	multiply	# clock_seconds
+822	push 10	# clock_seconds
+823	multiply	# clock_seconds
+824	push 10	# clock_seconds
+825	multiply	# clock_seconds
+826	push 10	# clock_seconds
+827	multiply	# clock_seconds
+828	divide	# clock_seconds
+829	add	# clock_seconds
+830	push 9	# clock_seconds
+831	push 10	# clock_seconds
+832	multiply	# clock_seconds
+833	push 3	# clock_seconds
+834	add	# clock_seconds
+835	push 10	# clock_seconds
+836	multiply	# clock_seconds
+837	push 1	# clock_seconds
+838	add	# clock_seconds
+839	push 10	# clock_seconds
+840	multiply	# clock_seconds
+841	push 10	# clock_seconds
+842	multiply	# clock_seconds
+843	push 4	# clock_seconds
+844	add	# clock_seconds
+845	push 4	# clock_seconds
+846	push 1	# clock_seconds
+847	not	# clock_seconds
+848	push 1	# clock_seconds
+849	subtract	# clock_seconds
+850	roll	# clock_seconds
+851	duplicate	# clock_seconds
+852	push 5	# clock_seconds
+853	push 1	# clock_seconds
+854	roll	# clock_seconds
+855	multiply	# clock_seconds
+856	push 1	# clock_seconds
+857	push 10	# clock_seconds
+858	multiply	# clock_seconds
+859	push 10	# clock_seconds
+860	multiply	# clock_seconds
+861	push 10	# clock_seconds
+862	multiply	# clock_seconds
+863	push 10	# clock_seconds
+864	multiply	# clock_seconds
+865	push 10	# clock_seconds
+866	multiply	# clock_seconds
+867	push 10	# clock_seconds
+868	multiply	# clock_seconds
+869	push 10	# clock_seconds
+870	multiply	# clock_seconds
+871	push 10	# clock_seconds
+872	multiply	# clock_seconds
+873	divide	# clock_seconds
+874	add	# clock_seconds
+875	push 1	# clock_seconds
+876	not	# clock_seconds
+877	push 6	# clock_seconds
+878	push 10	# clock_seconds
+879	multiply	# clock_seconds
+880	push 2	# clock_seconds
+881	add	# clock_seconds
+882	push 4	# clock_seconds
+883	push 1	# clock_seconds
+884	not	# clock_seconds
+885	push 1	# clock_seconds
+886	subtract	# clock_seconds
+887	roll	# clock_seconds
+888	duplicate	# clock_seconds
+889	push 5	# clock_seconds
+890	push 1	# clock_seconds
+891	roll	# clock_seconds
+892	multiply	# clock_seconds
+893	push 1	# clock_seconds
+894	push 10	# clock_seconds
+895	multiply	# clock_seconds
+896	push 10	# clock_seconds
+897	multiply	# clock_seconds
+898	push 10	# clock_seconds
+899	multiply	# clock_seconds
+900	push 10	# clock_seconds
+901	multiply	# clock_seconds
+902	push 10	# clock_seconds
+903	multiply	# clock_seconds
+904	push 10	# clock_seconds
+905	multiply	# clock_seconds
+906	push 10	# clock_seconds
+907	multiply	# clock_seconds
+908	push 10	# clock_seconds
+909	multiply	# clock_seconds
+910	push 10	# clock_seconds
+911	multiply	# clock_seconds
+912	divide	# clock_seconds
+913	subtract	# clock_seconds
+914	add	# clock_seconds
+915	duplicate	# clock_seconds
+916	push 1	# clock_seconds
+917	push 10	# clock_seconds
+918	multiply	# clock_seconds
+919	push 10	# clock_seconds
+920	multiply	# clock_seconds
+921	push 10	# clock_seconds
+922	multiply	# clock_seconds
+923	push 10	# clock_seconds
+924	multiply	# clock_seconds
+925	push 10	# clock_seconds
+926	multiply	# clock_seconds
+927	push 10	# clock_seconds
+928	multiply	# clock_seconds
+929	push 10	# clock_seconds
+930	multiply	# clock_seconds
+931	push 10	# clock_seconds
+932	multiply	# clock_seconds
+933	push 10	# clock_seconds
+934	multiply	# clock_seconds
+935	mod	# clock_seconds
+936	push 2	# clock_seconds
+937	push 1	# clock_seconds
+938	roll	# clock_seconds
+939	push 1	# clock_seconds
+940	push 10	# clock_seconds
+941	multiply	# clock_seconds
+942	push 10	# clock_seconds
+943	multiply	# clock_seconds
+944	push 10	# clock_seconds
+945	multiply	# clock_seconds
+946	push 10	# clock_seconds
+947	multiply	# clock_seconds
+948	push 10	# clock_seconds
+949	multiply	# clock_seconds
+950	push 10	# clock_seconds
+951	multiply	# clock_seconds
+952	push 10	# clock_seconds
+953	multiply	# clock_seconds
+954	push 10	# clock_seconds
+955	multiply	# clock_seconds
+956	push 10	# clock_seconds
+957	multiply	# clock_seconds
+958	divide	# clock_seconds
+959	duplicate	# clock_seconds
+960	push 1	# clock_seconds
+961	push 10	# clock_seconds
+962	multiply	# clock_seconds
+963	push 10	# clock_seconds
+964	multiply	# clock_seconds
+965	push 10	# clock_seconds
+966	multiply	# clock_seconds
+967	push 10	# clock_seconds
+968	multiply	# clock_seconds
+969	push 10	# clock_seconds
+970	multiply	# clock_seconds
+971	push 10	# clock_seconds
+972	multiply	# clock_seconds
+973	push 10	# clock_seconds
+974	multiply	# clock_seconds
+975	push 10	# clock_seconds
+976	multiply	# clock_seconds
+977	push 10	# clock_seconds
+978	multiply	# clock_seconds
+979	mod	# clock_seconds
+980	push 2	# clock_seconds
+981	push 1	# clock_seconds
+982	roll	# clock_seconds
+983	push 1	# clock_seconds
+984	push 10	# clock_seconds
+985	multiply	# clock_seconds
+986	push 10	# clock_seconds
+987	multiply	# clock_seconds
+988	push 10	# clock_seconds
+989	multiply	# clock_seconds
+990	push 10	# clock_seconds
+991	multiply	# clock_seconds
+992	push 10	# clock_seconds
+993	multiply	# clock_seconds
+994	push 10	# clock_seconds
+995	multiply	# clock_seconds
+996	push 10	# clock_seconds
+997	multiply	# clock_seconds
+998	push 10	# clock_seconds
+999	multiply	# clock_seconds
+1000	push 10	# clock_seconds
+1001	multiply	# clock_seconds
+1002	divide	# clock_seconds
+1003	push 3	# clock_seconds
+1004	push 1	# clock_seconds
+1005	not	# clock_seconds
+1006	push 1	# clock_seconds
+1007	subtract	# clock_seconds
+1008	roll	# clock_seconds
+1009	duplicate	# clock_seconds
+1010	push 4	# clock_seconds
+1011	push 1	# clock_seconds
+1012	roll	# clock_seconds
+1013	push 3	# clock_seconds
+1014	push 1	# clock_seconds
+1015	not	# clock_seconds
+1016	push 1	# clock_seconds
+1017	subtract	# clock_seconds
+1018	roll	# clock_seconds
+1019	duplicate	# clock_seconds
+1020	push 4	# clock_seconds
+1021	push 1	# clock_seconds
+1022	roll	# clock_seconds
+1023	push 3	# clock_seconds
+1024	push 1	# clock_seconds
+1025	not	# clock_seconds
+1026	push 1	# clock_seconds
+1027	subtract	# clock_seconds
+1028	roll	# clock_seconds
+1029	duplicate	# clock_seconds
+1030	push 4	# clock_seconds
+1031	push 1	# clock_seconds
+1032	roll	# clock_seconds
+1033	push 1	# clock_seconds
+1034	push 10	# clock_seconds
+1035	multiply	# clock_seconds
+1036	push 10	# clock_seconds
+1037	multiply	# clock_seconds
+1038	push 10	# clock_seconds
+1039	multiply	# clock_seconds
+1040	push 10	# clock_seconds
+1041	multiply	# clock_seconds
+1042	push 10	# clock_seconds
+1043	multiply	# clock_seconds
+1044	push 10	# clock_seconds
+1045	multiply	# clock_seconds
+1046	push 10	# clock_seconds
+1047	multiply	# clock_seconds
+1048	push 10	# clock_seconds
+1049	multiply	# clock_seconds
+1050	push 10	# clock_seconds
+1051	multiply	# clock_seconds
+1052	multiply	# clock_seconds
+1053	add	# clock_seconds
+1054	push 1	# clock_seconds
+1055	push 10	# clock_seconds
+1056	multiply	# clock_seconds
+1057	push 10	# clock_seconds
+1058	multiply	# clock_seconds
+1059	push 10	# clock_seconds
+1060	multiply	# clock_seconds
+1061	push 10	# clock_seconds
+1062	multiply	# clock_seconds
+1063	push 10	# clock_seconds
+1064	multiply	# clock_seconds
+1065	push 10	# clock_seconds
+1066	multiply	# clock_seconds
+1067	push 10	# clock_seconds
+1068	multiply	# clock_seconds
+1069	push 10	# clock_seconds
+1070	multiply	# clock_seconds
+1071	push 10	# clock_seconds
+1072	multiply	# clock_seconds
+1073	multiply	# clock_seconds
+1074	add	# clock_seconds
+1075	push 8	# clock_seconds
+1076	push 10	# clock_seconds
+1077	multiply	# clock_seconds
+1078	push 6	# clock_seconds
+1079	add	# clock_seconds
+1080	push 10	# clock_seconds
+1081	multiply	# clock_seconds
+1082	push 4	# clock_seconds
+1083	add	# clock_seconds
+1084	push 10	# clock_seconds
+1085	multiply	# clock_seconds
+1086	push 10	# clock_seconds
+1087	multiply	# clock_seconds
+1088	push 10	# clock_seconds
+1089	multiply	# clock_seconds
+1090	push 10	# clock_seconds
+1091	multiply	# clock_seconds
+1092	push 10	# clock_seconds
+1093	multiply	# clock_seconds
+1094	push 10	# clock_seconds
+1095	multiply	# clock_seconds
+1096	push 10	# clock_seconds
+1097	multiply	# clock_seconds
+1098	push 10	# clock_seconds
+1099	multiply	# clock_seconds
+1100	mod	# clock_seconds
+1101	push 8	# clock_seconds
+1102	push 10	# clock_seconds
+1103	multiply	# clock_seconds
+1104	push 6	# clock_seconds
+1105	add	# clock_seconds
+1106	push 10	# clock_seconds
+1107	multiply	# clock_seconds
+1108	push 4	# clock_seconds
+1109	add	# clock_seconds
+1110	push 10	# clock_seconds
+1111	multiply	# clock_seconds
+1112	push 10	# clock_seconds
+1113	multiply	# clock_seconds
+1114	push 10	# clock_seconds
+1115	multiply	# clock_seconds
+1116	push 10	# clock_seconds
+1117	multiply	# clock_seconds
+1118	push 10	# clock_seconds
+1119	multiply	# clock_seconds
+1120	push 10	# clock_seconds
+1121	multiply	# clock_seconds
+1122	push 10	# clock_seconds
+1123	multiply	# clock_seconds
+1124	push 10	# clock_seconds
+1125	multiply	# clock_seconds
+1126	add	# clock_seconds
+1127	push 8	# clock_seconds
+1128	push 10	# clock_seconds
+1129	multiply	# clock_seconds
+1130	push 6	# clock_seconds
+1131	add	# clock_seconds
+1132	push 10	# clock_seconds
+1133	multiply	# clock_seconds
+1134	push 4	# clock_seconds
+1135	add	# clock_seconds
+1136	push 10	# clock_seconds
+1137	multiply	# clock_seconds
+1138	push 10	# clock_seconds
+1139	multiply	# clock_seconds
+1140	push 10	# clock_seconds
+1141	multiply	# clock_seconds
+1142	push 10	# clock_seconds
+1143	multiply	# clock_seconds
+1144	push 10	# clock_seconds
+1145	multiply	# clock_seconds
+1146	push 10	# clock_seconds
+1147	multiply	# clock_seconds
+1148	push 10	# clock_seconds
+1149	multiply	# clock_seconds
+1150	push 10	# clock_seconds
+1151	multiply	# clock_seconds
+1152	mod	# clock_seconds
+1153	duplicate	# clock_seconds
+1154	push 1	# clock_seconds
+1155	push 10	# clock_seconds
+1156	multiply	# clock_seconds
+1157	push 10	# clock_seconds
+1158	multiply	# clock_seconds
+1159	push 10	# clock_seconds
+1160	multiply	# clock_seconds
+1161	push 10	# clock_seconds
+1162	multiply	# clock_seconds
+1163	push 10	# clock_seconds
+1164	multiply	# clock_seconds
+1165	push 10	# clock_seconds
+1166	multiply	# clock_seconds
+1167	push 10	# clock_seconds
+1168	multiply	# clock_seconds
+1169	push 10	# clock_seconds
+1170	multiply	# clock_seconds
+1171	push 10	# clock_seconds
+1172	multiply	# clock_seconds
+1173	mod	# clock_seconds
+1174	push 2	# clock_seconds
+1175	push 1	# clock_seconds
+1176	roll	# clock_seconds
+1177	push 1	# clock_seconds
+1178	push 10	# clock_seconds
+1179	multiply	# clock_seconds
+1180	push 10	# clock_seconds
+1181	multiply	# clock_seconds
+1182	push 10	# clock_seconds
+1183	multiply	# clock_seconds
+1184	push 10	# clock_seconds
+1185	multiply	# clock_seconds
+1186	push 10	# clock_seconds
+1187	multiply	# clock_seconds
+1188	push 10	# clock_seconds
+1189	multiply	# clock_seconds
+1190	push 10	# clock_seconds
+1191	multiply	# clock_seconds
+1192	push 10	# clock_seconds
+1193	multiply	# clock_seconds
+1194	push 10	# clock_seconds
+1195	multiply	# clock_seconds
+1196	divide	# clock_seconds
+1197	duplicate	# clock_seconds
+1198	push 1	# clock_seconds
+1199	push 10	# clock_seconds
+1200	multiply	# clock_seconds
+1201	push 10	# clock_seconds
+1202	multiply	# clock_seconds
+1203	push 10	# clock_seconds
+1204	multiply	# clock_seconds
+1205	push 10	# clock_seconds
+1206	multiply	# clock_seconds
+1207	push 10	# clock_seconds
+1208	multiply	# clock_seconds
+1209	push 10	# clock_seconds
+1210	multiply	# clock_seconds
+1211	push 10	# clock_seconds
+1212	multiply	# clock_seconds
+1213	push 10	# clock_seconds
+1214	multiply	# clock_seconds
+1215	push 10	# clock_seconds
+1216	multiply	# clock_seconds
+1217	mod	# clock_seconds
+1218	push 2	# clock_seconds
+1219	push 1	# clock_seconds
+1220	roll	# clock_seconds
+1221	push 1	# clock_seconds
+1222	push 10	# clock_seconds
+1223	multiply	# clock_seconds
+1224	push 10	# clock_seconds
+1225	multiply	# clock_seconds
+1226	push 10	# clock_seconds
+1227	multiply	# clock_seconds
+1228	push 10	# clock_seconds
+1229	multiply	# clock_seconds
+1230	push 10	# clock_seconds
+1231	multiply	# clock_seconds
+1232	push 10	# clock_seconds
+1233	multiply	# clock_seconds
+1234	push 10	# clock_seconds
+1235	multiply	# clock_seconds
+1236	push 10	# clock_seconds
+1237	multiply	# clock_seconds
+1238	push 10	# clock_seconds
+1239	multiply	# clock_seconds
+1240	divide	# clock_seconds
+1241	push 3	# gsto
+1242	push 1	# gsto
+1243	not	# gsto
+1244	push 1	# gsto
+1245	subtract	# gsto
+1246	roll	# gsto
+1247	duplicate	# gsto
+1248	push 4	# gsto
+1249	push 1	# gsto
+1250	roll	# gsto
+1251	push 3	# gsto
+1252	push 1	# gsto
+1253	not	# gsto
+1254	push 1	# gsto
+1255	subtract	# gsto
+1256	roll	# gsto
+1257	duplicate	# gsto
+1258	push 4	# gsto
+1259	push 1	# gsto
+1260	roll	# gsto
+1261	push 3	# gsto
+1262	push 1	# gsto
+1263	not	# gsto
+1264	push 1	# gsto
+1265	subtract	# gsto
+1266	roll	# gsto
+1267	duplicate	# gsto
+1268	push 4	# gsto
+1269	push 1	# gsto
+1270	roll	# gsto
+1271	push 1	# gsto
+1272	push 10	# gsto
+1273	multiply	# gsto
+1274	push 10	# gsto
+1275	multiply	# gsto
+1276	push 10	# gsto
+1277	multiply	# gsto
+1278	push 10	# gsto
+1279	multiply	# gsto
+1280	push 10	# gsto
+1281	multiply	# gsto
+1282	push 10	# gsto
+1283	multiply	# gsto
+1284	push 10	# gsto
+1285	multiply	# gsto
+1286	push 10	# gsto
+1287	multiply	# gsto
+1288	push 10	# gsto
+1289	multiply	# gsto
+1290	multiply	# gsto
+1291	add	# gsto
+1292	push 1	# gsto
+1293	push 10	# gsto
+1294	multiply	# gsto
+1295	push 10	# gsto
+1296	multiply	# gsto
+1297	push 10	# gsto
+1298	multiply	# gsto
+1299	push 10	# gsto
+1300	multiply	# gsto
+1301	push 10	# gsto
+1302	multiply	# gsto
+1303	push 10	# gsto
+1304	multiply	# gsto
+1305	push 10	# gsto
+1306	multiply	# gsto
+1307	push 10	# gsto
+1308	multiply	# gsto
+1309	push 10	# gsto
+1310	multiply	# gsto
+1311	multiply	# gsto
+1312	add	# gsto
+1313	push 1	# gsto
+1314	push 10	# gsto
+1315	multiply	# gsto
+1316	push 10	# gsto
+1317	multiply	# gsto
+1318	push 10	# gsto
+1319	multiply	# gsto
+1320	push 10	# gsto
+1321	multiply	# gsto
+1322	push 10	# gsto
+1323	multiply	# gsto
+1324	push 10	# gsto
+1325	multiply	# gsto
+1326	divide	# gsto
+1327	push 6	# gsto
+1328	push 10	# gsto
+1329	multiply	# gsto
+1330	push 2	# gsto
+1331	add	# gsto
+1332	push 10	# gsto
+1333	multiply	# gsto
+1334	push 8	# gsto
+1335	add	# gsto
+1336	push 10	# gsto
+1337	multiply	# gsto
+1338	push 3	# gsto
+1339	add	# gsto
+1340	push 10	# gsto
+1341	multiply	# gsto
+1342	push 1	# gsto
+1343	add	# gsto
+1344	push 10	# gsto
+1345	multiply	# gsto
+1346	push 8	# gsto
+1347	add	# gsto
+1348	push 10	# gsto
+1349	multiply	# gsto
+1350	push 5	# gsto
+1351	add	# gsto
+1352	push 10	# gsto
+1353	multiply	# gsto
+1354	push 3	# gsto
+1355	add	# gsto
+1356	push 10	# gsto
+1357	multiply	# gsto
+1358	multiply	# gsto
+1359	push 8	# gsto
+1360	push 10	# gsto
+1361	multiply	# gsto
+1362	push 6	# gsto
+1363	add	# gsto
+1364	push 10	# gsto
+1365	multiply	# gsto
+1366	push 4	# gsto
+1367	add	# gsto
+1368	push 10	# gsto
+1369	multiply	# gsto
+1370	push 10	# gsto
+1371	multiply	# gsto
+1372	divide	# gsto
+1373	push 4	# gsto
+1374	push 1	# gsto
+1375	not	# gsto
+1376	push 1	# gsto
+1377	subtract	# gsto
+1378	roll	# gsto
+1379	duplicate	# gsto
+1380	push 5	# gsto
+1381	push 1	# gsto
+1382	roll	# gsto
+1383	push 4	# gsto
+1384	push 1	# gsto
+1385	not	# gsto
+1386	push 1	# gsto
+1387	subtract	# gsto
+1388	roll	# gsto
+1389	duplicate	# gsto
+1390	push 5	# gsto
+1391	push 1	# gsto
+1392	roll	# gsto
+1393	push 4	# gsto
+1394	push 1	# gsto
+1395	not	# gsto
+1396	push 1	# gsto
+1397	subtract	# gsto
+1398	roll	# gsto
+1399	duplicate	# gsto
+1400	push 5	# gsto
+1401	push 1	# gsto
+1402	roll	# gsto
+1403	push 1	# gsto
+1404	push 10	# gsto
+1405	multiply	# gsto
+1406	push 10	# gsto
+1407	multiply	# gsto
+1408	push 10	# gsto
+1409	multiply	# gsto
+1410	push 10	# gsto
+1411	multiply	# gsto
+1412	push 10	# gsto
+1413	multiply	# gsto
+1414	push 10	# gsto
+1415	multiply	# gsto
+1416	push 10	# gsto
+1417	multiply	# gsto
+1418	push 10	# gsto
+1419	multiply	# gsto
+1420	push 10	# gsto
+1421	multiply	# gsto
+1422	multiply	# gsto
+1423	add	# gsto
+1424	push 1	# gsto
+1425	push 10	# gsto
+1426	multiply	# gsto
+1427	push 10	# gsto
+1428	multiply	# gsto
+1429	push 10	# gsto
+1430	multiply	# gsto
+1431	push 10	# gsto
+1432	multiply	# gsto
+1433	push 10	# gsto
+1434	multiply	# gsto
+1435	push 10	# gsto
+1436	multiply	# gsto
+1437	push 10	# gsto
+1438	multiply	# gsto
+1439	push 10	# gsto
+1440	multiply	# gsto
+1441	push 10	# gsto
+1442	multiply	# gsto
+1443	multiply	# gsto
+1444	add	# gsto
+1445	push 1	# gsto
+1446	push 10	# gsto
+1447	multiply	# gsto
+1448	push 10	# gsto
+1449	multiply	# gsto
+1450	push 10	# gsto
+1451	multiply	# gsto
+1452	push 10	# gsto
+1453	multiply	# gsto
+1454	push 10	# gsto
+1455	multiply	# gsto
+1456	push 10	# gsto
+1457	multiply	# gsto
+1458	mod	# gsto
+1459	push 6	# gsto
+1460	push 10	# gsto
+1461	multiply	# gsto
+1462	push 2	# gsto
+1463	add	# gsto
+1464	push 10	# gsto
+1465	multiply	# gsto
+1466	push 8	# gsto
+1467	add	# gsto
+1468	push 10	# gsto
+1469	multiply	# gsto
+1470	push 3	# gsto
+1471	add	# gsto
+1472	push 10	# gsto
+1473	multiply	# gsto
+1474	push 1	# gsto
+1475	add	# gsto
+1476	push 10	# gsto
+1477	multiply	# gsto
+1478	push 8	# gsto
+1479	add	# gsto
+1480	push 10	# gsto
+1481	multiply	# gsto
+1482	push 5	# gsto
+1483	add	# gsto
+1484	push 10	# gsto
+1485	multiply	# gsto
+1486	push 3	# gsto
+1487	add	# gsto
+1488	push 10	# gsto
+1489	multiply	# gsto
+1490	multiply	# gsto
+1491	push 8	# gsto
+1492	push 10	# gsto
+1493	multiply	# gsto
+1494	push 6	# gsto
+1495	add	# gsto
+1496	push 10	# gsto
+1497	multiply	# gsto
+1498	push 4	# gsto
+1499	add	# gsto
+1500	push 10	# gsto
+1501	multiply	# gsto
+1502	push 10	# gsto
+1503	multiply	# gsto
+1504	push 10	# gsto
+1505	multiply	# gsto
+1506	push 10	# gsto
+1507	multiply	# gsto
+1508	push 10	# gsto
+1509	multiply	# gsto
+1510	push 10	# gsto
+1511	multiply	# gsto
+1512	push 10	# gsto
+1513	multiply	# gsto
+1514	push 10	# gsto
+1515	multiply	# gsto
+1516	divide	# gsto
+1517	add	# gsto
+1518	push 4	# clock_phase
+1519	push 10	# clock_phase
+1520	multiply	# clock_phase
+1521	push 5	# clock_phase
+1522	add	# clock_phase
+1523	push 10	# clock_phase
+1524	multiply	# clock_phase
+1525	push 2	# clock_phase
+1526	add	# clock_phase
+1527	push 10	# clock_phase
+1528	multiply	# clock_phase
+1529	push 3	# clock_phase
+1530	add	# clock_phase
+1531	push 10	# clock_phase
+1532	multiply	# clock_phase
+1533	push 6	# clock_phase
+1534	add	# clock_phase
+1535	push 10	# clock_phase
+1536	multiply	# clock_phase
+1537	push 10	# clock_phase
+1538	multiply	# clock_phase
+1539	push 2	# clock_phase
+1540	add	# clock_phase
+1541	push 10	# clock_phase
+1542	multiply	# clock_phase
+1543	push 10	# clock_phase
+1544	multiply	# clock_phase
+1545	push 10	# clock_phase
+1546	multiply	# clock_phase
+1547	push 10	# clock_phase
+1548	multiply	# clock_phase
+1549	push 10	# clock_phase
+1550	multiply	# clock_phase
+1551	push 1	# clock_phase
+1552	not	# clock_phase
+1553	push 9	# clock_phase
+1554	push 10	# clock_phase
+1555	multiply	# clock_phase
+1556	push 2	# clock_phase
+1557	add	# clock_phase
+1558	push 10	# clock_phase
+1559	multiply	# clock_phase
+1560	push 4	# clock_phase
+1561	add	# clock_phase
+1562	push 10	# clock_phase
+1563	multiply	# clock_phase
+1564	push 2	# clock_phase
+1565	add	# clock_phase
+1566	push 10	# clock_phase
+1567	multiply	# clock_phase
+1568	push 2	# clock_phase
+1569	add	# clock_phase
+1570	push 10	# clock_phase
+1571	multiply	# clock_phase
+1572	push 10	# clock_phase
+1573	multiply	# clock_phase
+1574	push 2	# clock_phase
+1575	add	# clock_phase
+1576	push 10	# clock_phase
+1577	multiply	# clock_phase
+1578	push 9	# clock_phase
+1579	add	# clock_phase
+1580	subtract	# clock_phase
+1581	push 1	# clock_phase
+1582	push 10	# clock_phase
+1583	multiply	# clock_phase
+1584	push 6	# clock_phase
+1585	add	# clock_phase
+1586	push 1	# clock_phase
+1587	not	# clock_phase
+1588	push 1	# clock_phase
+1589	subtract	# clock_phase
+1590	roll	# clock_phase
+1591	duplicate	# clock_phase
+1592	push 1	# clock_phase
+1593	push 10	# clock_phase
+1594	multiply	# clock_phase
+1595	push 7	# clock_phase
+1596	add	# clock_phase
+1597	push 1	# clock_phase
+1598	roll	# clock_phase
+1599	push 3	# clock_phase
+1600	push 10	# clock_phase
+1601	multiply	# clock_phase
+1602	push 6	# clock_phase
+1603	add	# clock_phase
+1604	push 10	# clock_phase
+1605	multiply	# clock_phase
+1606	push 5	# clock_phase
+1607	add	# clock_phase
+1608	push 10	# clock_phase
+1609	multiply	# clock_phase
+1610	push 2	# clock_phase
+1611	add	# clock_phase
+1612	push 10	# clock_phase
+1613	multiply	# clock_phase
+1614	push 5	# clock_phase
+1615	add	# clock_phase
+1616	add	# clock_phase
+1617	multiply	# clock_phase
+1618	add	# clock_phase
+1619	push 1	# clock_phase
+1620	not	# clock_phase
+1621	push 9	# clock_phase
+1622	push 10	# clock_phase
+1623	multiply	# clock_phase
+1624	push 2	# clock_phase
+1625	add	# clock_phase
+1626	push 10	# clock_phase
+1627	multiply	# clock_phase
+1628	push 4	# clock_phase
+1629	add	# clock_phase
+1630	push 10	# clock_phase
+1631	multiply	# clock_phase
+1632	push 2	# clock_phase
+1633	add	# clock_phase
+1634	push 10	# clock_phase
+1635	multiply	# clock_phase
+1636	push 2	# clock_phase
+1637	add	# clock_phase
+1638	push 10	# clock_phase
+1639	multiply	# clock_phase
+1640	push 10	# clock_phase
+1641	multiply	# clock_phase
+1642	push 2	# clock_phase
+1643	add	# clock_phase
+1644	push 10	# clock_phase
+1645	multiply	# clock_phase
+1646	push 9	# clock_phase
+1647	add	# clock_phase
+1648	subtract	# clock_phase
+1649	push 1	# clock_phase
+1650	push 10	# clock_phase
+1651	multiply	# clock_phase
+1652	push 3	# clock_phase
+1653	add	# clock_phase
+1654	push 1	# clock_phase
+1655	not	# clock_phase
+1656	push 1	# clock_phase
+1657	subtract	# clock_phase
+1658	roll	# clock_phase
+1659	duplicate	# clock_phase
+1660	push 1	# clock_phase
+1661	push 10	# clock_phase
+1662	multiply	# clock_phase
+1663	push 4	# clock_phase
+1664	add	# clock_phase
+1665	push 1	# clock_phase
+1666	roll	# clock_phase
+1667	multiply	# clock_phase
+1668	push 8	# clock_phase
+1669	push 10	# clock_phase
+1670	multiply	# clock_phase
+1671	push 6	# clock_phase
+1672	add	# clock_phase
+1673	push 10	# clock_phase
+1674	multiply	# clock_phase
+1675	push 4	# clock_phase
+1676	add	# clock_phase
+1677	push 10	# clock_phase
+1678	multiply	# clock_phase
+1679	push 10	# clock_phase
+1680	multiply	# clock_phase
+1681	push 10	# clock_phase
+1682	multiply	# clock_phase
+1683	push 10	# clock_phase
+1684	multiply	# clock_phase
+1685	push 10	# clock_phase
+1686	multiply	# clock_phase
+1687	divide	# clock_phase
+1688	add	# clock_phase
+1689	duplicate	# clock_phase
+1690	push 1	# clock_phase
+1691	push 10	# clock_phase
+1692	multiply	# clock_phase
+1693	push 10	# clock_phase
+1694	multiply	# clock_phase
+1695	push 10	# clock_phase
+1696	multiply	# clock_phase
+1697	push 10	# clock_phase
+1698	multiply	# clock_phase
+1699	push 10	# clock_phase
+1700	multiply	# clock_phase
+1701	push 10	# clock_phase
+1702	multiply	# clock_phase
+1703	push 10	# clock_phase
+1704	multiply	# clock_phase
+1705	push 10	# clock_phase
+1706	multiply	# clock_phase
+1707	push 10	# clock_phase
+1708	multiply	# clock_phase
+1709	mod	# clock_phase
+1710	push 2	# clock_phase
+1711	push 1	# clock_phase
+1712	roll	# clock_phase
+1713	push 1	# clock_phase
+1714	push 10	# clock_phase
+1715	multiply	# clock_phase
+1716	push 10	# clock_phase
+1717	multiply	# clock_phase
+1718	push 10	# clock_phase
+1719	multiply	# clock_phase
+1720	push 10	# clock_phase
+1721	multiply	# clock_phase
+1722	push 10	# clock_phase
+1723	multiply	# clock_phase
+1724	push 10	# clock_phase
+1725	multiply	# clock_phase
+1726	push 10	# clock_phase
+1727	multiply	# clock_phase
+1728	push 10	# clock_phase
+1729	multiply	# clock_phase
+1730	push 10	# clock_phase
+1731	multiply	# clock_phase
+1732	divide	# clock_phase
+1733	duplicate	# clock_phase
+1734	push 1	# clock_phase
+1735	push 10	# clock_phase
+1736	multiply	# clock_phase
+1737	push 10	# clock_phase
+1738	multiply	# clock_phase
+1739	push 10	# clock_phase
+1740	multiply	# clock_phase
+1741	push 10	# clock_phase
+1742	multiply	# clock_phase
+1743	push 10	# clock_phase
+1744	multiply	# clock_phase
+1745	push 10	# clock_phase
+1746	multiply	# clock_phase
+1747	push 10	# clock_phase
+1748	multiply	# clock_phase
+1749	push 10	# clock_phase
+1750	multiply	# clock_phase
+1751	push 10	# clock_phase
+1752	multiply	# clock_phase
+1753	mod	# clock_phase
+1754	push 2	# clock_phase
+1755	push 1	# clock_phase
+1756	roll	# clock_phase
+1757	push 1	# clock_phase
+1758	push 10	# clock_phase
+1759	multiply	# clock_phase
+1760	push 10	# clock_phase
+1761	multiply	# clock_phase
+1762	push 10	# clock_phase
+1763	multiply	# clock_phase
+1764	push 10	# clock_phase
+1765	multiply	# clock_phase
+1766	push 10	# clock_phase
+1767	multiply	# clock_phase
+1768	push 10	# clock_phase
+1769	multiply	# clock_phase
+1770	push 10	# clock_phase
+1771	multiply	# clock_phase
+1772	push 10	# clock_phase
+1773	multiply	# clock_phase
+1774	push 10	# clock_phase
+1775	multiply	# clock_phase
+1776	divide	# clock_phase
+1777	push 3	# xnodce
+1778	push 1	# xnodce
+1779	not	# xnodce
+1780	push 1	# xnodce
+1781	subtract	# xnodce
+1782	roll	# xnodce
+1783	duplicate	# xnodce
+1784	push 4	# xnodce
+1785	push 1	# xnodce
+1786	roll	# xnodce
+1787	push 3	# xnodce
+1788	push 1	# xnodce
+1789	not	# xnodce
+1790	push 1	# xnodce
+1791	subtract	# xnodce
+1792	roll	# xnodce
+1793	duplicate	# xnodce
+1794	push 4	# xnodce
+1795	push 1	# xnodce
+1796	roll	# xnodce
+1797	push 3	# xnodce
+1798	push 1	# xnodce
+1799	not	# xnodce
+1800	push 1	# xnodce
+1801	subtract	# xnodce
+1802	roll	# xnodce
+1803	duplicate	# xnodce
+1804	push 4	# xnodce
+1805	push 1	# xnodce
+1806	roll	# xnodce
+1807	push 1	# xnodce
+1808	push 10	# xnodce
+1809	multiply	# xnodce
+1810	push 10	# xnodce
+1811	multiply	# xnodce
+1812	push 10	# xnodce
+1813	multiply	# xnodce
+1814	push 10	# xnodce
+1815	multiply	# xnodce
+1816	push 10	# xnodce
+1817	multiply	# xnodce
+1818	push 10	# xnodce
+1819	multiply	# xnodce
+1820	push 10	# xnodce
+1821	multiply	# xnodce
+1822	push 10	# xnodce
+1823	multiply	# xnodce
+1824	push 10	# xnodce
+1825	multiply	# xnodce
+1826	multiply	# xnodce
+1827	add	# xnodce
+1828	push 1	# xnodce
+1829	push 10	# xnodce
+1830	multiply	# xnodce
+1831	push 10	# xnodce
+1832	multiply	# xnodce
+1833	push 10	# xnodce
+1834	multiply	# xnodce
+1835	push 10	# xnodce
+1836	multiply	# xnodce
+1837	push 10	# xnodce
+1838	multiply	# xnodce
+1839	push 10	# xnodce
+1840	multiply	# xnodce
+1841	push 10	# xnodce
+1842	multiply	# xnodce
+1843	push 10	# xnodce
+1844	multiply	# xnodce
+1845	push 10	# xnodce
+1846	multiply	# xnodce
+1847	multiply	# xnodce
+1848	add	# xnodce
+1849	push 6	# xnodce
+1850	push 10	# xnodce
+1851	multiply	# xnodce
+1852	push 2	# xnodce
+1853	add	# xnodce
+1854	push 10	# xnodce
+1855	multiply	# xnodce
+1856	push 8	# xnodce
+1857	add	# xnodce
+1858	push 10	# xnodce
+1859	multiply	# xnodce
+1860	push 3	# xnodce
+1861	add	# xnodce
+1862	push 10	# xnodce
+1863	multiply	# xnodce
+1864	push 1	# xnodce
+1865	add	# xnodce
+1866	push 10	# xnodce
+1867	multiply	# xnodce
+1868	push 8	# xnodce
+1869	add	# xnodce
+1870	push 10	# xnodce
+1871	multiply	# xnodce
+1872	push 5	# xnodce
+1873	add	# xnodce
+1874	push 10	# xnodce
+1875	multiply	# xnodce
+1876	push 3	# xnodce
+1877	add	# xnodce
+1878	push 10	# xnodce
+1879	multiply	# xnodce
+1880	push 10	# xnodce
+1881	multiply	# xnodce
+1882	push 7	# xnodce
+1883	add	# xnodce
+1884	push 10	# xnodce
+1885	multiply	# xnodce
+1886	push 1	# xnodce
+1887	add	# xnodce
+1888	push 10	# xnodce
+1889	multiply	# xnodce
+1890	push 8	# xnodce
+1891	add	# xnodce
+1892	mod	# xnodce
+1893	push 6	# xnodce
+1894	push 10	# xnodce
+1895	multiply	# xnodce
+1896	push 2	# xnodce
+1897	add	# xnodce
+1898	push 10	# xnodce
+1899	multiply	# xnodce
+1900	push 8	# xnodce
+1901	add	# xnodce
+1902	push 10	# xnodce
+1903	multiply	# xnodce
+1904	push 3	# xnodce
+1905	add	# xnodce
+1906	push 10	# xnodce
+1907	multiply	# xnodce
+1908	push 1	# xnodce
+1909	add	# xnodce
+1910	push 10	# xnodce
+1911	multiply	# xnodce
+1912	push 8	# xnodce
+1913	add	# xnodce
+1914	push 10	# xnodce
+1915	multiply	# xnodce
+1916	push 5	# xnodce
+1917	add	# xnodce
+1918	push 10	# xnodce
+1919	multiply	# xnodce
+1920	push 3	# xnodce
+1921	add	# xnodce
+1922	push 10	# xnodce
+1923	multiply	# xnodce
+1924	push 10	# xnodce
+1925	multiply	# xnodce
+1926	push 7	# xnodce
+1927	add	# xnodce
+1928	push 10	# xnodce
+1929	multiply	# xnodce
+1930	push 1	# xnodce
+1931	add	# xnodce
+1932	push 10	# xnodce
+1933	multiply	# xnodce
+1934	push 8	# xnodce
+1935	add	# xnodce
+1936	add	# xnodce
+1937	push 6	# xnodce
+1938	push 10	# xnodce
+1939	multiply	# xnodce
+1940	push 2	# xnodce
+1941	add	# xnodce
+1942	push 10	# xnodce
+1943	multiply	# xnodce
+1944	push 8	# xnodce
+1945	add	# xnodce
+1946	push 10	# xnodce
+1947	multiply	# xnodce
+1948	push 3	# xnodce
+1949	add	# xnodce
+1950	push 10	# xnodce
+1951	multiply	# xnodce
+1952	push 1	# xnodce
+1953	add	# xnodce
+1954	push 10	# xnodce
+1955	multiply	# xnodce
+1956	push 8	# xnodce
+1957	add	# xnodce
+1958	push 10	# xnodce
+1959	multiply	# xnodce
+1960	push 5	# xnodce
+1961	add	# xnodce
+1962	push 10	# xnodce
+1963	multiply	# xnodce
+1964	push 3	# xnodce
+1965	add	# xnodce
+1966	push 10	# xnodce
+1967	multiply	# xnodce
+1968	push 10	# xnodce
+1969	multiply	# xnodce
+1970	push 7	# xnodce
+1971	add	# xnodce
+1972	push 10	# xnodce
+1973	multiply	# xnodce
+1974	push 1	# xnodce
+1975	add	# xnodce
+1976	push 10	# xnodce
+1977	multiply	# xnodce
+1978	push 8	# xnodce
+1979	add	# xnodce
+1980	mod	# xnodce
+1981	push 1	# xnodce
+1982	push 10	# xnodce
+1983	multiply	# xnodce
+1984	push 10	# xnodce
+1985	multiply	# xnodce
+1986	push 10	# xnodce
+1987	multiply	# xnodce
+1988	divide	# xnodce
+1989	push 5	# clock_phase
+1990	push 10	# clock_phase
+1991	multiply	# clock_phase
+1992	push 8	# clock_phase
+1993	add	# clock_phase
+1994	push 10	# clock_phase
+1995	multiply	# clock_phase
+1996	push 3	# clock_phase
+1997	add	# clock_phase
+1998	push 10	# clock_phase
+1999	multiply	# clock_phase
+2000	push 5	# clock_phase
+2001	add	# clock_phase
+2002	push 10	# clock_phase
+2003	multiply	# clock_phase
+2004	push 1	# clock_phase
+2005	add	# clock_phase
+2006	push 10	# clock_phase
+2007	multiply	# clock_phase
+2008	push 5	# clock_phase
+2009	add	# clock_phase
+2010	push 10	# clock_phase
+2011	multiply	# clock_phase
+2012	push 1	# clock_phase
+2013	add	# clock_phase
+2014	push 10	# clock_phase
+2015	multiply	# clock_phase
+2016	push 4	# clock_phase
+2017	add	# clock_phase
+2018	push 10	# clock_phase
+2019	multiply	# clock_phase
+2020	push 10	# clock_phase
+2021	multiply	# clock_phase
+2022	push 10	# clock_phase
+2023	multiply	# clock_phase
+2024	push 10	# clock_phase
+2025	multiply	# clock_phase
+2026	push 1	# clock_phase
+2027	push 10	# clock_phase
+2028	multiply	# clock_phase
+2029	push 9	# clock_phase
+2030	add	# clock_phase
+2031	push 10	# clock_phase
+2032	multiply	# clock_phase
+2033	push 4	# clock_phase
+2034	add	# clock_phase
+2035	push 10	# clock_phase
+2036	multiply	# clock_phase
+2037	push 4	# clock_phase
+2038	add	# clock_phase
+2039	push 10	# clock_phase
+2040	multiply	# clock_phase
+2041	push 3	# clock_phase
+2042	add	# clock_phase
+2043	push 10	# clock_phase
+2044	multiply	# clock_phase
+2045	push 6	# clock_phase
+2046	add	# clock_phase
+2047	push 10	# clock_phase
+2048	multiply	# clock_phase
+2049	push 8	# clock_phase
+2050	add	# clock_phase
+2051	push 10	# clock_phase
+2052	multiply	# clock_phase
+2053	push 10	# clock_phase
+2054	multiply	# clock_phase
+2055	push 2	# clock_phase
+2056	push 10	# clock_phase
+2057	multiply	# clock_phase
+2058	push 1	# clock_phase
+2059	not	# clock_phase
+2060	push 1	# clock_phase
+2061	subtract	# clock_phase
+2062	roll	# clock_phase
+2063	duplicate	# clock_phase
+2064	push 2	# clock_phase
+2065	push 10	# clock_phase
+2066	multiply	# clock_phase
+2067	push 1	# clock_phase
+2068	add	# clock_phase
+2069	push 1	# clock_phase
+2070	roll	# clock_phase
+2071	push 3	# clock_phase
+2072	push 10	# clock_phase
+2073	multiply	# clock_phase
+2074	push 6	# clock_phase
+2075	add	# clock_phase
+2076	push 10	# clock_phase
+2077	multiply	# clock_phase
+2078	push 5	# clock_phase
+2079	add	# clock_phase
+2080	push 10	# clock_phase
+2081	multiply	# clock_phase
+2082	push 2	# clock_phase
+2083	add	# clock_phase
+2084	push 10	# clock_phase
+2085	multiply	# clock_phase
+2086	push 5	# clock_phase
+2087	add	# clock_phase
+2088	add	# clock_phase
+2089	multiply	# clock_phase
+2090	add	# clock_phase
+2091	push 1	# clock_phase
+2092	push 10	# clock_phase
+2093	multiply	# clock_phase
+2094	push 9	# clock_phase
+2095	add	# clock_phase
+2096	push 10	# clock_phase
+2097	multiply	# clock_phase
+2098	push 4	# clock_phase
+2099	add	# clock_phase
+2100	push 10	# clock_phase
+2101	multiply	# clock_phase
+2102	push 4	# clock_phase
+2103	add	# clock_phase
+2104	push 10	# clock_phase
+2105	multiply	# clock_phase
+2106	push 3	# clock_phase
+2107	add	# clock_phase
+2108	push 10	# clock_phase
+2109	multiply	# clock_phase
+2110	push 6	# clock_phase
+2111	add	# clock_phase
+2112	push 10	# clock_phase
+2113	multiply	# clock_phase
+2114	push 8	# clock_phase
+2115	add	# clock_phase
+2116	push 10	# clock_phase
+2117	multiply	# clock_phase
+2118	push 10	# clock_phase
+2119	multiply	# clock_phase
+2120	push 1	# clock_phase
+2121	push 10	# clock_phase
+2122	multiply	# clock_phase
+2123	push 7	# clock_phase
+2124	add	# clock_phase
+2125	push 1	# clock_phase
+2126	not	# clock_phase
+2127	push 1	# clock_phase
+2128	subtract	# clock_phase
+2129	roll	# clock_phase
+2130	duplicate	# clock_phase
+2131	push 1	# clock_phase
+2132	push 10	# clock_phase
+2133	multiply	# clock_phase
+2134	push 8	# clock_phase
+2135	add	# clock_phase
+2136	push 1	# clock_phase
+2137	roll	# clock_phase
+2138	multiply	# clock_phase
+2139	push 8	# clock_phase
+2140	push 10	# clock_phase
+2141	multiply	# clock_phase
+2142	push 6	# clock_phase
+2143	add	# clock_phase
+2144	push 10	# clock_phase
+2145	multiply	# clock_phase
+2146	push 4	# clock_phase
+2147	add	# clock_phase
+2148	push 10	# clock_phase
+2149	multiply	# clock_phase
+2150	push 10	# clock_phase
+2151	multiply	# clock_phase
+2152	push 10	# clock_phase
+2153	multiply	# clock_phase
+2154	push 10	# clock_phase
+2155	multiply	# clock_phase
+2156	push 10	# clock_phase
+2157	multiply	# clock_phase
+2158	divide	# clock_phase
+2159	add	# clock_phase
+2160	duplicate	# clock_phase
+2161	push 1	# clock_phase
+2162	push 10	# clock_phase
+2163	multiply	# clock_phase
+2164	push 10	# clock_phase
+2165	multiply	# clock_phase
+2166	push 10	# clock_phase
+2167	multiply	# clock_phase
+2168	push 10	# clock_phase
+2169	multiply	# clock_phase
+2170	push 10	# clock_phase
+2171	multiply	# clock_phase
+2172	push 10	# clock_phase
+2173	multiply	# clock_phase
+2174	push 10	# clock_phase
+2175	multiply	# clock_phase
+2176	push 10	# clock_phase
+2177	multiply	# clock_phase
+2178	push 10	# clock_phase
+2179	multiply	# clock_phase
+2180	mod	# clock_phase
+2181	push 2	# clock_phase
+2182	push 1	# clock_phase
+2183	roll	# clock_phase
+2184	push 1	# clock_phase
+2185	push 10	# clock_phase
+2186	multiply	# clock_phase
+2187	push 10	# clock_phase
+2188	multiply	# clock_phase
+2189	push 10	# clock_phase
+2190	multiply	# clock_phase
+2191	push 10	# clock_phase
+2192	multiply	# clock_phase
+2193	push 10	# clock_phase
+2194	multiply	# clock_phase
+2195	push 10	# clock_phase
+2196	multiply	# clock_phase
+2197	push 10	# clock_phase
+2198	multiply	# clock_phase
+2199	push 10	# clock_phase
+2200	multiply	# clock_phase
+2201	push 10	# clock_phase
+2202	multiply	# clock_phase
+2203	divide	# clock_phase
+2204	duplicate	# clock_phase
+2205	push 1	# clock_phase
+2206	push 10	# clock_phase
+2207	multiply	# clock_phase
+2208	push 10	# clock_phase
+2209	multiply	# clock_phase
+2210	push 10	# clock_phase
+2211	multiply	# clock_phase
+2212	push 10	# clock_phase
+2213	multiply	# clock_phase
+2214	push 10	# clock_phase
+2215	multiply	# clock_phase
+2216	push 10	# clock_phase
+2217	multiply	# clock_phase
+2218	push 10	# clock_phase
+2219	multiply	# clock_phase
+2220	push 10	# clock_phase
+2221	multiply	# clock_phase
+2222	push 10	# clock_phase
+2223	multiply	# clock_phase
+2224	mod	# clock_phase
+2225	push 2	# clock_phase
+2226	push 1	# clock_phase
+2227	roll	# clock_phase
+2228	push 1	# clock_phase
+2229	push 10	# clock_phase
+2230	multiply	# clock_phase
+2231	push 10	# clock_phase
+2232	multiply	# clock_phase
+2233	push 10	# clock_phase
+2234	multiply	# clock_phase
+2235	push 10	# clock_phase
+2236	multiply	# clock_phase
+2237	push 10	# clock_phase
+2238	multiply	# clock_phase
+2239	push 10	# clock_phase
+2240	multiply	# clock_phase
+2241	push 10	# clock_phase
+2242	multiply	# clock_phase
+2243	push 10	# clock_phase
+2244	multiply	# clock_phase
+2245	push 10	# clock_phase
+2246	multiply	# clock_phase
+2247	divide	# clock_phase
+2248	push 3	# gam
+2249	push 1	# gam
+2250	not	# gam
+2251	push 1	# gam
+2252	subtract	# gam
+2253	roll	# gam
+2254	duplicate	# gam
+2255	push 4	# gam
+2256	push 1	# gam
+2257	roll	# gam
+2258	push 3	# gam
+2259	push 1	# gam
+2260	not	# gam
+2261	push 1	# gam
+2262	subtract	# gam
+2263	roll	# gam
+2264	duplicate	# gam
+2265	push 4	# gam
+2266	push 1	# gam
+2267	roll	# gam
+2268	push 3	# gam
+2269	push 1	# gam
+2270	not	# gam
+2271	push 1	# gam
+2272	subtract	# gam
+2273	roll	# gam
+2274	duplicate	# gam
+2275	push 4	# gam
+2276	push 1	# gam
+2277	roll	# gam
+2278	push 1	# gam
+2279	push 10	# gam
+2280	multiply	# gam
+2281	push 10	# gam
+2282	multiply	# gam
+2283	push 10	# gam
+2284	multiply	# gam
+2285	push 10	# gam
+2286	multiply	# gam
+2287	push 10	# gam
+2288	multiply	# gam
+2289	push 10	# gam
+2290	multiply	# gam
+2291	push 10	# gam
+2292	multiply	# gam
+2293	push 10	# gam
+2294	multiply	# gam
+2295	push 10	# gam
+2296	multiply	# gam
+2297	multiply	# gam
+2298	add	# gam
+2299	push 1	# gam
+2300	push 10	# gam
+2301	multiply	# gam
+2302	push 10	# gam
+2303	multiply	# gam
+2304	push 10	# gam
+2305	multiply	# gam
+2306	push 10	# gam
+2307	multiply	# gam
+2308	push 10	# gam
+2309	multiply	# gam
+2310	push 10	# gam
+2311	multiply	# gam
+2312	push 10	# gam
+2313	multiply	# gam
+2314	push 10	# gam
+2315	multiply	# gam
+2316	push 10	# gam
+2317	multiply	# gam
+2318	multiply	# gam
+2319	add	# gam
+2320	push 6	# gam
+2321	push 10	# gam
+2322	multiply	# gam
+2323	push 2	# gam
+2324	add	# gam
+2325	push 10	# gam
+2326	multiply	# gam
+2327	push 8	# gam
+2328	add	# gam
+2329	push 10	# gam
+2330	multiply	# gam
+2331	push 3	# gam
+2332	add	# gam
+2333	push 10	# gam
+2334	multiply	# gam
+2335	push 1	# gam
+2336	add	# gam
+2337	push 10	# gam
+2338	multiply	# gam
+2339	push 8	# gam
+2340	add	# gam
+2341	push 10	# gam
+2342	multiply	# gam
+2343	push 5	# gam
+2344	add	# gam
+2345	push 10	# gam
+2346	multiply	# gam
+2347	push 3	# gam
+2348	add	# gam
+2349	push 10	# gam
+2350	multiply	# gam
+2351	push 10	# gam
+2352	multiply	# gam
+2353	push 7	# gam
+2354	add	# gam
+2355	push 10	# gam
+2356	multiply	# gam
+2357	push 1	# gam
+2358	add	# gam
+2359	push 10	# gam
+2360	multiply	# gam
+2361	push 8	# gam
+2362	add	# gam
+2363	mod	# gam
+2364	push 6	# gam
+2365	push 10	# gam
+2366	multiply	# gam
+2367	push 2	# gam
+2368	add	# gam
+2369	push 10	# gam
+2370	multiply	# gam
+2371	push 8	# gam
+2372	add	# gam
+2373	push 10	# gam
+2374	multiply	# gam
+2375	push 3	# gam
+2376	add	# gam
+2377	push 10	# gam
+2378	multiply	# gam
+2379	push 1	# gam
+2380	add	# gam
+2381	push 10	# gam
+2382	multiply	# gam
+2383	push 8	# gam
+2384	add	# gam
+2385	push 10	# gam
+2386	multiply	# gam
+2387	push 5	# gam
+2388	add	# gam
+2389	push 10	# gam
+2390	multiply	# gam
+2391	push 3	# gam
+2392	add	# gam
+2393	push 10	# gam
+2394	multiply	# gam
+2395	push 10	# gam
+2396	multiply	# gam
+2397	push 7	# gam
+2398	add	# gam
+2399	push 10	# gam
+2400	multiply	# gam
+2401	push 1	# gam
+2402	add	# gam
+2403	push 10	# gam
+2404	multiply	# gam
+2405	push 8	# gam
+2406	add	# gam
+2407	add	# gam
+2408	push 6	# gam
+2409	push 10	# gam
+2410	multiply	# gam
+2411	push 2	# gam
+2412	add	# gam
+2413	push 10	# gam
+2414	multiply	# gam
+2415	push 8	# gam
+2416	add	# gam
+2417	push 10	# gam
+2418	multiply	# gam
+2419	push 3	# gam
+2420	add	# gam
+2421	push 10	# gam
+2422	multiply	# gam
+2423	push 1	# gam
+2424	add	# gam
+2425	push 10	# gam
+2426	multiply	# gam
+2427	push 8	# gam
+2428	add	# gam
+2429	push 10	# gam
+2430	multiply	# gam
+2431	push 5	# gam
+2432	add	# gam
+2433	push 10	# gam
+2434	multiply	# gam
+2435	push 3	# gam
+2436	add	# gam
+2437	push 10	# gam
+2438	multiply	# gam
+2439	push 10	# gam
+2440	multiply	# gam
+2441	push 7	# gam
+2442	add	# gam
+2443	push 10	# gam
+2444	multiply	# gam
+2445	push 1	# gam
+2446	add	# gam
+2447	push 10	# gam
+2448	multiply	# gam
+2449	push 8	# gam
+2450	add	# gam
+2451	mod	# gam
+2452	push 1	# gam
+2453	push 10	# gam
+2454	multiply	# gam
+2455	push 10	# gam
+2456	multiply	# gam
+2457	push 10	# gam
+2458	multiply	# gam
+2459	divide	# gam
+2460	push 6	# clock_phase
+2461	push 10	# clock_phase
+2462	multiply	# clock_phase
+2463	push 2	# clock_phase
+2464	add	# clock_phase
+2465	push 10	# clock_phase
+2466	multiply	# clock_phase
+2467	push 5	# clock_phase
+2468	add	# clock_phase
+2469	push 10	# clock_phase
+2470	multiply	# clock_phase
+2471	push 6	# clock_phase
+2472	add	# clock_phase
+2473	push 10	# clock_phase
+2474	multiply	# clock_phase
+2475	push 5	# clock_phase
+2476	add	# clock_phase
+2477	push 10	# clock_phase
+2478	multiply	# clock_phase
+2479	push 8	# clock_phase
+2480	add	# clock_phase
+2481	push 10	# clock_phase
+2482	multiply	# clock_phase
+2483	push 3	# clock_phase
+2484	add	# clock_phase
+2485	push 10	# clock_phase
+2486	multiply	# clock_phase
+2487	push 7	# clock_phase
+2488	add	# clock_phase
+2489	push 10	# clock_phase
+2490	multiply	# clock_phase
+2491	push 10	# clock_phase
+2492	multiply	# clock_phase
+2493	push 10	# clock_phase
+2494	multiply	# clock_phase
+2495	push 10	# clock_phase
+2496	multiply	# clock_phase
+2497	push 1	# clock_phase
+2498	push 10	# clock_phase
+2499	multiply	# clock_phase
+2500	push 7	# clock_phase
+2501	add	# clock_phase
+2502	push 10	# clock_phase
+2503	multiply	# clock_phase
+2504	push 2	# clock_phase
+2505	add	# clock_phase
+2506	push 10	# clock_phase
+2507	multiply	# clock_phase
+2508	push 10	# clock_phase
+2509	multiply	# clock_phase
+2510	push 1	# clock_phase
+2511	add	# clock_phase
+2512	push 10	# clock_phase
+2513	multiply	# clock_phase
+2514	push 9	# clock_phase
+2515	add	# clock_phase
+2516	push 10	# clock_phase
+2517	multiply	# clock_phase
+2518	push 7	# clock_phase
+2519	add	# clock_phase
+2520	push 10	# clock_phase
+2521	multiply	# clock_phase
+2522	push 7	# clock_phase
+2523	add	# clock_phase
+2524	push 10	# clock_phase
+2525	multiply	# clock_phase
+2526	push 10	# clock_phase
+2527	multiply	# clock_phase
+2528	push 2	# clock_phase
+2529	push 10	# clock_phase
+2530	multiply	# clock_phase
+2531	push 4	# clock_phase
+2532	add	# clock_phase
+2533	push 1	# clock_phase
+2534	not	# clock_phase
+2535	push 1	# clock_phase
+2536	subtract	# clock_phase
+2537	roll	# clock_phase
+2538	duplicate	# clock_phase
+2539	push 2	# clock_phase
+2540	push 10	# clock_phase
+2541	multiply	# clock_phase
+2542	push 5	# clock_phase
+2543	add	# clock_phase
+2544	push 1	# clock_phase
+2545	roll	# clock_phase
+2546	push 3	# clock_phase
+2547	push 10	# clock_phase
+2548	multiply	# clock_phase
+2549	push 6	# clock_phase
+2550	add	# clock_phase
+2551	push 10	# clock_phase
+2552	multiply	# clock_phase
+2553	push 5	# clock_phase
+2554	add	# clock_phase
+2555	push 10	# clock_phase
+2556	multiply	# clock_phase
+2557	push 2	# clock_phase
+2558	add	# clock_phase
+2559	push 10	# clock_phase
+2560	multiply	# clock_phase
+2561	push 5	# clock_phase
+2562	add	# clock_phase
+2563	add	# clock_phase
+2564	multiply	# clock_phase
+2565	add	# clock_phase
+2566	push 1	# clock_phase
+2567	push 10	# clock_phase
+2568	multiply	# clock_phase
+2569	push 7	# clock_phase
+2570	add	# clock_phase
+2571	push 10	# clock_phase
+2572	multiply	# clock_phase
+2573	push 2	# clock_phase
+2574	add	# clock_phase
+2575	push 10	# clock_phase
+2576	multiply	# clock_phase
+2577	push 10	# clock_phase
+2578	multiply	# clock_phase
+2579	push 1	# clock_phase
+2580	add	# clock_phase
+2581	push 10	# clock_phase
+2582	multiply	# clock_phase
+2583	push 9	# clock_phase
+2584	add	# clock_phase
+2585	push 10	# clock_phase
+2586	multiply	# clock_phase
+2587	push 7	# clock_phase
+2588	add	# clock_phase
+2589	push 10	# clock_phase
+2590	multiply	# clock_phase
+2591	push 7	# clock_phase
+2592	add	# clock_phase
+2593	push 10	# clock_phase
+2594	multiply	# clock_phase
+2595	push 10	# clock_phase
+2596	multiply	# clock_phase
+2597	push 2	# clock_phase
+2598	push 10	# clock_phase
+2599	multiply	# clock_phase
+2600	push 1	# clock_phase
+2601	add	# clock_phase
+2602	push 1	# clock_phase
+2603	not	# clock_phase
+2604	push 1	# clock_phase
+2605	subtract	# clock_phase
+2606	roll	# clock_phase
+2607	duplicate	# clock_phase
+2608	push 2	# clock_phase
+2609	push 10	# clock_phase
+2610	multiply	# clock_phase
+2611	push 2	# clock_phase
+2612	add	# clock_phase
+2613	push 1	# clock_phase
+2614	roll	# clock_phase
+2615	multiply	# clock_phase
+2616	push 8	# clock_phase
+2617	push 10	# clock_phase
+2618	multiply	# clock_phase
+2619	push 6	# clock_phase
+2620	add	# clock_phase
+2621	push 10	# clock_phase
+2622	multiply	# clock_phase
+2623	push 4	# clock_phase
+2624	add	# clock_phase
+2625	push 10	# clock_phase
+2626	multiply	# clock_phase
+2627	push 10	# clock_phase
+2628	multiply	# clock_phase
+2629	push 10	# clock_phase
+2630	multiply	# clock_phase
+2631	push 10	# clock_phase
+2632	multiply	# clock_phase
+2633	push 10	# clock_phase
+2634	multiply	# clock_phase
+2635	divide	# clock_phase
+2636	add	# clock_phase
+2637	duplicate	# clock_phase
+2638	push 1	# clock_phase
+2639	push 10	# clock_phase
+2640	multiply	# clock_phase
+2641	push 10	# clock_phase
+2642	multiply	# clock_phase
+2643	push 10	# clock_phase
+2644	multiply	# clock_phase
+2645	push 10	# clock_phase
+2646	multiply	# clock_phase
+2647	push 10	# clock_phase
+2648	multiply	# clock_phase
+2649	push 10	# clock_phase
+2650	multiply	# clock_phase
+2651	push 10	# clock_phase
+2652	multiply	# clock_phase
+2653	push 10	# clock_phase
+2654	multiply	# clock_phase
+2655	push 10	# clock_phase
+2656	multiply	# clock_phase
+2657	mod	# clock_phase
+2658	push 2	# clock_phase
+2659	push 1	# clock_phase
+2660	roll	# clock_phase
+2661	push 1	# clock_phase
+2662	push 10	# clock_phase
+2663	multiply	# clock_phase
+2664	push 10	# clock_phase
+2665	multiply	# clock_phase
+2666	push 10	# clock_phase
+2667	multiply	# clock_phase
+2668	push 10	# clock_phase
+2669	multiply	# clock_phase
+2670	push 10	# clock_phase
+2671	multiply	# clock_phase
+2672	push 10	# clock_phase
+2673	multiply	# clock_phase
+2674	push 10	# clock_phase
+2675	multiply	# clock_phase
+2676	push 10	# clock_phase
+2677	multiply	# clock_phase
+2678	push 10	# clock_phase
+2679	multiply	# clock_phase
+2680	divide	# clock_phase
+2681	duplicate	# clock_phase
+2682	push 1	# clock_phase
+2683	push 10	# clock_phase
+2684	multiply	# clock_phase
+2685	push 10	# clock_phase
+2686	multiply	# clock_phase
+2687	push 10	# clock_phase
+2688	multiply	# clock_phase
+2689	push 10	# clock_phase
+2690	multiply	# clock_phase
+2691	push 10	# clock_phase
+2692	multiply	# clock_phase
+2693	push 10	# clock_phase
+2694	multiply	# clock_phase
+2695	push 10	# clock_phase
+2696	multiply	# clock_phase
+2697	push 10	# clock_phase
+2698	multiply	# clock_phase
+2699	push 10	# clock_phase
+2700	multiply	# clock_phase
+2701	mod	# clock_phase
+2702	push 2	# clock_phase
+2703	push 1	# clock_phase
+2704	roll	# clock_phase
+2705	push 1	# clock_phase
+2706	push 10	# clock_phase
+2707	multiply	# clock_phase
+2708	push 10	# clock_phase
+2709	multiply	# clock_phase
+2710	push 10	# clock_phase
+2711	multiply	# clock_phase
+2712	push 10	# clock_phase
+2713	multiply	# clock_phase
+2714	push 10	# clock_phase
+2715	multiply	# clock_phase
+2716	push 10	# clock_phase
+2717	multiply	# clock_phase
+2718	push 10	# clock_phase
+2719	multiply	# clock_phase
+2720	push 10	# clock_phase
+2721	multiply	# clock_phase
+2722	push 10	# clock_phase
+2723	multiply	# clock_phase
+2724	divide	# clock_phase
+2725	push 3	# zmos
+2726	push 1	# zmos
+2727	not	# zmos
+2728	push 1	# zmos
+2729	subtract	# zmos
+2730	roll	# zmos
+2731	duplicate	# zmos
+2732	push 4	# zmos
+2733	push 1	# zmos
+2734	roll	# zmos
+2735	push 3	# zmos
+2736	push 1	# zmos
+2737	not	# zmos
+2738	push 1	# zmos
+2739	subtract	# zmos
+2740	roll	# zmos
+2741	duplicate	# zmos
+2742	push 4	# zmos
+2743	push 1	# zmos
+2744	roll	# zmos
+2745	push 3	# zmos
+2746	push 1	# zmos
+2747	not	# zmos
+2748	push 1	# zmos
+2749	subtract	# zmos
+2750	roll	# zmos
+2751	duplicate	# zmos
+2752	push 4	# zmos
+2753	push 1	# zmos
+2754	roll	# zmos
+2755	push 1	# zmos
+2756	push 10	# zmos
+2757	multiply	# zmos
+2758	push 10	# zmos
+2759	multiply	# zmos
+2760	push 10	# zmos
+2761	multiply	# zmos
+2762	push 10	# zmos
+2763	multiply	# zmos
+2764	push 10	# zmos
+2765	multiply	# zmos
+2766	push 10	# zmos
+2767	multiply	# zmos
+2768	push 10	# zmos
+2769	multiply	# zmos
+2770	push 10	# zmos
+2771	multiply	# zmos
+2772	push 10	# zmos
+2773	multiply	# zmos
+2774	multiply	# zmos
+2775	add	# zmos
+2776	push 1	# zmos
+2777	push 10	# zmos
+2778	multiply	# zmos
+2779	push 10	# zmos
+2780	multiply	# zmos
+2781	push 10	# zmos
+2782	multiply	# zmos
+2783	push 10	# zmos
+2784	multiply	# zmos
+2785	push 10	# zmos
+2786	multiply	# zmos
+2787	push 10	# zmos
+2788	multiply	# zmos
+2789	push 10	# zmos
+2790	multiply	# zmos
+2791	push 10	# zmos
+2792	multiply	# zmos
+2793	push 10	# zmos
+2794	multiply	# zmos
+2795	multiply	# zmos
+2796	add	# zmos
+2797	push 6	# zmos
+2798	push 10	# zmos
+2799	multiply	# zmos
+2800	push 2	# zmos
+2801	add	# zmos
+2802	push 10	# zmos
+2803	multiply	# zmos
+2804	push 8	# zmos
+2805	add	# zmos
+2806	push 10	# zmos
+2807	multiply	# zmos
+2808	push 3	# zmos
+2809	add	# zmos
+2810	push 10	# zmos
+2811	multiply	# zmos
+2812	push 1	# zmos
+2813	add	# zmos
+2814	push 10	# zmos
+2815	multiply	# zmos
+2816	push 8	# zmos
+2817	add	# zmos
+2818	push 10	# zmos
+2819	multiply	# zmos
+2820	push 5	# zmos
+2821	add	# zmos
+2822	push 10	# zmos
+2823	multiply	# zmos
+2824	push 3	# zmos
+2825	add	# zmos
+2826	push 10	# zmos
+2827	multiply	# zmos
+2828	push 10	# zmos
+2829	multiply	# zmos
+2830	push 7	# zmos
+2831	add	# zmos
+2832	push 10	# zmos
+2833	multiply	# zmos
+2834	push 1	# zmos
+2835	add	# zmos
+2836	push 10	# zmos
+2837	multiply	# zmos
+2838	push 8	# zmos
+2839	add	# zmos
+2840	mod	# zmos
+2841	push 6	# zmos
+2842	push 10	# zmos
+2843	multiply	# zmos
+2844	push 2	# zmos
+2845	add	# zmos
+2846	push 10	# zmos
+2847	multiply	# zmos
+2848	push 8	# zmos
+2849	add	# zmos
+2850	push 10	# zmos
+2851	multiply	# zmos
+2852	push 3	# zmos
+2853	add	# zmos
+2854	push 10	# zmos
+2855	multiply	# zmos
+2856	push 1	# zmos
+2857	add	# zmos
+2858	push 10	# zmos
+2859	multiply	# zmos
+2860	push 8	# zmos
+2861	add	# zmos
+2862	push 10	# zmos
+2863	multiply	# zmos
+2864	push 5	# zmos
+2865	add	# zmos
+2866	push 10	# zmos
+2867	multiply	# zmos
+2868	push 3	# zmos
+2869	add	# zmos
+2870	push 10	# zmos
+2871	multiply	# zmos
+2872	push 10	# zmos
+2873	multiply	# zmos
+2874	push 7	# zmos
+2875	add	# zmos
+2876	push 10	# zmos
+2877	multiply	# zmos
+2878	push 1	# zmos
+2879	add	# zmos
+2880	push 10	# zmos
+2881	multiply	# zmos
+2882	push 8	# zmos
+2883	add	# zmos
+2884	add	# zmos
+2885	push 6	# zmos
+2886	push 10	# zmos
+2887	multiply	# zmos
+2888	push 2	# zmos
+2889	add	# zmos
+2890	push 10	# zmos
+2891	multiply	# zmos
+2892	push 8	# zmos
+2893	add	# zmos
+2894	push 10	# zmos
+2895	multiply	# zmos
+2896	push 3	# zmos
+2897	add	# zmos
+2898	push 10	# zmos
+2899	multiply	# zmos
+2900	push 1	# zmos
+2901	add	# zmos
+2902	push 10	# zmos
+2903	multiply	# zmos
+2904	push 8	# zmos
+2905	add	# zmos
+2906	push 10	# zmos
+2907	multiply	# zmos
+2908	push 5	# zmos
+2909	add	# zmos
+2910	push 10	# zmos
+2911	multiply	# zmos
+2912	push 3	# zmos
+2913	add	# zmos
+2914	push 10	# zmos
+2915	multiply	# zmos
+2916	push 10	# zmos
+2917	multiply	# zmos
+2918	push 7	# zmos
+2919	add	# zmos
+2920	push 10	# zmos
+2921	multiply	# zmos
+2922	push 1	# zmos
+2923	add	# zmos
+2924	push 10	# zmos
+2925	multiply	# zmos
+2926	push 8	# zmos
+2927	add	# zmos
+2928	mod	# zmos
+2929	push 1	# zmos
+2930	push 10	# zmos
+2931	multiply	# zmos
+2932	push 10	# zmos
+2933	multiply	# zmos
+2934	push 10	# zmos
+2935	multiply	# zmos
+2936	divide	# zmos
+2937	push 1	# clock_phase
+2938	not	# clock_phase
+2939	push 1	# clock_phase
+2940	push 10	# clock_phase
+2941	multiply	# clock_phase
+2942	push 1	# clock_phase
+2943	add	# clock_phase
+2944	push 10	# clock_phase
+2945	multiply	# clock_phase
+2946	push 1	# clock_phase
+2947	add	# clock_phase
+2948	push 10	# clock_phase
+2949	multiply	# clock_phase
+2950	push 5	# clock_phase
+2951	add	# clock_phase
+2952	push 10	# clock_phase
+2953	multiply	# clock_phase
+2954	push 1	# clock_phase
+2955	add	# clock_phase
+2956	push 10	# clock_phase
+2957	multiply	# clock_phase
+2958	push 8	# clock_phase
+2959	add	# clock_phase
+2960	push 10	# clock_phase
+2961	multiply	# clock_phase
+2962	push 4	# clock_phase
+2963	add	# clock_phase
+2964	push 10	# clock_phase
+2965	multiply	# clock_phase
+2966	push 2	# clock_phase
+2967	add	# clock_phase
+2968	push 10	# clock_phase
+2969	multiply	# clock_phase
+2970	push 10	# clock_phase
+2971	multiply	# clock_phase
+2972	push 10	# clock_phase
+2973	multiply	# clock_phase
+2974	push 10	# clock_phase
+2975	multiply	# clock_phase
+2976	subtract	# clock_phase
+2977	push 2	# clock_phase
+2978	push 10	# clock_phase
+2979	multiply	# clock_phase
+2980	push 2	# clock_phase
+2981	add	# clock_phase
+2982	push 10	# clock_phase
+2983	multiply	# clock_phase
+2984	push 8	# clock_phase
+2985	add	# clock_phase
+2986	push 10	# clock_phase
+2987	multiply	# clock_phase
+2988	push 10	# clock_phase
+2989	multiply	# clock_phase
+2990	push 2	# clock_phase
+2991	add	# clock_phase
+2992	push 10	# clock_phase
+2993	multiply	# clock_phase
+2994	push 7	# clock_phase
+2995	add	# clock_phase
+2996	push 10	# clock_phase
+2997	multiply	# clock_phase
+2998	push 1	# clock_phase
+2999	add	# clock_phase
+3000	push 10	# clock_phase
+3001	multiply	# clock_phase
+3002	push 3	# clock_phase
+3003	add	# clock_phase
+3004	push 10	# clock_phase
+3005	multiply	# clock_phase
+3006	push 2	# clock_phase
+3007	add	# clock_phase
+3008	push 10	# clock_phase
+3009	multiply	# clock_phase
+3010	push 10	# clock_phase
+3011	multiply	# clock_phase
+3012	push 2	# clock_phase
+3013	push 10	# clock_phase
+3014	multiply	# clock_phase
+3015	push 8	# clock_phase
+3016	add	# clock_phase
+3017	push 1	# clock_phase
+3018	not	# clock_phase
+3019	push 1	# clock_phase
+3020	subtract	# clock_phase
+3021	roll	# clock_phase
+3022	duplicate	# clock_phase
+3023	push 2	# clock_phase
+3024	push 10	# clock_phase
+3025	multiply	# clock_phase
+3026	push 9	# clock_phase
+3027	add	# clock_phase
+3028	push 1	# clock_phase
+3029	roll	# clock_phase
+3030	push 3	# clock_phase
+3031	push 10	# clock_phase
+3032	multiply	# clock_phase
+3033	push 6	# clock_phase
+3034	add	# clock_phase
+3035	push 10	# clock_phase
+3036	multiply	# clock_phase
+3037	push 5	# clock_phase
+3038	add	# clock_phase
+3039	push 10	# clock_phase
+3040	multiply	# clock_phase
+3041	push 2	# clock_phase
+3042	add	# clock_phase
+3043	push 10	# clock_phase
+3044	multiply	# clock_phase
+3045	push 5	# clock_phase
+3046	add	# clock_phase
+3047	add	# clock_phase
+3048	multiply	# clock_phase
+3049	add	# clock_phase
+3050	push 2	# clock_phase
+3051	push 10	# clock_phase
+3052	multiply	# clock_phase
+3053	push 2	# clock_phase
+3054	add	# clock_phase
+3055	push 10	# clock_phase
+3056	multiply	# clock_phase
+3057	push 8	# clock_phase
+3058	add	# clock_phase
+3059	push 10	# clock_phase
+3060	multiply	# clock_phase
+3061	push 10	# clock_phase
+3062	multiply	# clock_phase
+3063	push 2	# clock_phase
+3064	add	# clock_phase
+3065	push 10	# clock_phase
+3066	multiply	# clock_phase
+3067	push 7	# clock_phase
+3068	add	# clock_phase
+3069	push 10	# clock_phase
+3070	multiply	# clock_phase
+3071	push 1	# clock_phase
+3072	add	# clock_phase
+3073	push 10	# clock_phase
+3074	multiply	# clock_phase
+3075	push 3	# clock_phase
+3076	add	# clock_phase
+3077	push 10	# clock_phase
+3078	multiply	# clock_phase
+3079	push 2	# clock_phase
+3080	add	# clock_phase
+3081	push 10	# clock_phase
+3082	multiply	# clock_phase
+3083	push 10	# clock_phase
+3084	multiply	# clock_phase
+3085	push 2	# clock_phase
+3086	push 10	# clock_phase
+3087	multiply	# clock_phase
+3088	push 5	# clock_phase
+3089	add	# clock_phase
+3090	push 1	# clock_phase
+3091	not	# clock_phase
+3092	push 1	# clock_phase
+3093	subtract	# clock_phase
+3094	roll	# clock_phase
+3095	duplicate	# clock_phase
+3096	push 2	# clock_phase
+3097	push 10	# clock_phase
+3098	multiply	# clock_phase
+3099	push 6	# clock_phase
+3100	add	# clock_phase
+3101	push 1	# clock_phase
+3102	roll	# clock_phase
+3103	multiply	# clock_phase
+3104	push 8	# clock_phase
+3105	push 10	# clock_phase
+3106	multiply	# clock_phase
+3107	push 6	# clock_phase
+3108	add	# clock_phase
+3109	push 10	# clock_phase
+3110	multiply	# clock_phase
+3111	push 4	# clock_phase
+3112	add	# clock_phase
+3113	push 10	# clock_phase
+3114	multiply	# clock_phase
+3115	push 10	# clock_phase
+3116	multiply	# clock_phase
+3117	push 10	# clock_phase
+3118	multiply	# clock_phase
+3119	push 10	# clock_phase
+3120	multiply	# clock_phase
+3121	push 10	# clock_phase
+3122	multiply	# clock_phase
+3123	divide	# clock_phase
+3124	add	# clock_phase
+3125	duplicate	# clock_phase
+3126	push 1	# clock_phase
+3127	push 10	# clock_phase
+3128	multiply	# clock_phase
+3129	push 10	# clock_phase
+3130	multiply	# clock_phase
+3131	push 10	# clock_phase
+3132	multiply	# clock_phase
+3133	push 10	# clock_phase
+3134	multiply	# clock_phase
+3135	push 10	# clock_phase
+3136	multiply	# clock_phase
+3137	push 10	# clock_phase
+3138	multiply	# clock_phase
+3139	push 10	# clock_phase
+3140	multiply	# clock_phase
+3141	push 10	# clock_phase
+3142	multiply	# clock_phase
+3143	push 10	# clock_phase
+3144	multiply	# clock_phase
+3145	mod	# clock_phase
+3146	push 2	# clock_phase
+3147	push 1	# clock_phase
+3148	roll	# clock_phase
+3149	push 1	# clock_phase
+3150	push 10	# clock_phase
+3151	multiply	# clock_phase
+3152	push 10	# clock_phase
+3153	multiply	# clock_phase
+3154	push 10	# clock_phase
+3155	multiply	# clock_phase
+3156	push 10	# clock_phase
+3157	multiply	# clock_phase
+3158	push 10	# clock_phase
+3159	multiply	# clock_phase
+3160	push 10	# clock_phase
+3161	multiply	# clock_phase
+3162	push 10	# clock_phase
+3163	multiply	# clock_phase
+3164	push 10	# clock_phase
+3165	multiply	# clock_phase
+3166	push 10	# clock_phase
+3167	multiply	# clock_phase
+3168	divide	# clock_phase
+3169	duplicate	# clock_phase
+3170	push 1	# clock_phase
+3171	push 10	# clock_phase
+3172	multiply	# clock_phase
+3173	push 10	# clock_phase
+3174	multiply	# clock_phase
+3175	push 10	# clock_phase
+3176	multiply	# clock_phase
+3177	push 10	# clock_phase
+3178	multiply	# clock_phase
+3179	push 10	# clock_phase
+3180	multiply	# clock_phase
+3181	push 10	# clock_phase
+3182	multiply	# clock_phase
+3183	push 10	# clock_phase
+3184	multiply	# clock_phase
+3185	push 10	# clock_phase
+3186	multiply	# clock_phase
+3187	push 10	# clock_phase
+3188	multiply	# clock_phase
+3189	mod	# clock_phase
+3190	push 2	# clock_phase
+3191	push 1	# clock_phase
+3192	roll	# clock_phase
+3193	push 1	# clock_phase
+3194	push 10	# clock_phase
+3195	multiply	# clock_phase
+3196	push 10	# clock_phase
+3197	multiply	# clock_phase
+3198	push 10	# clock_phase
+3199	multiply	# clock_phase
+3200	push 10	# clock_phase
+3201	multiply	# clock_phase
+3202	push 10	# clock_phase
+3203	multiply	# clock_phase
+3204	push 10	# clock_phase
+3205	multiply	# clock_phase
+3206	push 10	# clock_phase
+3207	multiply	# clock_phase
+3208	push 10	# clock_phase
+3209	multiply	# clock_phase
+3210	push 10	# clock_phase
+3211	multiply	# clock_phase
+3212	divide	# clock_phase
+3213	push 3	# zmol
+3214	push 1	# zmol
+3215	not	# zmol
+3216	push 1	# zmol
+3217	subtract	# zmol
+3218	roll	# zmol
+3219	duplicate	# zmol
+3220	push 4	# zmol
+3221	push 1	# zmol
+3222	roll	# zmol
+3223	push 3	# zmol
+3224	push 1	# zmol
+3225	not	# zmol
+3226	push 1	# zmol
+3227	subtract	# zmol
+3228	roll	# zmol
+3229	duplicate	# zmol
+3230	push 4	# zmol
+3231	push 1	# zmol
+3232	roll	# zmol
+3233	push 3	# zmol
+3234	push 1	# zmol
+3235	not	# zmol
+3236	push 1	# zmol
+3237	subtract	# zmol
+3238	roll	# zmol
+3239	duplicate	# zmol
+3240	push 4	# zmol
+3241	push 1	# zmol
+3242	roll	# zmol
+3243	push 1	# zmol
+3244	push 10	# zmol
+3245	multiply	# zmol
+3246	push 10	# zmol
+3247	multiply	# zmol
+3248	push 10	# zmol
+3249	multiply	# zmol
+3250	push 10	# zmol
+3251	multiply	# zmol
+3252	push 10	# zmol
+3253	multiply	# zmol
+3254	push 10	# zmol
+3255	multiply	# zmol
+3256	push 10	# zmol
+3257	multiply	# zmol
+3258	push 10	# zmol
+3259	multiply	# zmol
+3260	push 10	# zmol
+3261	multiply	# zmol
+3262	multiply	# zmol
+3263	add	# zmol
+3264	push 1	# zmol
+3265	push 10	# zmol
+3266	multiply	# zmol
+3267	push 10	# zmol
+3268	multiply	# zmol
+3269	push 10	# zmol
+3270	multiply	# zmol
+3271	push 10	# zmol
+3272	multiply	# zmol
+3273	push 10	# zmol
+3274	multiply	# zmol
+3275	push 10	# zmol
+3276	multiply	# zmol
+3277	push 10	# zmol
+3278	multiply	# zmol
+3279	push 10	# zmol
+3280	multiply	# zmol
+3281	push 10	# zmol
+3282	multiply	# zmol
+3283	multiply	# zmol
+3284	add	# zmol
+3285	push 6	# zmol
+3286	push 10	# zmol
+3287	multiply	# zmol
+3288	push 2	# zmol
+3289	add	# zmol
+3290	push 10	# zmol
+3291	multiply	# zmol
+3292	push 8	# zmol
+3293	add	# zmol
+3294	push 10	# zmol
+3295	multiply	# zmol
+3296	push 3	# zmol
+3297	add	# zmol
+3298	push 10	# zmol
+3299	multiply	# zmol
+3300	push 1	# zmol
+3301	add	# zmol
+3302	push 10	# zmol
+3303	multiply	# zmol
+3304	push 8	# zmol
+3305	add	# zmol
+3306	push 10	# zmol
+3307	multiply	# zmol
+3308	push 5	# zmol
+3309	add	# zmol
+3310	push 10	# zmol
+3311	multiply	# zmol
+3312	push 3	# zmol
+3313	add	# zmol
+3314	push 10	# zmol
+3315	multiply	# zmol
+3316	push 10	# zmol
+3317	multiply	# zmol
+3318	push 7	# zmol
+3319	add	# zmol
+3320	push 10	# zmol
+3321	multiply	# zmol
+3322	push 1	# zmol
+3323	add	# zmol
+3324	push 10	# zmol
+3325	multiply	# zmol
+3326	push 8	# zmol
+3327	add	# zmol
+3328	mod	# zmol
+3329	push 6	# zmol
+3330	push 10	# zmol
+3331	multiply	# zmol
+3332	push 2	# zmol
+3333	add	# zmol
+3334	push 10	# zmol
+3335	multiply	# zmol
+3336	push 8	# zmol
+3337	add	# zmol
+3338	push 10	# zmol
+3339	multiply	# zmol
+3340	push 3	# zmol
+3341	add	# zmol
+3342	push 10	# zmol
+3343	multiply	# zmol
+3344	push 1	# zmol
+3345	add	# zmol
+3346	push 10	# zmol
+3347	multiply	# zmol
+3348	push 8	# zmol
+3349	add	# zmol
+3350	push 10	# zmol
+3351	multiply	# zmol
+3352	push 5	# zmol
+3353	add	# zmol
+3354	push 10	# zmol
+3355	multiply	# zmol
+3356	push 3	# zmol
+3357	add	# zmol
+3358	push 10	# zmol
+3359	multiply	# zmol
+3360	push 10	# zmol
+3361	multiply	# zmol
+3362	push 7	# zmol
+3363	add	# zmol
+3364	push 10	# zmol
+3365	multiply	# zmol
+3366	push 1	# zmol
+3367	add	# zmol
+3368	push 10	# zmol
+3369	multiply	# zmol
+3370	push 8	# zmol
+3371	add	# zmol
+3372	add	# zmol
+3373	push 6	# zmol
+3374	push 10	# zmol
+3375	multiply	# zmol
+3376	push 2	# zmol
+3377	add	# zmol
+3378	push 10	# zmol
+3379	multiply	# zmol
+3380	push 8	# zmol
+3381	add	# zmol
+3382	push 10	# zmol
+3383	multiply	# zmol
+3384	push 3	# zmol
+3385	add	# zmol
+3386	push 10	# zmol
+3387	multiply	# zmol
+3388	push 1	# zmol
+3389	add	# zmol
+3390	push 10	# zmol
+3391	multiply	# zmol
+3392	push 8	# zmol
+3393	add	# zmol
+3394	push 10	# zmol
+3395	multiply	# zmol
+3396	push 5	# zmol
+3397	add	# zmol
+3398	push 10	# zmol
+3399	multiply	# zmol
+3400	push 3	# zmol
+3401	add	# zmol
+3402	push 10	# zmol
+3403	multiply	# zmol
+3404	push 10	# zmol
+3405	multiply	# zmol
+3406	push 7	# zmol
+3407	add	# zmol
+3408	push 10	# zmol
+3409	multiply	# zmol
+3410	push 1	# zmol
+3411	add	# zmol
+3412	push 10	# zmol
+3413	multiply	# zmol
+3414	push 8	# zmol
+3415	add	# zmol
+3416	mod	# zmol
+3417	push 1	# zmol
+3418	push 10	# zmol
+3419	multiply	# zmol
+3420	push 10	# zmol
+3421	multiply	# zmol
+3422	push 10	# zmol
+3423	multiply	# zmol
+3424	divide	# zmol
+3425	push 3	# zmol
+3426	push 10	# zmol
+3427	multiply	# zmol
+3428	push 1	# zmol
+3429	add	# zmol
+3430	push 1	# zmol
+3431	not	# zmol
+3432	push 1	# zmol
+3433	subtract	# zmol
+3434	roll	# zmol
+3435	duplicate	# zmol
+3436	push 3	# zmol
+3437	push 10	# zmol
+3438	multiply	# zmol
+3439	push 2	# zmol
+3440	add	# zmol
+3441	push 1	# zmol
+3442	roll	# zmol
+3443	not	# zmol
+3444	out_number	# zmol
+3445	push 3	# zmol
+3446	push 10	# zmol
+3447	multiply	# zmol
+3448	push 2	# zmol
+3449	add	# zmol
+3450	out_char	# zmol
+3451	push 3	# zmol
+3452	push 10	# zmol
+3453	multiply	# zmol
+3454	push 1	# zmol
+3455	add	# zmol
+3456	push 1	# zmol
+3457	not	# zmol
+3458	push 1	# zmol
+3459	subtract	# zmol
+3460	roll	# zmol
+3461	duplicate	# zmol
+3462	push 3	# zmol
+3463	push 10	# zmol
+3464	multiply	# zmol
+3465	push 2	# zmol
+3466	add	# zmol
+3467	push 1	# zmol
+3468	roll	# zmol
+3469	push 1	# zmol
+3470	push 10	# zmol
+3471	multiply	# zmol
+3472	push 8	# zmol
+3473	add	# zmol
+3474	push 1	# zmol
+3475	not	# zmol
+3476	push 1	# zmol
+3477	subtract	# zmol
+3478	roll	# zmol
+3479	duplicate	# zmol
+3480	push 1	# zmol
+3481	push 10	# zmol
+3482	multiply	# zmol
+3483	push 9	# zmol
+3484	add	# zmol
+3485	push 1	# zmol
+3486	roll	# zmol
+3487	multiply	# zmol
+3488	out_number	# zmol
+3489	push 3	# zmol
+3490	push 10	# zmol
+3491	multiply	# zmol
+3492	push 2	# zmol
+3493	add	# zmol
+3494	out_char	# zmol
+3495	push 3	# zmol
+3496	push 10	# zmol
+3497	multiply	# zmol
+3498	push 1	# zmol
+3499	add	# zmol
+3500	push 1	# zmol
+3501	not	# zmol
+3502	push 1	# zmol
+3503	subtract	# zmol
+3504	roll	# zmol
+3505	duplicate	# zmol
+3506	push 3	# zmol
+3507	push 10	# zmol
+3508	multiply	# zmol
+3509	push 2	# zmol
+3510	add	# zmol
+3511	push 1	# zmol
+3512	roll	# zmol
+3513	push 1	# zmol
+3514	push 10	# zmol
+3515	multiply	# zmol
+3516	push 4	# zmol
+3517	add	# zmol
+3518	push 1	# zmol
+3519	not	# zmol
+3520	push 1	# zmol
+3521	subtract	# zmol
+3522	roll	# zmol
+3523	duplicate	# zmol
+3524	push 1	# zmol
+3525	push 10	# zmol
+3526	multiply	# zmol
+3527	push 5	# zmol
+3528	add	# zmol
+3529	push 1	# zmol
+3530	roll	# zmol
+3531	multiply	# zmol
+3532	out_number	# zmol
+3533	push 3	# zmol
+3534	push 10	# zmol
+3535	multiply	# zmol
+3536	push 2	# zmol
+3537	add	# zmol
+3538	out_char	# zmol
+3539	push 3	# zmol
+3540	push 10	# zmol
+3541	multiply	# zmol
+3542	push 1	# zmol
+3543	add	# zmol
+3544	push 1	# zmol
+3545	not	# zmol
+3546	push 1	# zmol
+3547	subtract	# zmol
+3548	roll	# zmol
+3549	duplicate	# zmol
+3550	push 3	# zmol
+3551	push 10	# zmol
+3552	multiply	# zmol
+3553	push 2	# zmol
+3554	add	# zmol
+3555	push 1	# zmol
+3556	roll	# zmol
+3557	push 10	# zmol
+3558	push 1	# zmol
+3559	not	# zmol
+3560	push 1	# zmol
+3561	subtract	# zmol
+3562	roll	# zmol
+3563	duplicate	# zmol
+3564	push 1	# zmol
+3565	push 10	# zmol
+3566	multiply	# zmol
+3567	push 1	# zmol
+3568	add	# zmol
+3569	push 1	# zmol
+3570	roll	# zmol
+3571	multiply	# zmol
+3572	out_number	# zmol
+3573	push 3	# zmol
+3574	push 10	# zmol
+3575	multiply	# zmol
+3576	push 2	# zmol
+3577	add	# zmol
+3578	out_char	# zmol
+3579	push 3	# zmol
+3580	push 10	# zmol
+3581	multiply	# zmol
+3582	push 1	# zmol
+3583	add	# zmol
+3584	push 1	# zmol
+3585	not	# zmol
+3586	push 1	# zmol
+3587	subtract	# zmol
+3588	roll	# zmol
+3589	duplicate	# zmol
+3590	push 3	# zmol
+3591	push 10	# zmol
+3592	multiply	# zmol
+3593	push 2	# zmol
+3594	add	# zmol
+3595	push 1	# zmol
+3596	roll	# zmol
+3597	push 6	# zmol
+3598	push 1	# zmol
+3599	not	# zmol
+3600	push 1	# zmol
+3601	subtract	# zmol
+3602	roll	# zmol
+3603	duplicate	# zmol
+3604	push 7	# zmol
+3605	push 1	# zmol
+3606	roll	# zmol
+3607	multiply	# zmol
+3608	out_number	# zmol
+3609	push 3	# zmol
+3610	push 10	# zmol
+3611	multiply	# zmol
+3612	push 2	# zmol
+3613	add	# zmol
+3614	out_char	# zmol
+3615	push 3	# zmol
+3616	push 10	# zmol
+3617	multiply	# zmol
+3618	push 1	# zmol
+3619	add	# zmol
+3620	push 1	# zmol
+3621	not	# zmol
+3622	push 1	# zmol
+3623	subtract	# zmol
+3624	roll	# zmol
+3625	duplicate	# zmol
+3626	push 3	# zmol
+3627	push 10	# zmol
+3628	multiply	# zmol
+3629	push 2	# zmol
+3630	add	# zmol
+3631	push 1	# zmol
+3632	roll	# zmol
+3633	push 2	# zmol
+3634	push 1	# zmol
+3635	not	# zmol
+3636	push 1	# zmol
+3637	subtract	# zmol
+3638	roll	# zmol
+3639	duplicate	# zmol
+3640	push 3	# zmol
+3641	push 1	# zmol
+3642	roll	# zmol
+3643	multiply	# zmol
+3644	out_number	# zmol
+3645	push 10	# zmol
+3646	out_char	# zmol

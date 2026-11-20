@@ -1,5 +1,16 @@
 # SkyForge Piet
 
+**Development status (2026-11-20):** `v0.3.0` is the verified bounded near-Earth
+SGP4 milestone on `codex/sgp4-near-earth`; `main` still contains the `v0.2.0`
+baseline. [PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1) is open.
+The branch also includes a verified [deep-space epoch kernel](sgp4/DEEP-TIME.md).
+Its standalone 256-case suite passes and is now included in `npm test` and CI.
+The new [lunar-orientation kernel](sgp4/LUNAR.md) adds 361 passing cases.
+Independent reviews are complete; all thirteen suites and eleven executable
+image reproducibility checks pass.
+Full deep-space propagation remains unfinished.
+See the [work ledger](docs/WORK-LEDGER.md) for evidence and remaining work.
+
 **Satellite tracking computed by executable images.** The PNG files are Piet
 programs: an unmodified interpreter reads their colors, traverses their blocks,
 and performs the mathematics on its stack.
@@ -14,8 +25,19 @@ The larger [tracking engine PNG](tracking/tracking.png) computes:
 **Orbital elements + elapsed time + station → ECI position/velocity → azimuth,
 elevation, range, range rate, Doppler, and visibility.**
 
-This is an elliptic **two-body** model with rotating spherical Earth. **SGP4 is
-not implemented yet.** See the [roadmap](docs/ROADMAP.md).
+This is an elliptic **two-body** model with rotating spherical Earth.
+The stable baseline is [v0.2.0](https://github.com/Hermestheog/skyforge-piet/releases/tag/v0.2.0).
+
+**Bounded near-Earth SGP4 is implemented:** [full.png](sgp4/full.png) computes
+TEME position and velocity with signed B*, variable atmosphere, normal/simplified
+drag, higher-order time terms, and secular/periodic corrections, up to one day
+forward or backward. All 636 cases pass in unmodified npiet, including 104 direct
+published states with original B*. Runtime orbital mathematics stays in the PNG.
+See [instructions, numerical limits and results](sgp4/FULL.md).
+
+The earlier [epoch](sgp4/README.md) and [B*=0](sgp4/PROPAGATION.md) programs remain
+unchanged. Deep-space dynamics, TLE parsing and SGP4 station tracking remain
+separate work in the [roadmap](docs/ROADMAP.md).
 
 ## Run the PNGs
 
@@ -117,7 +139,10 @@ With Node 22+ and npiet on PATH, use `npm test` and `npm run build` directly.
 
 Evidence is checked in: [circular tests](TEST-RESULTS.md), [574 before/after
 comparisons](equivalence-results.json), [artwork coverage](layout-verification.json),
-and [tracking results](tracking/test-results.json). Tests retain strict timeouts
+and [tracking results](tracking/test-results.json), plus the
+[SGP4 epoch comparisons](sgp4/test-results.json) and
+[zero-drag propagation comparisons](sgp4/secular-test-results.json), and
+[636 integrated signed-B* cases](sgp4/full-test-results.json). Tests retain strict timeouts
 and execute actual PNG files in unmodified npiet.
 
 ## Development history
@@ -134,3 +159,6 @@ Project code and PNG programs: [MIT](LICENSE). The separately vendored
 [npiet interpreter](https://www.bertnase.de/npiet/) retains its original
 [GPL-2.0 license](vendor/COPYING). See [circular-program documentation](CIRCULAR.md)
 for interpreter provenance and the original challenge.
+The independent SGP4 test oracle and verification fixtures retain their
+upstream [Unlicense](vendor/sgp4-reference/LICENSE), with pinned
+[provenance](vendor/sgp4-reference/provenance.json).

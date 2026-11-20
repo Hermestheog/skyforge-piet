@@ -1,11 +1,11 @@
 {
   "name": "skyforge-piet",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "Executable Piet images for orbital calculation and two-body satellite tracking",
+  "description": "Executable Piet images for orbital calculation, two-body tracking and bounded near-Earth SGP4",
   "type": "module",
   "scripts": {
-    "build": "node assemble.mjs && node tracking/build.mjs",
+    "build": "node assemble.mjs && node tracking/build.mjs && node sgp4/build.mjs && node sgp4/secular-build.mjs && node sgp4/atmosphere-build.mjs && node sgp4/drag-build.mjs && node sgp4/drag-ecc-build.mjs && node sgp4/full-build.mjs && node sgp4/deep-time-build.mjs && node sgp4/lunar-build.mjs",
     "test": "node scripts/test-all.mjs"
   },
   "engines": { "node": ">=22" },

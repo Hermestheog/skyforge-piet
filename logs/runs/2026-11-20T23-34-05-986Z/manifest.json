@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "script": "test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 10530,
+      "log": "test.mjs.log"
+    },
+    {
+      "script": "equivalence.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 11127,
+      "log": "equivalence.mjs.log"
+    },
+    {
+      "script": "verify-layout.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 75,
+      "log": "verify-layout.mjs.log"
+    },
+    {
+      "script": "tracking/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 6628,
+      "log": "tracking-test.mjs.log"
+    },
+    {
+      "script": "sgp4/test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 5131,
+      "log": "sgp4-test.mjs.log"
+    },
+    {
+      "script": "sgp4/secular-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 8627,
+      "log": "sgp4-secular-test.mjs.log"
+    },
+    {
+      "script": "sgp4/atmosphere-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 501,
+      "log": "sgp4-atmosphere-test.mjs.log"
+    },
+    {
+      "script": "sgp4/drag-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 1363,
+      "log": "sgp4-drag-test.mjs.log"
+    },
+    {
+      "script": "sgp4/drag-ecc-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 8317,
+      "log": "sgp4-drag-ecc-test.mjs.log"
+    },
+    {
+      "script": "sgp4/wide-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 101,
+      "log": "sgp4-wide-test.mjs.log"
+    },
+    {
+      "script": "sgp4/full-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 134148,
+      "log": "sgp4-full-test.mjs.log"
+    },
+    {
+      "script": "sgp4/deep-time-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 1560,
+      "log": "sgp4-deep-time-test.mjs.log"
+    },
+    {
+      "script": "sgp4/lunar-test.mjs",
+      "exit_code": 0,
+      "elapsed_ms": 5991,
+      "log": "sgp4-lunar-test.mjs.log"
+    }
+  ]
+}

@@ -647,3 +647,28 @@ This completes the epoch/time foundation plan, not full deep-space propagation.
 Next dependency: dscom lunar/solar orientation and common coefficients, then
 periodic corrections and resonance initialization/integration. All runtime
 orbital math remains in the executable PNG; the prior v0.3.0 tag is retained.
+
+## 2026-11-20 — lunar orientation implementation
+
+Started the dscom orientation block as a separate image, preserving the epoch
+component and all previous PNGs. Independent tests first failed on the missing
+executable; archived in logs/2026-11-20/lunar-missing-image-red.trace.txt.gz.
+During fixture inspection, corrected a provisional oracle origin from 18261.5
+to the explicit difference JD2451544.5 - JD2433281.5 = 18263 before interpreter
+validation. The former is dscom's internal offset, not the input epoch offset.
+
+The image emits 24568 instructions in 1174x644 pixels; SHA-256
+c1d59915e3b6c2b3a46cd2c1029380a8e2a6b85fcdfd869142e084c72a754f86.
+Actual unmodified npiet passes 361 cases (353 valid, 8 invalid).
+Maximum component error 6.165933641444354e-8 stays below the predeclared
+5e-7 limit; unit-circle residual 3.736037501589351e-8 stays below 2e-6.
+No tolerance, production shared module, or interpreter was changed. The oracle
+exposes local variables in an in-memory copy of hash-verified vendor dscom.
+Build/rebuild/test/CI integration is added; review and full acceptance pending.
+
+Independent lunar review: no critical/important arithmetic or oracle defects.
+CORDIC storage remains below int32 max, sqrt outputs fit the helper, and lunar
+products fit int64. All ten prior PNGs compare byte-for-byte to bd015b8; all
+eleven images rebuild identically. Final: minor (deferred): unit-circle residual
+assertions lack the input packet/diagnostic file written for component errors;
+there has been no such failure in the acceptance cases. Full CI pending.

@@ -64,3 +64,16 @@ The 636-case report matches the final PNG hash; CI logs are preserved in
 `logs/runs/2026-11-15T20-14-15-222Z/`. The separate local 633-case pre-guard run
 also passed and is retained without attributing its results to the final image.
 All review findings with concrete reproducers were addressed before acceptance.
+
+## Lunar orientation accepted — 2026-11-20
+
+Source 9ba039e, CI 44837670212: all thirteen suites and all eleven executable
+image rebuilds pass. The lunar suite contains 353 valid and 8 invalid cases;
+maximum component error 6.165933641444354e-8 at the fixed 5e-7 limit.
+Independent review found no critical/important defects. Deferred minor:
+unit-circle assertion diagnostics omit the detailed input packet.
+Permanent evidence: logs/runs/2026-11-20T23-34-05-986Z/ and sgp4/lunar-test-results.json.
+All twelve pre-existing PNG files (including reference artwork) compare exactly
+to bd015b8; shared production math and vendored interpreter are unchanged.
+The next step is full dscom common coefficients. Periodic and resonance dynamics
+remain unimplemented. This component is not a full SDP4 propagator.

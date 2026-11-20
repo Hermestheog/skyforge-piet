@@ -5,7 +5,9 @@ SGP4 milestone on `codex/sgp4-near-earth`; `main` still contains the `v0.2.0`
 baseline. [PR #1](https://github.com/Hermestheog/skyforge-piet/pull/1) is open.
 The branch also includes a verified [deep-space epoch kernel](sgp4/DEEP-TIME.md).
 Its standalone 256-case suite passes and is now included in `npm test` and CI.
-Independent review is complete; all twelve suites and reproducibility checks pass.
+The new [lunar-orientation kernel](sgp4/LUNAR.md) adds 361 passing cases.
+Independent reviews are complete; all thirteen suites and eleven executable
+image reproducibility checks pass.
 Full deep-space propagation remains unfinished.
 See the [work ledger](docs/WORK-LEDGER.md) for evidence and remaining work.
 

@@ -49,6 +49,20 @@ c1d59915e3b6c2b3a46cd2c1029380a8e2a6b85fcdfd869142e084c72a754f86.
 
 All build and sequential regression paths include this component. Independent
 review found no critical or important defects. Full thirteen-suite CI acceptance
-is pending. All prior PNGs remain
+passed for source `9ba039e` in [run 44837670212](https://github.com/Hermestheog/skyforge-piet/actions/runs/44837670212). All prior PNGs remain
 unchanged. Next: couple this orientation with mean orbital elements to compute
 solar/lunar common coefficients, then periodic and resonance terms.
+
+Range review: `zsinil` stays above 0.313, so the division denominators stay
+nonzero. Both square-root outputs are at most 1e8, below the helper's 2^27-1
+reach. The atan2 inputs satisfy approximately |x| ≤ 1e8 and |y| < 1.272e8;
+after the helper's factor of eight and CORDIC gain, stored magnitudes remain
+below 2.14e9, within signed 32-bit storage. Lunar products are about 1e16 or
+smaller, within signed 64-bit arithmetic. The larger epoch intermediates retain
+the existing split-limb implementation. The shared math and interpreter sources
+are unchanged.
+
+Deferred minor diagnostic issue: unit-circle assertions do not yet preserve
+the detailed failing input packet written by component-error checks. No such
+failure occurred in the tested cases; this affects failure diagnosis, not the
+assertion's acceptance threshold.

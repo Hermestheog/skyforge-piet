@@ -21,7 +21,9 @@
    describe the accepted interface and range guards. Prior programs are preserved.
 5. **Deep-space support — in progress:** a standalone epoch-angle PNG and
    256-case suite are saved in [the verified epoch foundation](../sgp4/DEEP-TIME.md).
-   Independent review and all twelve regression suites pass; the epoch foundation is verified.
+   The [lunar-orientation component](../sgp4/LUNAR.md) now adds 361 cases and
+   the six direction components needed by dscom. Independent reviews and all
+   thirteen regression suites pass. Common coefficient calculation is next.
    SDP4/resonance/lunar-solar dynamics remain unimplemented, with separate
    verification coverage. A GEO example in the current two-body model does
    not establish deep-space SGP4 correctness.

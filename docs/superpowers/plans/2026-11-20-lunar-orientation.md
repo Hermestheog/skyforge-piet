@@ -11,8 +11,11 @@ Spec: ../specs/2026-11-20-lunar-orientation-design.md
   build executable PNG and audit artifacts, then pass actual npiet tests.
 - [x] Review ranges and independent oracle; address concrete findings.
 - [x] Integrate build/rebuild/sequential tests/CI and document contract/results.
-- [ ] Verify all previous tests and images, preserve logs, commit and push.
+- [x] Verify all previous tests and images, preserve logs, commit and push.
 
 Review focus: 64-bit products, 32-bit stored registers/roll temporary, CORDIC
 range and quadrants, sqrt range, negative components, noon epoch convention,
 quantization and oracle instrumentation integrity.
+
+Accepted: CI 44837670212 on 9ba039e, thirteen suites, eleven identical builds.
+Final: minor (deferred): unit-circle failures lack a detailed input packet.

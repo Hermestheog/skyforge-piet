@@ -672,3 +672,15 @@ products fit int64. All ten prior PNGs compare byte-for-byte to bd015b8; all
 eleven images rebuild identically. Final: minor (deferred): unit-circle residual
 assertions lack the input packet/diagnostic file written for component errors;
 there has been no such failure in the acceptance cases. Full CI pending.
+
+## 2026-11-20 — lunar orientation acceptance
+
+CI run 44837670212 for 9ba039e8c1606d95172a31b8cedcd3a264631def passed
+all thirteen sequential suites and eleven executable-image rebuilds. The
+downloaded lunar report exactly matches the locally tested report and PNG hash;
+all thirteen manifest exit codes are zero. Evidence retained in
+logs/runs/2026-11-20T23-34-05-986Z/ and logs/2026-11-20/lunar-ci-validation.log.
+The saved J2000 example executed directly and returned
+0 93423846 35664898 97857698 20588122 30315986 95293972.
+The component plan is complete; dscom coefficients, periodic corrections and
+resonance remain next. No full SDP4 or universal accuracy claim is made.

@@ -41,9 +41,11 @@ const lines=readFileSync('vendor/sgp4-reference/SGP4-VER.TLE','utf8').split(/\r?
 let tleEpochs=0;
 for(let i=0;i<lines.length;i++)if(lines[i].startsWith('1 ')){
   const tle=new TLE(lines[i],lines[++i].slice(0,69)),r=tle.rec;
-  const original=r.jdsatepoch+r.jdsatepochF,total=Math.round((original-2451544.5)*DAY);
+  const original=r.jdsatepoch+r.jdsatepochF;
+  const originalMillis=(r.jdsatepoch-2451544.5)*DAY+r.jdsatepochF*DAY,total=Math.round(originalMillis);
   const day=Math.floor(total/DAY),ms=total-day*DAY;
-  add(`TLE ${tle.objectID}`,day,ms,{original_jd:original,quantization_ms:(2451544.5+day+ms/DAY-original)*DAY});tleEpochs++;
+  if(String(tle.objectID)==='28129')assert.equal(ms,49309462,'TLE 28129 nearest millisecond');
+  add(`TLE ${tle.objectID}`,day,ms,{original_jd:original,quantization_ms:total-originalMillis});tleEpochs++;
 }
 assert.ok(tleEpochs>=30);
 const invalid=[[-36526,0],[36526,0],[0,-1],[0,DAY],[],['bad'],[0],[0,'bad']];
@@ -67,8 +69,14 @@ for(const c of cases){const actual=run(c.input),errors=actual.slice(1).map((v,i)
   results.push({...c,actual,errors});
 }
 for(const input of invalid)assert.deepEqual(run(input),[1,0,0,0,0,0]);
+// Compatibility probes document npiet input semantics, outside canonical input.
+const parserProbes=[];
+for(const [token,parsed] of [['4294967296',0],['-4294967296',0],['0bad',0],['1.5',1]]){
+  const input=[0,token],actual=run(input);assert.deepEqual(actual,run([0,parsed]));
+  parserProbes.push({input,parsed_millis:parsed,actual});
+}
 assert.equal(hash(),sha,'PNG must remain unchanged during validation');
 writeFileSync('sgp4/deep-time-test-results.json',JSON.stringify({result:'PASS',valid:cases.length,invalid:invalid.length,total:cases.length+invalid.length,
-  tle_epochs:tleEpochs,tolerance_rad:tolerance,max_errors_rad:maxima,png_sha256:sha,
+  parser_compatibility:parserProbes,tle_epochs:tleEpochs,tolerance_rad:tolerance,max_errors_rad:maxima,png_sha256:sha,
   quantization_note:'TLE epochs are rounded to milliseconds first; reference values use the same encoded Julian day. This is phase-kernel validation, not deep-space state propagation.',results,invalid_inputs:invalid},null,2)+'\n');
 console.log(`PASS deep-space epoch: ${cases.length} valid, ${invalid.length} invalid; ${tleEpochs} TLE epochs; max angular errors ${maxima.join(', ')}`);

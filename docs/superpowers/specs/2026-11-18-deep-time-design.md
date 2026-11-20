@@ -4,11 +4,13 @@ Continuation authorized by the user's request to push existing work and keep
 going along the SGP4 roadmap. Implementation choices remain delegated.
 
 Deliver a separate executable Piet epoch kernel as the first deep-space
-component. Inputs are integer days relative to JD 2451544.5 (2000-01-01 midnight)
+component. Inputs are signed-32-bit integer tokens: days relative to JD 2451544.5 (2000-01-01 midnight)
 in [-36525,36525], then milliseconds since midnight in [0,86399999]. Output:
 status, Greenwich mean sidereal angle, lunar node phase, lunar orientation phase
 (gam), solar mean phase (zmos), lunar mean phase (zmol), all radians times 1e8
-normalized into [0,2*pi). Invalid input returns status 1 and five zeros.
+normalized into [0,2*pi). Missing/unreadable numeric input or parsed values outside
+the domain return status 1 and five zeros. Native npiet prefix parsing applies;
+strict text validation and overflow-token handling are outside this interface.
 
 Use the pinned Vallado gstime/dscom equations. Epoch interpretation follows the
 Julian-day value supplied: no calendar parser, leap-second handling or UT1/UTC

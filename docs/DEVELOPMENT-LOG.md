@@ -612,3 +612,22 @@ the standalone suite to the sequential runner, and retained its report plus
 failure packets in CI artifacts. The runtime image, existing tests, thresholds
 and interpreter are unchanged. Full twelve-suite acceptance is pending this
 candidate run; a fresh independent review has been requested.
+
+## 2026-11-20 — independent epoch review fixes
+
+The fresh reviewer found no further arithmetic defect in the accepted domain,
+but reproduced two important contract/test issues. TLE 28129's fractional epoch
+is 49309461.504 milliseconds: nearest millisecond is 49309462, not 49309461.
+A new assertion failed before the fix; the trace is archived in logs/2026-11-20/.
+The test now subtracts the epoch origin before combining the Julian-day halves
+and reports quantization in small millisecond units. The unchanged PNG passes
+all 256 cases with the corrected epoch, retaining the 5e-8 tolerance.
+
+Ruling: retain standard npiet numeric input and explicitly require signed-32-bit
+integer tokens, consistent with the prior components. Arbitrary text validation
+is not implemented: npiet accepts 0bad as 0 and 1.5 as 1, and oversized tokens
+can wrap (4294967296 and -4294967296 become 0). Four actual interpreter probes
+now preserve this behavior separately from numerical cases. Cost: callers must
+supply canonical int32 tokens; status 1 is not a strict lexical validation result.
+No interpreter or runtime PNG was changed. Standalone suite and probes pass;
+full regression acceptance of these fixes is still pending.
